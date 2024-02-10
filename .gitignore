@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/
+
+# Next.js build directory
+.next/
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# Environment variables file
+.env*.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Compiled files
+*.log
+*.pem
+*.pid
+*.seed
+*.pid.lock
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
