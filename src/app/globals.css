@@ -17,11 +17,20 @@
   }
 }
 
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.actionBtn{
+  @apply  py-2 px-4 bg-primary hover:bg-dark border border-dark hover:border-primary hover:text-primary disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.inputTag {
+  @apply block py-2 px-4 outline-none border border-primary bg-dark;
+}
+.labelTag{
+  @apply font-semibold text-gray-400;
 }
 
 .roboto-thin {

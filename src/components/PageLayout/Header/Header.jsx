@@ -12,22 +12,22 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className=" py-4 px-12 bg-dark bg-opacity-60 flex items-center justify-between sticky top-0 right-0 left-0 z-50">
+    <header className=" py-4 md:px-12 px-4 bg-dark bg-opacity-60 flex items-center justify-between sticky top-0 right-0 left-0 z-50">
       {/* Logo & Name */}
-      <Link className=" flex gap-4 items-center" href={process.env.BASE_URL || "#"}>
+      <Link className=" flex gap-4 items-center" href={process.env.BASE_URL || "http://localhost:3000"}>
         <h1 className=" text-3xl tracking-tighter font-sans font-bold pb-1">
           JA
         </h1>
         <h2 className=" text-2xl">Just Abdullah</h2>
       </Link>
       <nav className={`md:block relative ${isOpen ? "block" : "hidden"}`}>
-        <ul className={`${isOpen?"absolute top-8 left-0 rounded-lg py-2 px-12 flex flex-col gap-2 bg-dark":"flex space-x-8"} `}>
+        <ul className={`${isOpen?"absolute top-8 md:left-0 -left-12 border border-primary rounded-lg py-2 px-8 flex flex-col gap-2 bg-dark":"flex space-x-8"} `}>
           {links.map((item, index) => {
             return (
               <li key={index}>
                 <Link
                   onClick={() => setIsOpen((val) => !val)}
-                  className=""
+                  className=" hover:text-primary duration-300"
                   href={item?.slug}
                 >
                   {item?.name}

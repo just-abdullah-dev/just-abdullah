@@ -1,17 +1,19 @@
+import Contact from "@/components/ContactPage/Contact";
+import HeroSection from "@/components/HeroSection/HeroSection";
 import PageLayout from "@/components/PageLayout/PageLayout";
+import Projects from "@/components/ProjectsPage/Projects";
+import Services from "@/components/ServicesPage/Services";
+import Skills from "@/components/Skills/Skills";
 
 export default function Home() {
   return (
     <PageLayout>
-     
-     <div className=" text-7xl py-12 text-primary roboto-bold">
-        Just Abdullah
-      </div>
-      <div className=" text-7xl py-12 text-primary roboto-bold">
-        Just Abdullah
-      </div>
-      <div className=" text-7xl py-12 text-primary roboto-bold">
-        Just Abdullah
+      <div className=" grid gap-6 md:gap-12 mt-4">
+        <HeroSection />
+        <Services />
+        <Skills />
+        <Projects />
+        <Contact />
       </div>
     </PageLayout>
   );
