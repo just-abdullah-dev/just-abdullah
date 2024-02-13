@@ -22,7 +22,13 @@
     text-wrap: balance;
   }
 }
+.projects > a:nth-child(even) {
+  @apply flex-row-reverse;
+}
 
+.projects > a:nth-child(odd) {
+  @apply flex-row;
+}
 .actionBtn{
   @apply  py-2 px-4 bg-primary hover:bg-dark border border-dark hover:border-primary hover:text-primary disabled:opacity-50 disabled:cursor-not-allowed;
 }

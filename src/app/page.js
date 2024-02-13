@@ -11,8 +11,8 @@ export default function Home() {
       <div className=" grid gap-6 md:gap-12 mt-4">
         <HeroSection />
         <Services />
-        <Skills />
         <Projects />
+        <Skills />
         <Contact />
       </div>
     </PageLayout>

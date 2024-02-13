@@ -18,7 +18,7 @@ export default function Header() {
         <h1 className=" text-3xl tracking-tighter font-sans font-bold pb-1">
           JA
         </h1>
-        <h2 className=" text-2xl">Just Abdullah</h2>
+        <h2 className=" text-2xl">Just Abdullah.</h2>
       </Link>
       <nav className={`md:block relative ${isOpen ? "block" : "hidden"}`}>
         <ul className={`${isOpen?"absolute top-8 md:left-0 -left-12 border border-primary rounded-lg py-2 px-8 flex flex-col gap-2 bg-dark":"flex space-x-8"} `}>
