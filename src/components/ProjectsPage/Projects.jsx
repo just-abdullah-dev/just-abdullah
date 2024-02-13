@@ -16,34 +16,42 @@ function Projects() {
       </Link>
       {/* projects map func  */}
       <div className=" projects grid gap-8 grid-cols-1 text-light">
-        {projects.map((item, index)=>{
-          return <Link
-          key={index}
-          className=" p-4 flex items-center justify-between relative  flex-row-reverse" href={`/projects/${item?.slug}`}>
-            <div className="md:hidden duration-300 font-serif text-xl hover:text-primary absolute -top-6 left-0">{item?.title}</div>
-            <div className="hidden md:flex w-1/12 aspect-square roboto-bold text-3xl lg:text-4xl xl:text-5xl items-center justify-center bg-dark border border-primary rounded-full">
-              0{index+1}
-            </div>
-            <div className="hidden md:block border-b border-primary w-4/12 relative">
-              <div className="  font-serif text-4xl hover:text-primary absolute bottom-0 duration-300 left-16">{item?.title}</div>
-            </div>
-            <div className=" w-full md:w-7/12 flex items-center justify-center aspect-video bg-opacity-50 bg-light rounded-lg">
-              <div className=" w-full h-full bg-dark m-2 mt-4 rounded-md overflow-hidden relative flex items-center justify-center">
-                <Image
+        {projects.map((item, index) => {
+          return (
+            <Link
+              key={index}
+              className=" p-4 flex items-center justify-between relative  flex-row-reverse"
+              href={`/projects/${item?.slug}`}
+            >
+              <div className="md:hidden duration-300 font-serif text-xl hover:text-primary absolute -top-6 left-0">
+                {item?.title}
+              </div>
+              <div className="hidden md:flex w-1/12 aspect-square roboto-bold text-3xl lg:text-4xl xl:text-5xl items-center justify-center bg-dark border border-primary rounded-full">
+                0{index + 1}
+              </div>
+              <div className="hidden md:block border-b border-primary w-4/12 relative">
+                <div className="  font-serif text-4xl hover:text-primary absolute bottom-0 duration-300 left-16">
+                  {item?.title}
+                </div>
+              </div>
+              <div className=" w-full md:w-7/12 flex items-center justify-center aspect-video bg-opacity-50 bg-light rounded-lg">
+                <div className=" w-full h-full bg-dark m-2 mt-4 rounded-md overflow-hidden relative flex items-center justify-center">
+                  <Image
                   className=" w-full h-fit"
                   src={ item?.images[0] }
                   alt={`${item?.title} picture`}
                   width={300}
                   height={300}
+                  priority
                 />
-                <div className=" bg-dark bg-opacity-40 w-full absolute z-10 bottom-0 right-0 text-center pt-1 text-sm md:text-base hover:underline duration-300 w-1/">
-                  Tap to see
+                  <div className=" bg-dark bg-opacity-40 w-full absolute z-10 bottom-0 right-0 text-center pt-1 text-sm md:text-base hover:underline duration-300 w-1/">
+                    Tap to see
+                  </div>
                 </div>
-            </div>
-          </div>
-        </Link>
+              </div>
+            </Link>
+          );
         })}
-        
       </div>
     </div>
   );
