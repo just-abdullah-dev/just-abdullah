@@ -15,7 +15,7 @@ function Skills() {
       </Link>
       {/* skills map func  */}
       <div className=" grid gap-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2">
-        <div className=" p-4 rounded-lg border border-primary bg-opacity-50 bg-light duration-300 text-dark h-[150px] flex flex-col justify-between items-center">
+        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
           <Image
             className=" aspect-auto h-auto mx-auto my-auto"
             width={120}
@@ -29,7 +29,7 @@ function Skills() {
             Next.js
           </h1>
         </div>
-        <div className=" p-4 rounded-lg border border-primary bg-opacity-40 bg-light duration-300 text-dark h-[150px] flex flex-col justify-between items-center">
+        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
           <Image
             className=" aspect-auto h-auto mx-auto my-auto"
             width={90}
@@ -43,7 +43,7 @@ function Skills() {
             React.js
           </h1>
         </div>
-        <div className=" p-4 rounded-lg border border-primary bg-opacity-40 bg-light duration-300 text-dark h-[150px] flex flex-col justify-between items-center">
+        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
           <Image
             className=" aspect-auto h-auto mx-auto my-auto"
             width={90}
@@ -57,7 +57,7 @@ function Skills() {
             Tailwind CSS
           </h1>
         </div>
-        <div className=" p-4 rounded-lg border border-primary bg-opacity-40 bg-light duration-300 text-dark h-[150px] flex flex-col justify-between items-center">
+        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
           <Image
             className=" aspect-auto h-auto mx-auto my-auto"
             width={125}
@@ -71,7 +71,7 @@ function Skills() {
             Node.js
           </h1>
         </div>
-        <div className=" p-4 rounded-lg border border-primary bg-opacity-40 bg-light duration-300 text-dark h-[150px] flex flex-col justify-between items-center">
+        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
           <Image
             className=" aspect-auto h-auto mx-auto my-auto"
             width={90}
@@ -85,7 +85,7 @@ function Skills() {
             Express.js
           </h1>
         </div>
-        <div className=" p-4 rounded-lg border border-primary bg-opacity-40 bg-light duration-300 text-dark h-[150px] flex flex-col justify-between items-center">
+        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
           <Image
             className=" aspect-auto h-auto mx-auto my-auto"
             width={150}
@@ -99,7 +99,7 @@ function Skills() {
             MongoDB
           </h1>
         </div>
-        <div className=" p-4 rounded-lg border border-primary bg-opacity-40 bg-light duration-300 text-dark h-[150px] flex flex-col justify-between items-center">
+        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
           <Image
             className=" aspect-auto h-auto mx-auto my-auto"
             width={85}
@@ -113,7 +113,7 @@ function Skills() {
             Git
           </h1>
         </div>
-        <div className=" p-4 rounded-lg border border-primary bg-opacity-40 bg-light duration-300 text-dark h-[150px] flex flex-col justify-between items-center">
+        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
           <Image
             className=" aspect-auto h-auto mx-auto my-auto"
             width={80}

@@ -1,12 +1,14 @@
+"use client";
 import { projects } from "@/constants/data";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 function Projects() {
   return (
-    <div className="grid gap-6 lg:px-12 xl:px-24 mt-6 md:mt-0">
+    <div
+      className="grid gap-6 lg:px-12 xl:px-24 mt-6 md:mt-0"
+    >
       {/* title  */}
       <Link
         href={"projects"}
@@ -26,7 +28,7 @@ function Projects() {
               <div className="md:hidden duration-300 font-serif text-xl hover:text-primary absolute -top-6 left-0">
                 {item?.title}
               </div>
-              <div className="hidden md:flex w-1/12 aspect-square roboto-bold text-3xl lg:text-4xl xl:text-5xl items-center justify-center bg-dark border border-primary rounded-full">
+              <div className="hidden md:flex w-1/12 aspect-square roboto-bold text-3xl lg:text-4xl xl:text-5xl items-center justify-center border lg:border-2 xl:border-4 border-dark rounded-full bg-opacity-30 bg-gray-500">
                 0{index + 1}
               </div>
               <div className="hidden md:block border-b border-primary w-4/12 relative">
@@ -34,16 +36,16 @@ function Projects() {
                   {item?.title}
                 </div>
               </div>
-              <div className=" w-full md:w-7/12 flex items-center justify-center aspect-video bg-opacity-50 bg-light rounded-lg">
+              <div className=" w-full md:w-7/12 flex items-center justify-center aspect-video bg-opacity-30 bg-gray-500 rounded-lg">
                 <div className=" w-full h-full bg-dark m-2 mt-4 rounded-md overflow-hidden relative flex items-center justify-center">
                   <Image
-                  className=" w-full h-fit"
-                  src={ item?.images[0] }
-                  alt={`${item?.title} picture`}
-                  width={300}
-                  height={300}
-                  priority
-                />
+                    className=" w-full h-fit"
+                    src={item?.images[0]}
+                    alt={`${item?.title} picture`}
+                    width={300}
+                    height={300}
+                    priority
+                  />
                   <div className=" bg-dark bg-opacity-40 w-full absolute z-10 bottom-0 right-0 text-center pt-1 text-sm md:text-base hover:underline duration-300 w-1/">
                     Tap to see
                   </div>

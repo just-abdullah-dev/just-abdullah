@@ -18,6 +18,20 @@
 }
 
 @layer utilities {
+  .text-stroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-stroke-primary {
+    -webkit-text-stroke-color: #fe4031;
+  }
+  .text-stroke-white {
+    -webkit-text-stroke-color: white;
+  }
+}
+
+@layer utilities {
   .text-balance {
     text-wrap: balance;
   }
@@ -110,6 +124,7 @@
   font-weight: 900;
   font-style: italic;
 }
+
 
 
 

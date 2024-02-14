@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className=" flex items-center overflow-hidden text-gray-300 relative">
+    <div className=" flex items-center overflow-hidden w-full text-gray-300 relative">
       <div className=" flex flex-col md:gap-2 md:w-1/2 lg:pl-12 xl:pl-24 py-12 md:py-0 gap-6">
         <div className=" text-6xl text-primary roboto-bold stroke-white stroke-2 ">
           Here is Abdullah!

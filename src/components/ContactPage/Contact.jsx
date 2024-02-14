@@ -46,7 +46,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className=" md:px-56 grid gap-8 md:p-4 mt-6 md:mt-0">
+    <div id="contact" className=" md:px-12 lg:px-32 xl:px-56 grid gap-8 md:p-4 mt-6 md:mt-0">
       {/* title  */}
       <div className=" md:px-24 grid gap-2">
         <h1 className=" text-primary roboto-bold text-4xl lg:text-5xl">Contact.</h1>

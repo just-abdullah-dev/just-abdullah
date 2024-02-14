@@ -10,7 +10,7 @@ export default function Home() {
     <PageLayout>
       <div className=" grid gap-6 md:gap-12 mt-4">
         <HeroSection />
-        <Services />
+        <Services />          
         <Projects />
         <Skills />
         <Contact />
