@@ -2,9 +2,10 @@ import Image from "next/image";
 import React from "react";
 
 export default function HeroSection() {
+  // Hero Section for Service pAge
   return (
-    <div className=" flex flex-col lg:flex-row items-center overflow-hidden w-full text-gray-300 relative bg-gray-40 py-12 lg:py-24 gap-10">
-      <div className=" flex flex-col md:w-2/3 lg:pl-12 xl:pl-24 gap-6">
+    <div className=" flex flex-col-reverse lg:flex-row items-center overflow-hidden w-full text-gray-300 relative gap-10">
+      <div className=" flex flex-col lg:w-[55%] lg:pl-12 xl:pl-24 gap-6">
         <div className=" text-6xl lg:text-7xl text-primary roboto-bold">
           Web Services!
         </div>
@@ -13,10 +14,10 @@ export default function HeroSection() {
           <span className=" text-primary">realitites.</span>
         </div>
       </div>
-      <div className=" w-full rounded-lg lg:w-1/3 overflow-hidden h-full flex items-center justify-center">
+      <div className=" w-full rounded-lg lg:w-[45%] overflow-hidden h-full flex items-center justify-center">
         <Image
-        className=" w-full aspect-auto"
-        src={'/skill-joiner-1.gif'}
+        className=" w-[80%] md:w-[60%] lg:w-[90%] aspect-auto"
+        src={'/web-service.png'}
         alt="pic"
         width={600}
         height={600}

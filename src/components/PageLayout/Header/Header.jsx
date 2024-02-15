@@ -26,7 +26,7 @@ export default function Header() {
             return (
               <li key={index}>
                 <Link
-                  onClick={() => setIsOpen((val) => !val)}
+                  onClick={() => setIsOpen(false)}
                   className=" hover:text-primary duration-300"
                   href={item?.slug}
                 >

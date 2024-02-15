@@ -5,41 +5,91 @@ const services = [
   {
     title: "Personal",
     slug: "personal",
+    image: "/per.png",
+    features: [
+      "Website pages: 10",
+      "Fast & optimized",
+      "Custom Domain Connection",
+      "Free SSL",
+      "Website languages: 2",
+      "SEO friendly",
+      "Premium support",
+    ],
     desc: "Unleash the power of personalization. From customization to optimization, I cater to your specific requirements, delivering results that exceed expectations.",
   },
   {
     title: "Corporate",
     slug: "corporate",
+    image: "/corporate-2.png",
+    features: [
+      "Website pages: 10",
+      "Fast & optimized",
+      "Custom Domain Connection",
+      "Free SSL",
+      "Website languages: 2",
+      "SEO friendly",
+      "Premium support",
+    ],
     desc: "Elevate your business with corporate solutions tailored to your needs. From seamless integration to unparalleled support, I ensure your enterprise operates at its peak efficiency.",
   },
   {
     title: "Ecommerce",
     slug: "ecommerce",
+    image: "/ecommerce-2.png",
+    features: [
+      "Website pages: 10",
+      "Fast & optimized",
+      "Custom Domain Connection",
+      "Free SSL",
+      "Website languages: 2",
+      "SEO friendly",
+      "Premium support",
+    ],
     desc: "Dive into the world of online commerce with Ecommerce solutions, designed to boost your digital presence and foster growth.",
   },
   {
     title: "Custom",
     slug: "custom",
+    image: "/custom.png",
+    features: [
+      "Website pages: 10",
+      "Fast & optimized",
+      "Custom Domain Connection",
+      "Free SSL",
+      "Website languages: 2",
+      "SEO friendly",
+      "Premium support",
+    ],
     desc: "From concept to execution, my custom development services provide the foundation for your startup's success, combining creativity, expertise, and unparalleled support.",
   },
   {
     title: "Deployment",
     slug: "deployment",
+    image: "/deployment.png",
+    features: [
+      "Website pages: 10",
+      "Fast & optimized",
+      "Custom Domain Connection",
+      "Free SSL",
+      "Website languages: 2",
+      "SEO friendly",
+      "Premium support",
+    ],
     desc: "If you're looking for someone to deploy and maintain your project, then you're in a right place! You can leave it for me and get rid of extra work.",
   },
 ];
 
 // projects each tile data
 const projects = [
-  // read verve 
+  // read verve
   {
     title: "Read Verve",
     slug: "read-verve",
-    images: ["/read-verve.gif", "/read-verve-sm-1.gif", "read-verve-sm-2.gif",],
-    keyword: [ "Next.js", "React.js", "Node.js", "MongoDB"],
-    repo: 'https://github.com/just-abdullah-dev/read-verve-next-js/',
-    link: '',
-    completedOn: '24-Nov-2023',
+    images: ["/read-verve.gif", "/read-verve-sm-1.gif", "read-verve-sm-2.gif"],
+    keyword: ["Next.js", "React.js", "Node.js", "MongoDB"],
+    repo: "https://github.com/just-abdullah-dev/read-verve-next-js/",
+    link: "",
+    completedOn: "24-Nov-2023",
     desc: `## Read Verve: Empowering Knowledge through Diverse Blogs
 
     ### Introduction to Read Verve
@@ -69,15 +119,15 @@ const projects = [
     Join us on Read Verve and embark on an enriching journey through a world of insightful content and collaborative learning.
     `,
   },
-  // skill joiner 
+  // skill joiner
   {
     title: "Skill Joiner",
     slug: "skill-joiner",
     images: ["/skill-joiner-1.gif", "/skill-joiner-2.gif"],
-    keyword: [ "Next.js", "React.js", "Node.js", "MongoDB"],
-    repo: 'https://github.com/just-abdullah-dev/skill-joiner-nextjs',
-    link: '',
-    completedOn: '22-Jan-2024',
+    keyword: ["Next.js", "React.js", "Node.js", "MongoDB"],
+    repo: "https://github.com/just-abdullah-dev/skill-joiner-nextjs",
+    link: "",
+    completedOn: "22-Jan-2024",
     desc: `###Introduction:
     Skill Joiner is a special platform for PAF-IAST University. It helps smart
     students who are good at lots of things like coding, designing, SEO, and more.
@@ -90,17 +140,17 @@ const projects = [
     job and students will bid on the job. Or users can request a service from
     specific student.
     This platform also has community forums for each profession. Where
-    students can communicate with each other to learn and grow together.`
+    students can communicate with each other to learn and grow together.`,
   },
-  // quizical app 
+  // quizical app
   {
     title: "Quizical",
     slug: "quizical",
     images: ["/quizical.gif"],
-    keyword: [ "React.js", "Trivia API" ],
-    repo: 'https://github.com/just-abdullah-dev/Quizical-App',
-    link: 'https://quizical-app.netlify.app/',
-    completedOn: '05-Sep-2024',
+    keyword: ["React.js", "Trivia API"],
+    repo: "https://github.com/just-abdullah-dev/Quizical-App",
+    link: "https://quizical-app.netlify.app/",
+    completedOn: "05-Sep-2024",
     desc: `# Quizical App
 
     ## Introduction
@@ -129,15 +179,15 @@ const projects = [
     7. **Finish the Quiz**: Complete the quiz and see your final score.
     `,
   },
-  // tenzies app 
+  // tenzies app
   {
     title: "Tenzies Game",
     slug: "tenzies",
     images: ["/tenzies.gif"],
-    keyword: [ "React.js" ],
-    repo: 'https://github.com/just-abdullah-dev/Tenzies-Game',
-    link: 'https://tenzies-game-ar.netlify.app/',
-    completedOn: '02-Sep-2024',
+    keyword: ["React.js"],
+    repo: "https://github.com/just-abdullah-dev/Tenzies-Game",
+    link: "https://tenzies-game-ar.netlify.app/",
+    completedOn: "02-Sep-2024",
     desc: `# Tenzies-Game
 
     ## Introduction
