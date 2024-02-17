@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <header className=" py-4 md:px-12 px-4 bg-dark bg-opacity-60 flex items-center justify-between sticky top-0 right-0 left-0 z-50">
       {/* Logo & Name */}
-      <Link className=" flex gap-4 items-center" href={process.env.BASE_URL || "http://localhost:3000"}>
+      <Link className=" flex gap-4 items-center" href={"/"}>
         <h1 className=" text-3xl tracking-tighter font-sans font-bold pb-1">
           JA
         </h1>

@@ -44,13 +44,20 @@
   @apply flex-row;
 }
 .actionBtn{
-  @apply  py-2 px-4 bg-primary hover:bg-dark border border-dark hover:border-primary hover:text-primary disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply  py-2 px-4 bg-primary hover:bg-dark border border-dark hover:border-primary hover:text-primary disabled:opacity-50 disabled:cursor-not-allowed duration-300;
 }
 .inputTag {
   @apply block py-2 px-4 outline-none border border-primary bg-dark;
 }
 .labelTag{
   @apply font-semibold text-gray-400;
+}
+.transition-hero-image{
+  border-radius: 100%;
+  transition: border-radius 0.3s ease-in-out;
+}
+.transition-hero-image:hover{
+  border-radius: 5%;
 }
 
 .roboto-thin {

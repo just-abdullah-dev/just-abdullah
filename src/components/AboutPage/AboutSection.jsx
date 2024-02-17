@@ -1,15 +1,18 @@
+import { ArrowRight, MoveRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function AboutSection() {
   return (
     <div className="">
       <Image
-        className="mx-auto w-full md:w-[80%] lg:w-[60%] xl:w-[45%] aspect-auto scale-x-[-1] rounded-2xl shadow-xl"
+        className="mx-auto w-full md:w-[80%] lg:w-[60%] xl:w-[45%] aspect-auto scale-x-[-1] rounded-2xl"
         src={"/DP_New.jpeg"}
         alt="Abdullah Profile Picture"
         width={800}
         height={800}
+        priority
       />
       <div className=" p-4 grid gap-8 text-light lg:px-8 xl:px-16">
         <div className=" grid gap-4">
@@ -67,8 +70,9 @@ export default function AboutSection() {
           </ul>
         </div>
         {/* call for action  */}
-        <div className=" text-white roboto-bold text-3xl py-6">
-          Let&#39;s build something amazing together!
+        <div className=" text-white roboto-bold text-3xl py-6 flex items-center gap-4 hover:gap-10 duration-300">
+          Let&#39;s build something amazing together <Link href={"/#contact"}>
+            <MoveRight size={40} className=" hover:text-primary" /></Link>
         </div>
       </div>
     </div>

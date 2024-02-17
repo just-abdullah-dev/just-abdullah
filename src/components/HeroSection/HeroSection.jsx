@@ -23,10 +23,10 @@ export default function HeroSection() {
             className="actionBtn w-fit"
             >Contact Me</Link>
       </div>
-      <div className=" md:w-1/2 items-center justify-center  hidden md:flex">
+      <div className=" md:w-1/2 items-center justify-center  hidden md:flex ">
         <Image
         src={'/DP_New.jpeg'}
-        className=" aspect-square rounded-full scale-x-[-1]"
+        className=" aspect-square scale-x-[-1] transition-hero-image"
         width={450}
         height={450}
         alt="hero-section-image"
