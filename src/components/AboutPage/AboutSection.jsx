@@ -13,43 +13,63 @@ export default function AboutSection() {
       />
       <div className=" p-4 grid gap-8 text-light lg:px-8 xl:px-16">
         <div className=" grid gap-4">
-        <h1 className=" text-2xl roboto-bold text-white">
-        Emerging Full Stack Web Developer         
-        </h1>
-        <p className=" ">
-        I am <span className=" text-primary">Abdullah</span>, an enthusiastic full-stack web developer with expertise in Next.js, React.js, Node.js, and MongoDB. With 1+ year of hands-on experience in the web development, I specialize in crafting exceptional user experiences using cutting-edge technologies.
-      </p>
+          <h1 className=" text-2xl roboto-bold text-white">
+            Emerging Full Stack Web Developer
+          </h1>
+          <p className=" ">
+            I am <span className=" text-primary">Abdullah</span>, an
+            enthusiastic full-stack web developer with expertise in Next.js,
+            React.js, Node.js, and MongoDB. With 1+ year of hands-on experience
+            in the web development, I specialize in crafting exceptional user
+            experiences using cutting-edge technologies.
+          </p>
         </div>
-      {/* key points  */}
-      <div>
-        <h2 className=" roboto-bold text-xl text-white">
-Here's what sets me apart:
-        </h2>
-        <ul className=" list-inside list-disc pl-4">
-          <li>Proficiency in React.js, Next.js, MongoDB, and Node.js, ensuring robust and scalable web applications.</li>
-          <li>Dedication to delivering high-quality solutions that meet your needs.</li>
-          <li>Strong problem-solving skills and attention to detail, resulting in clean and efficient code.</li>
-          <li>Continuous learning to stay updated with the latest trends and best practices in web development.</li>
-        
-
-      </ul>
-      </div>
-      {/* tech  */}
-      <div>
-        <h2 className=" roboto-bold text-xl text-white">
-        Technologies I work with:
-        </h2>
-        <ul className=" list-inside list-disc pl-4">
-          <li><b>Frontend: </b>React.js, Next.js, HTML, CSS, Tailwind, JavaScript</li>
-          <li><b>Backend:</b> Node.js, MongoDB, Next.js</li>
-          <li><b>Tools:</b> Git, VS Code</li>
-          
-              </ul>
-      </div>
-      {/* call for action  */}
-      <div className=" text-white roboto-bold text-3xl py-6">
-Let's build something amazing together!
-      </div>
+        {/* key points  */}
+        <div>
+          <h2 className=" roboto-bold text-xl text-white">
+            Here&#39;s what sets me apart
+          </h2>
+          <ul className=" list-inside list-disc pl-4">
+            <li>
+              Proficiency in React.js, Next.js, MongoDB, and Node.js, ensuring
+              robust and scalable web applications.
+            </li>
+            <li>
+              Dedication to delivering high-quality solutions that meet your
+              needs.
+            </li>
+            <li>
+              Strong problem-solving skills and attention to detail, resulting
+              in clean and efficient code.
+            </li>
+            <li>
+              Continuous learning to stay updated with the latest trends and
+              best practices in web development.
+            </li>
+          </ul>
+        </div>
+        {/* tech  */}
+        <div>
+          <h2 className=" roboto-bold text-xl text-white">
+            Technologies I work with:
+          </h2>
+          <ul className=" list-inside list-disc pl-4">
+            <li>
+              <b>Frontend: </b>React.js, Next.js, HTML, CSS, Tailwind,
+              JavaScript
+            </li>
+            <li>
+              <b>Backend:</b> Node.js, MongoDB, Next.js
+            </li>
+            <li>
+              <b>Tools:</b> Git, VS Code
+            </li>
+          </ul>
+        </div>
+        {/* call for action  */}
+        <div className=" text-white roboto-bold text-3xl py-6">
+          Let&#39;s build something amazing together!
+        </div>
       </div>
     </div>
   );
