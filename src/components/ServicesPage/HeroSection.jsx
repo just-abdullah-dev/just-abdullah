@@ -7,7 +7,7 @@ export default function HeroSection() {
     <div className=" flex flex-col-reverse lg:flex-row items-center overflow-hidden w-full text-gray-300 relative gap-10">
       <div className=" flex flex-col lg:w-[55%] lg:pl-12 xl:pl-24 gap-6">
         <div className=" text-6xl lg:text-7xl text-primary roboto-bold">
-          Web Services!
+          Web Services
         </div>
         <div className=" text-3xl text-light roboto-bold">
           Where <span className="text-primary">ideas</span> transform into web{" "}

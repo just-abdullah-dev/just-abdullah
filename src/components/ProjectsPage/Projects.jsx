@@ -1,32 +1,35 @@
-"use client";
 import { projects } from "@/constants/data";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 
-function Projects() {
+function Projects({showMoreBtn}) {
   return (
     <div
       className="grid gap-6 lg:px-12 xl:px-24 mt-6 md:mt-0"
     >
       {/* title  */}
+      {showMoreBtn &&
       <Link
-        href={"projects"}
-        className=" text-primary roboto-bold text-4xl lg:text-5xl"
-      >
-        Projects.
-      </Link>
+      href={"projects"}
+      className=" text-primary roboto-bold text-4xl lg:text-5xl mb-4"
+    >
+      Projects.
+    </Link>}
       {/* projects map func  */}
       <div className=" projects grid gap-8 grid-cols-1 text-light">
         {projects.map((item, index) => {
+          if(showMoreBtn && index > 2){
+            return;
+          }
           return (
             <Link
               key={index}
               className=" p-4 flex items-center justify-between relative  flex-row-reverse"
               href={`/projects/${item?.slug}`}
             >
-              <div className="md:hidden duration-300 font-serif text-xl hover:text-primary absolute -top-6 left-0">
-                {item?.title}
+              <div className="md:hidden duration-300 font-serif text-xl hover:text-primary absolute -top-6 left-0 ">
+                <span className="">{index+1}.</span>{" "}{item?.title}
               </div>
               <div className="hidden md:flex w-1/12 aspect-square roboto-bold text-3xl lg:text-4xl xl:text-5xl items-center justify-center border lg:border-2 xl:border-4 border-dark rounded-full bg-opacity-30 bg-gray-500">
                 0{index + 1}
@@ -55,6 +58,11 @@ function Projects() {
           );
         })}
       </div>
+      {showMoreBtn &&
+        <Link 
+            href={`/projects`}
+            className="actionBtn w-fit mx-auto"
+            >See More Projects</Link>}
     </div>
   );
 }

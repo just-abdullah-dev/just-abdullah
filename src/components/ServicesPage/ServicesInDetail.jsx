@@ -43,6 +43,9 @@ function ServicesInDetail() {
                   </li>
                 })}
               </ul>
+              <div className="w-full">
+              <Link className=" bg-primary text-light p-2 px-6 w-fit float-right" href={`/#contact`}>Contact</Link>
+              </div>
               </div>
             </div>
           );

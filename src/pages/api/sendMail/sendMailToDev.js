@@ -8,13 +8,14 @@ export default async function handler (req, res) {
                 message: "Only POST method is allow."
             })
         }
-        const {name, email, message} = req.body;
+        const {name, email, message, subject} = req.body;
         sendMailToDev(
             "just.abdullah.dev@gmail.com",
             name,
             "Abdullah",
             email,
-            message
+            message,
+            subject
           );
           res.status(200).json({
             success: true,

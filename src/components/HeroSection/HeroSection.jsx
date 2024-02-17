@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function HeroSection() {
@@ -17,10 +18,10 @@ export default function HeroSection() {
         <div className=" w-[75%]">
             A student of software engineering, I have a passion to develop modern classical things for a startup to standout.
         </div>
-            <a 
+            <Link 
             href={`#contact`}
             className="actionBtn w-fit"
-            >Contact Me</a>
+            >Contact Me</Link>
       </div>
       <div className=" md:w-1/2 items-center justify-center  hidden md:flex">
         <Image
