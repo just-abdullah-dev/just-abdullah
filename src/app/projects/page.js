@@ -1,8 +1,5 @@
-import Contact from "@/components/ContactPage/Contact";
 import PageLayout from "@/components/PageLayout/PageLayout";
 import Projects from "@/components/ProjectsPage/Projects";
-import HeroSection from "@/components/ServicesPage/HeroSection";
-import ServicesInDetail from "@/components/ServicesPage/ServicesInDetail";
 import React from "react";
 
 function page() {

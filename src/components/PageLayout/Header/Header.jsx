@@ -5,9 +5,9 @@ import React, { useState } from "react";
 
 export default function Header() {
   const links = [
-    { name: "Services", slug: "services" },
-    { name: "Projects", slug: "projects" },
-    { name: "About", slug: "about" },
+    { name: "Services", slug: "/services" },
+    { name: "Projects", slug: "/projects" },
+    { name: "About", slug: "/about" },
   ];
   const [isOpen, setIsOpen] = useState(false);
 

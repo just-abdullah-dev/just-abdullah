@@ -14,6 +14,7 @@ export default function AboutSection() {
         height={800}
         priority
       />
+      {/* about content  */}
       <div className=" p-4 grid gap-8 text-light lg:px-8 xl:px-16">
         <div className=" grid gap-4">
           <h1 className=" text-2xl roboto-bold text-white">
@@ -70,7 +71,7 @@ export default function AboutSection() {
           </ul>
         </div>
         {/* call for action  */}
-        <div className=" text-white roboto-bold text-3xl py-6 flex items-center gap-4 hover:gap-10 duration-300">
+        <div className=" text-white roboto-bold text-3xl py-6 flex items-end md:items-center gap-4 hover:gap-10 duration-300">
           Let&#39;s build something amazing together <Link href={"/#contact"}>
             <MoveRight size={40} className=" hover:text-primary" /></Link>
         </div>

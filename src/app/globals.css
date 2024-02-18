@@ -132,6 +132,35 @@
   font-style: italic;
 }
 
+#md-div h1, #md-div h2,#md-div h3,#md-div h4,#md-div h5,#md-div h6,#md-div p,#md-div ul, #md-div ol, #md-div li{
+  margin: 0;
+  padding: 0;
+}
+#md-div p, #md-div li{
+  @apply text-light leading-8;
+}
+#md-div ul, #md-div ol{
+  @apply list-disc pl-8
+}
+ #md-div h1{
+  font-size: 32px;
+ }
+ #md-div h2{
+  font-size: 24px;
+ }
+ #md-div h3{
+  font-size: 18.72px;
+ }
+ #md-div h4{
+  font-size: 16px;
+ }
+ #md-div h5{
+  font-size: 13.28px;
+ }
+ #md-div h6{
+  font-size: 10.72px;
+ }
+
 
 
 

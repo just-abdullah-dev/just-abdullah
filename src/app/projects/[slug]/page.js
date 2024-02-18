@@ -5,14 +5,14 @@ import React from 'react'
 
 export default function page({params}) {
     const breadcrumbs = [
-        {name:" Home", path: "/"},
-        {name:" Projects", path: "/projects"},
-        {name:" Read Verve", path: params?.slug},
+        {name:" home", path: "/"},
+        {name:" projects", path: "/projects"},
+        {name: params?.slug.replace("-"," "), path: params?.slug},
     ];
 
   return (
-    <PageLayout>
-        <div>
+    <PageLayout> 
+        <div className='gri'>
             <BreadCrumbs data={breadcrumbs} />
             <ProjectInDetail slug={params?.slug} />
         </div>

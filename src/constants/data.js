@@ -85,136 +85,58 @@ const projects = [
   {
     title: "Read Verve",
     slug: "read-verve",
-    images: ["/read-verve.gif", "/read-verve-sm-1.gif", "read-verve-sm-2.gif"],
-    keyword: ["Next.js", "React.js", "Node.js", "MongoDB"],
+    tagline: "lorem12 dfdjkf jkdf smf dfdjk fdf jjddfdn.",
+    images: ["/read-verve.gif", "/read-verve-sm-1.gif", "/read-verve-sm-2.gif"],
+    keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/read-verve-next-js/",
     link: "",
     completedOn: "24-Nov-2023",
-    desc: `## Read Verve: Empowering Knowledge through Diverse Blogs
-
-    ### Introduction to Read Verve
-    
-    Welcome to Read Verve, a dynamic blog website designed to enrich your knowledge base. Dive into a myriad of articles spanning various categories, curated to cater to your diverse interests and informational needs.
-    
-    #### Blog Website Features
-    
-    - **Categorized Articles**: Explore a wide range of topics across distinct categories.
-    - **User Engagement**: Interact with the community by commenting on posts.
-    - **Personalized Profiles**: Customize your profile with details like name, avatar, and password settings.
-    
-    #### Administrative Control
-    
-    - **Multiple Admin Management**: The platform supports multiple admins, granting them comprehensive control over user activities and site management.
-    - **Admin Privileges**: Admins hold authority over user management tasks, including user deletion and role assignments (e.g., admin or author).
-    
-    #### Author Capabilities
-    
-    - **Content Creation**: Authors contribute and publish their blogs on the platform.
-    - **Editing Tools**: Authors can revise and improve their published content as needed.
-    
-    ### Just Abdullah: A Full-Stack Developer's Inaugural Project
-    
-    I am Abdullah, a passionate full-stack developer who developed the Read Verve. This project signifies a significant milestone in my career, showcasing my proficiency in leveraging the **Next.js** framework. Through Read Verve, I aimed to create an interactive and informative space for users, providing valuable content and empowering contributors with diverse functionalities.
-    
-    Join us on Read Verve and embark on an enriching journey through a world of insightful content and collaborative learning.
-    `,
+    desc: `## Read Verve: Empowering Knowledge through Diverse Blogs\n\n### Introduction to Read Verve\n\nWelcome to Read Verve, a dynamic blog website designed to enrich your knowledge base. Dive into a myriad of articles spanning various categories, curated to cater to your diverse interests and informational needs.\n\n\n\n### Blog Website Features\n\n- **Categorized Articles**: Explore a wide range of topics across distinct categories.\n\n- **User Engagement**: Interact with the community by commenting on posts.\n\n- **Personalized Profiles**: Customize your profile with details like name, avatar, and password settings.\n\n### Administrative Control\n\n- **Multiple Admin Management**: The platform supports multiple admins, granting them comprehensive control over user activities and site management.\n\n- **Admin Privileges**: Admins hold authority over user management tasks, including user deletion and role assignments (e.g., admin or author).\n\n### Author Capabilities\n\n- **Content Creation**: Authors contribute and publish their blogs on the platform.\n\n- **Editing Tools**: Authors can revise and improve their published content as needed.\n\n`,
   },
   // skill joiner
   {
     title: "Skill Joiner",
+    tagline: "lorem12 dfdjkf jkdf smf dfdjk fdf jjddfdn.",
     slug: "skill-joiner",
-    images: ["/skill-joiner-1.gif", "/skill-joiner-2.gif"],
-    keyword: ["Next.js", "React.js", "Node.js", "MongoDB"],
+    images: ["/skill-joiner-1.gif", "/quizical.gif", "/tenzies.gif"],
+    keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/skill-joiner-nextjs",
     link: "",
     completedOn: "22-Jan-2024",
-    desc: `###Introduction:
-    Skill Joiner is a special platform for PAF-IAST University. It helps smart
+    desc: `### Introduction:\n\nSkill Joiner is a special platform for PAF-IAST University. It helps smart
     students who are good at lots of things like coding, designing, SEO, and more.
     This platform is designed to let students craft their profiles, showcasing their
     expertise and portfolios. Skill Joiner acts as a central hub, facilitating
     connections with various opportunities within and beyond the university's
-    scope.
-    Skill Joiner connects people who needs skill persons (from PAF-IAST),
+    scope.\n\n### Connecting Skillful Individuals:\n\nSkill Joiner connects people who needs skill persons (from PAF-IAST),
     providing easy interface to find out the expert for their work. Users can post a
     job and students will bid on the job. Or users can request a service from
-    specific student.
-    This platform also has community forums for each profession. Where
+    specific student.\n\n### Community Forums for Learning:\n\nThis platform also has community forums for each profession. Where
     students can communicate with each other to learn and grow together.`,
   },
   // quizical app
   {
     title: "Quizical",
+    tagline: "lorem12 dfdjkf jkdf smf dfdjk fdf jjddfdn.",
     slug: "quizical",
     images: ["/quizical.gif"],
-    keyword: ["React.js", "Trivia API"],
+    keywords: ["React.js", "Trivia API"],
     repo: "https://github.com/just-abdullah-dev/Quizical-App",
     link: "https://quizical-app.netlify.app/",
     completedOn: "05-Sep-2024",
-    desc: `# Quizical App
-
-    ## Introduction
-    Hello, I'm Abdullah Rahim, a frontend developer with expertise in React.js, HTML, CSS, and JavaScript. I created the Quizical app, a quiz-based game that allows users to select the number of multiple-choice questions, category, and difficulty level to test their knowledge.
-    
-    ## About the App
-    
-    Quizical is an engaging and educational quiz app that provides an interactive way to challenge your knowledge on various topics. Whether you're looking for a fun way to pass the time or want to learn something new, Quizical has you covered.
-    
-    ### Features
-    - Choose the number of multiple-choice questions you want to answer.
-    - Select a quiz category from a wide range of topics.
-    - Pick a difficulty level that suits your knowledge.
-    - Receive instant feedback on your answers.
-    
-    ## How to Play
-    1. **Launch the App**: Open the Quizical app in your web browser.
-    2. **Customize Your Quiz**:
-       - Select the number of questions you want to answer.
-       - Choose a quiz category that interests you.
-       - Pick a difficulty level based on your knowledge level.
-    3. **Start the Quiz**: Click the "Start Quiz" button to begin.
-    4. **Answer Questions**: Answer each multiple-choice question by selecting the correct option.
-    5. **Get Feedback**: Receive immediate feedback on your answer, including whether it's correct or not.
-    6. **View Your Score**: Keep track of your score as you progress through the quiz.
-    7. **Finish the Quiz**: Complete the quiz and see your final score.
-    `,
+    desc: `### Introduction:\n\nQuizical is an engaging and educational quiz app that provides an interactive way to challenge your knowledge on various topics. Whether you're looking for a fun way to pass the time or want to learn something new, Quizical has you covered.\n\n### Features:\n\n- Choose the number of multiple-choice questions you want to answer.\n\n- Select a quiz category from a wide range of topics.\n\n- Pick a difficulty level that suits your knowledge.\n\n- Receive instant feedback on your answers.\n\n### How to Play:\n\n1. **Launch the App**: Open the Quizical app in your web browser.\n\n2. **Customize Your Quiz**: Select the number, type, and difficulty level of questions.\n\n3. **Start the Quiz**: Click the "Start Quiz" button to begin.\n\n4. **Answer Questions**: Answer each multiple-choice question by selecting the correct option.\n\n5. **Get Feedback**: Receive immediate feedback on your answer, including whether it's correct or not.\n\n6. **View Your Score**: Keep track of your score as you progress through the quiz.\n\n7. **Finish the Quiz**: Complete the quiz and see your final score.\n\n`,
   },
   // tenzies app
   {
     title: "Tenzies Game",
+    tagline: "lorem12 dfdjkf jkdf smf dfdjk fdf jjddfdn.",
     slug: "tenzies",
     images: ["/tenzies.gif"],
-    keyword: ["React.js"],
+    keywords: ["React.js"],
     repo: "https://github.com/just-abdullah-dev/Tenzies-Game",
     link: "https://tenzies-game-ar.netlify.app/",
     completedOn: "02-Sep-2024",
-    desc: `# Tenzies-Game
-
-    ## Introduction
-    Hello, I'm Abdullah Rahim, a frontend developer with expertise in React.js, HTML, CSS, and JavaScript. I created this Tenzies game as part of a course project and added additional functionality to enhance the gaming experience.
-    
-    ## About the Game
-    Tenzies is a fun and addictive dice game where the goal is to roll as many dice with the same number as possible within a limited time. The more dice with the same number you roll, the higher your score. Challenge yourself and see how high you can score!
-    
-    ### Features
-    - Roll dice and aim for the highest score.
-    - Track your best score, total rolls, and game duration.
-    - Automatically save your best score to local storage for future reference.
-    - Enjoy a clean and responsive user interface.
-    
-    ## Technologies Used
-    
-    - React.js
-    - HTML5
-    - CSS3
-    - JavaScript
-    
-    ## Acknowledgments
-    
-    I would like to thank [Bob Ziroll](https://www.coursera.org/instructor/~130316767) for providing the guidance and inspiration to create this project.
-    
-    #tenzies #react #reactjs 
-    `,
+    desc: `### Introduction:\n\nTenzies game is a fun and addictive dice game where the goal is to roll as many dice with the same number as possible within a limited time. The more dice with the same number you roll, the higher your score. Challenge yourself and see how high you can score!\n\n### Features:\n\n- Roll dice and aim for the highest score.\n\n- Track your best score, total rolls, and game duration.\n\n- Automatically save your best score to local storage for future reference.\n\n- Enjoy a clean and responsive user interface.\n\n### Technologies Used:\n\n- React.js\n\n- HTML5\n\n- CSS3\n\n- JavaScript\n\n### Acknowledgments:\n\nI would like to thank **[Bob Ziroll](https://www.coursera.org/instructor/~130316767)** for providing the guidance and inspiration to create this project.`,
   },
 ];
 
