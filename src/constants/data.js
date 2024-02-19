@@ -85,8 +85,13 @@ const projects = [
   {
     title: "Read Verve",
     slug: "read-verve",
-    tagline: "lorem12 dfdjkf jkdf smf dfdjk fdf jjddfdn.",
-    images: ["/read-verve.gif", "/read-verve-sm-1.gif", "/read-verve-sm-2.gif"],
+    tagline: "Unleash Your Intellectual Journey with Read Verve",
+    images: [
+      "/read-verve.gif",
+      "/t.png",
+    //  "/read-verve-sm-1.gif", 
+    //  "/read-verve-sm-2.gif",
+    ],
     keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/read-verve-next-js/",
     link: "",
@@ -96,9 +101,9 @@ const projects = [
   // skill joiner
   {
     title: "Skill Joiner",
-    tagline: "lorem12 dfdjkf jkdf smf dfdjk fdf jjddfdn.",
+    tagline: "Skills you need delivered with speed",
     slug: "skill-joiner",
-    images: ["/skill-joiner-1.gif", "/quizical.gif", "/tenzies.gif"],
+    images: ["/skill-joiner-1.gif", "/skill-joiner-2.gif",],
     keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/skill-joiner-nextjs",
     link: "",
@@ -117,7 +122,7 @@ const projects = [
   // quizical app
   {
     title: "Quizical",
-    tagline: "lorem12 dfdjkf jkdf smf dfdjk fdf jjddfdn.",
+    tagline: "Challenge Your Mind, Expand Your Knowledge",
     slug: "quizical",
     images: ["/quizical.gif"],
     keywords: ["React.js", "Trivia API"],
@@ -129,7 +134,7 @@ const projects = [
   // tenzies app
   {
     title: "Tenzies Game",
-    tagline: "lorem12 dfdjkf jkdf smf dfdjk fdf jjddfdn.",
+    tagline: "Roll, match, conquer - Tenzies Game!",
     slug: "tenzies",
     images: ["/tenzies.gif"],
     keywords: ["React.js"],

@@ -6,9 +6,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from "react-markdown";
+import OtherProjects from "./OtherProjects";
 
 export default function ProjectInDetail({ slug }) {
+  const arr = [1, 2, 3, 4, 5, 6];
   let data = projects.filter((item) => {
     if (item?.slug === slug) {
       return item;
@@ -17,9 +19,11 @@ export default function ProjectInDetail({ slug }) {
   data = data[0];
 
   const settings = {
+    autoplay: true,
+    autoplaySpeed: 5000,
     dots: true,
     infinite: true,
-    speed: 1,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -46,7 +50,7 @@ export default function ProjectInDetail({ slug }) {
                     key={index}
                     src={item}
                     width={1000}
-                    height={1000}
+                    height={400}
                   />
                 );
               })}
@@ -63,32 +67,52 @@ export default function ProjectInDetail({ slug }) {
           )}
         </div>
       </div>
-      {data?.completedOn &&
-      <p className=" text-light text-sm float-right mr-6 mb-8">Completed on: {data?.completedOn}</p>}
+      {data?.completedOn && (
+        <p className=" text-light text-sm float-right mr-6 mb-8">
+          Completed on: {data?.completedOn}
+        </p>
+      )}
       {/* github and preview links  */}
       <div className=" flex items-center justify-around py-4 w-full mb-8">
-        <Link className=" actionBtn w-28 text-center" target="_blank" href={data?.repo}>Code</Link>
-        
-        <Link className=" actionBtn w-28 text-center" target="_blank" href={data?.link}>Visit</Link>
+        <Link
+          className=" actionBtn w-28 text-center"
+          target="_blank"
+          href={data?.repo}
+        >
+          Code
+        </Link>
+
+        <Link
+          className=" actionBtn w-28 text-center"
+          target="_blank"
+          href={data?.link}
+        >
+          Visit
+        </Link>
       </div>
+
       {/* description  */}
-      <div id="md-div" className="md:px-16 lg:px-24 mb-8"> 
-      <ReactMarkdown className=" grid gap-2">{data?.desc}</ReactMarkdown> 
+      <div id="md-div" className="md:px-16 lg:px-24 mb-8">
+        <ReactMarkdown className=" grid gap-2">{data?.desc}</ReactMarkdown>
       </div>
       {/* tags  */}
       <div className="grid gap-4 mb-8 md:px-16 lg:px-24">
         <h2 className=" text-white roboto-bold text-lg">Tags:</h2>
         <div className=" flex flex-wrap items-center gap-6 px-4">
-        {data?.keywords.map((item, index)=>{
-          return <div key={index} className=" px-4 py-2 w-fit bg-primary">{item}
-            </div>
-        })}
+          {data?.keywords.map((item, index) => {
+            return (
+              <div key={index} className=" px-4 py-2 w-fit bg-primary">
+                {item}
+              </div>
+            );
+          })}
         </div>
       </div>
 
       {/* others projects except this one  */}
       <div className=" mb-8 md:px-16 lg:px-24">
-
+        <h1 className="text-primary roboto-bold text-3xl">Other Projects:</h1>
+        <OtherProjects slug={slug} />
       </div>
     </div>
   );
