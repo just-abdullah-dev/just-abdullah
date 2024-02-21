@@ -9,7 +9,7 @@ export default async function handler (req, res) {
             })
         }
         const {name, email, message, subject} = req.body;
-        sendMailToDev(
+        await sendMailToDev(
             "just.abdullah.dev@gmail.com",
             name,
             "Abdullah",
