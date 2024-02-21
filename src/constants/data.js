@@ -2,76 +2,71 @@ import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 // web services each tile data
 const services = [
+  // personal
   {
     title: "Personal",
     slug: "personal",
-    image: "/per.png",
+    image: "/personal.png",
     features: [
-      "Website pages: 10",
       "Fast & optimized",
       "Custom Domain Connection",
       "Free SSL",
-      "Website languages: 2",
       "SEO friendly",
       "Premium support",
     ],
     desc: "Unleash the power of personalization. From customization to optimization, I cater to your specific requirements, delivering results that exceed expectations.",
   },
+  // corporate 
   {
     title: "Corporate",
     slug: "corporate",
-    image: "/corporate-2.png",
+    image: "/corporate.png",
     features: [
-      "Website pages: 10",
       "Fast & optimized",
       "Custom Domain Connection",
       "Free SSL",
-      "Website languages: 2",
       "SEO friendly",
       "Premium support",
     ],
     desc: "Elevate your business with corporate solutions tailored to your needs. From seamless integration to unparalleled support, I ensure your enterprise operates at its peak efficiency.",
   },
+  // ecommerce 
   {
     title: "Ecommerce",
     slug: "ecommerce",
-    image: "/ecommerce-2.png",
+    image: "/ecommerce.png",
     features: [
-      "Website pages: 10",
       "Fast & optimized",
       "Custom Domain Connection",
       "Free SSL",
-      "Website languages: 2",
       "SEO friendly",
       "Premium support",
     ],
     desc: "Dive into the world of online commerce with Ecommerce solutions, designed to boost your digital presence and foster growth.",
   },
+  // custom 
   {
     title: "Custom",
     slug: "custom",
     image: "/custom.png",
     features: [
-      "Website pages: 10",
       "Fast & optimized",
       "Custom Domain Connection",
       "Free SSL",
-      "Website languages: 2",
       "SEO friendly",
       "Premium support",
     ],
     desc: "From concept to execution, my custom development services provide the foundation for your startup's success, combining creativity, expertise, and unparalleled support.",
   },
+  // deployment
   {
     title: "Deployment",
     slug: "deployment",
     image: "/deployment.png",
     features: [
-      "Website pages: 10",
       "Fast & optimized",
       "Custom Domain Connection",
       "Free SSL",
-      "Website languages: 2",
       "SEO friendly",
       "Premium support",
     ],
@@ -88,9 +83,7 @@ const projects = [
     tagline: "Unleash Your Intellectual Journey with Read Verve",
     images: [
       "/read-verve.gif",
-      "/t.png",
-    //  "/read-verve-sm-1.gif", 
-    //  "/read-verve-sm-2.gif",
+      "/read-verve-sm.png",
     ],
     keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/read-verve-next-js/",
