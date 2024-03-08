@@ -12,6 +12,7 @@ export default function AboutSection() {
         alt="Abdullah Profile Picture"
         width={800}
         height={800}
+        loading = 'eager'
         priority
       />
       {/* about content  */}
