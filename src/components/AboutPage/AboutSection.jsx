@@ -7,8 +7,8 @@ export default function AboutSection() {
   return (
     <div className="">
       <Image
-        className="mx-auto w-full md:w-[80%] lg:w-[60%] xl:w-[45%] aspect-auto scale-x-[-1] rounded-2xl"
-        src={"/DP_New.jpeg"}
+        className="mx-auto w-full md:w-[70%] lg:w-[45%] xl:w-[35%] aspect-auto scale-x-[-1 rounded-2xl"
+        src={"/DP_New2_Square.jpg"}
         alt="Abdullah Profile Picture"
         width={800}
         height={800}
