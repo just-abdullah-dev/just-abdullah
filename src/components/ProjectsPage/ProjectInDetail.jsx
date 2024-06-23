@@ -67,28 +67,37 @@ export default function ProjectInDetail({ slug }) {
           )}
         </div>
       </div>
+      <div className=" float-right flex gap-2 text-light mr-6 mb-8">
+          {data?.startedOn && (
+        <p>
+          {data?.startedOn}
+        </p>
+      )}-
       {data?.completedOn && (
-        <p className=" text-light text-sm float-right mr-6 mb-8">
-          Completed on: {data?.completedOn}
+        <p className=" ">
+          {data?.completedOn}
         </p>
       )}
+      </div>
+
       {/* github and preview links  */}
       <div className=" flex items-center justify-around py-4 w-full mb-8">
+        {data?.repo && 
         <Link
-          className=" actionBtn w-28 text-center"
+          className=" actionBtn w-44 text-center"
           target="_blank"
           href={data?.repo}
         >
-          Code
-        </Link>
-
+          See on GitHub
+        </Link>}
+          {data?.link && 
         <Link
-          className=" actionBtn w-28 text-center"
+          className=" actionBtn w-44 text-center"
           target="_blank"
           href={data?.link}
         >
-          Visit
-        </Link>
+          Visit Site
+        </Link>}
       </div>
 
       {/* description  */}

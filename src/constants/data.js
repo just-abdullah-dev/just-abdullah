@@ -76,6 +76,36 @@ const services = [
 
 // projects each tile data
 const projects = [
+  // Naseerfolio
+  {
+    title: "Naseerfolio",
+    tagline: "Building the Future of Mobile Apps",
+    slug: "naseerfolio",
+    images: ["/naseerfolio-1.gif", "/naseerfolio-2.gif", "/naseerfolio-image.jpg"],
+    keywords: ["Next.js", "React.js", "TailwindCSS", "Framer Motion", "Node Mailer"],
+    repo: "",
+    link: "https://protech-coders.com/",
+    startedOn: "15-Jun-2024",
+    completedOn: "21-Jun-2024",
+    desc: `## Naseerfolio - Muhammad Naseer Portfolio \n\n ### Introduction:
+
+Naseerfolio is a professional portfolio website designed for Naseer, a talented Flutter mobile app developer. This sleek and modern portfolio showcases Naseer's skills, projects, and experience, providing a comprehensive overview of his expertise. Explore Naseerfolio to learn more about his work and get in touch through the integrated contact form.
+\n\n
+### Features:
+\n\n
+- Browse through a portfolio of mobile app development projects.
+- Learn about Naseer's skills, experience, and background.
+- Contact Naseer directly using the integrated contact form.
+- Enjoy smooth animations and a responsive design for an optimal user experience.
+\n\n\n\n
+### Technologies Used:
+\n\n
+- Next.js
+- React.js
+- Tailwind CSS
+- Nodemailer (used in contact form to send mail)
+- Framer Motion (animations)`,
+  },
   // read verve
   {
     title: "Read Verve",
@@ -88,6 +118,7 @@ const projects = [
     keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/read-verve-next-js/",
     link: "",
+    startedOn: "01-Sept-2023",
     completedOn: "24-Nov-2023",
     desc: `## Read Verve: Empowering Knowledge through Diverse Blogs\n\n### Introduction to Read Verve\n\nWelcome to Read Verve, a dynamic blog website designed to enrich your knowledge base. Dive into a myriad of articles spanning various categories, curated to cater to your diverse interests and informational needs.\n\n\n\n### Blog Website Features\n\n- **Categorized Articles**: Explore a wide range of topics across distinct categories.\n\n- **User Engagement**: Interact with the community by commenting on posts.\n\n- **Personalized Profiles**: Customize your profile with details like name, avatar, and password settings.\n\n### Administrative Control\n\n- **Multiple Admin Management**: The platform supports multiple admins, granting them comprehensive control over user activities and site management.\n\n- **Admin Privileges**: Admins hold authority over user management tasks, including user deletion and role assignments (e.g., admin or author).\n\n### Author Capabilities\n\n- **Content Creation**: Authors contribute and publish their blogs on the platform.\n\n- **Editing Tools**: Authors can revise and improve their published content as needed.\n\n`,
   },
@@ -100,6 +131,7 @@ const projects = [
     keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/skill-joiner-nextjs",
     link: "",
+    startedOn: "01-Dec-2023",
     completedOn: "22-Jan-2024",
     desc: `### Introduction:\n\nSkill Joiner is a special platform for PAF-IAST University. It helps smart
     students who are good at lots of things like coding, designing, SEO, and more.
@@ -121,7 +153,8 @@ const projects = [
     keywords: ["React.js", "Trivia API"],
     repo: "https://github.com/just-abdullah-dev/Quizical-App",
     link: "https://quizical-app.netlify.app/",
-    completedOn: "05-Sep-2024",
+    startedOn: "04-Sept-2023",
+    completedOn: "05-Sept-2023",
     desc: `### Introduction:\n\nQuizical is an engaging and educational quiz app that provides an interactive way to challenge your knowledge on various topics. Whether you're looking for a fun way to pass the time or want to learn something new, Quizical has you covered.\n\n### Features:\n\n- Choose the number of multiple-choice questions you want to answer.\n\n- Select a quiz category from a wide range of topics.\n\n- Pick a difficulty level that suits your knowledge.\n\n- Receive instant feedback on your answers.\n\n### How to Play:\n\n1. **Launch the App**: Open the Quizical app in your web browser.\n\n2. **Customize Your Quiz**: Select the number, type, and difficulty level of questions.\n\n3. **Start the Quiz**: Click the "Start Quiz" button to begin.\n\n4. **Answer Questions**: Answer each multiple-choice question by selecting the correct option.\n\n5. **Get Feedback**: Receive immediate feedback on your answer, including whether it's correct or not.\n\n6. **View Your Score**: Keep track of your score as you progress through the quiz.\n\n7. **Finish the Quiz**: Complete the quiz and see your final score.\n\n`,
   },
   // tenzies app
@@ -133,7 +166,8 @@ const projects = [
     keywords: ["React.js"],
     repo: "https://github.com/just-abdullah-dev/Tenzies-Game",
     link: "https://tenzies-game-ar.netlify.app/",
-    completedOn: "02-Sep-2024",
+    startedOn: "01-Sept-2023",
+    completedOn: "02-Sept-2023",
     desc: `### Introduction:\n\nTenzies game is a fun and addictive dice game where the goal is to roll as many dice with the same number as possible within a limited time. The more dice with the same number you roll, the higher your score. Challenge yourself and see how high you can score!\n\n### Features:\n\n- Roll dice and aim for the highest score.\n\n- Track your best score, total rolls, and game duration.\n\n- Automatically save your best score to local storage for future reference.\n\n- Enjoy a clean and responsive user interface.\n\n### Technologies Used:\n\n- React.js\n\n- HTML5\n\n- CSS3\n\n- JavaScript\n\n### Acknowledgments:\n\nI would like to thank **[Bob Ziroll](https://www.coursera.org/instructor/~130316767)** for providing the guidance and inspiration to create this project.`,
   },
 ];
