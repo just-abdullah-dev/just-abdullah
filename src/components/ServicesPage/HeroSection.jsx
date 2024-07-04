@@ -14,9 +14,9 @@ export default function HeroSection() {
           <span className=" text-primary">realitites.</span>
         </div>
       </div>
-      <div className=" w-full rounded-lg lg:w-[45%] overflow-hidden h-full flex items-center justify-center">
+      <div className=" w-full lg:w-[45%] overflow-hidden h-full flex items-center justify-center">
         <Image
-        className=" w-[80%] md:w-[60%] lg:w-[90%] aspect-auto"
+        className=" w-[80%] md:w-[60%] aspect-auto"
         src={'/web-service.png'}
         alt="pic"
         width={600}

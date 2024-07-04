@@ -12,10 +12,10 @@ export default function Footer() {
   
   return (
     <footer className="bg-dark pt-8 ">
-      <div className="container mx-auto px-4 flex flex-col items-center justify-center w-full">
+      <div className="container mx-auto px-4 md:px-16 lg:px-28 flex flex-col w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Logo & Name, pages links*/}
-          <div className=" flex items-center flex-col gap-3">
+          <div className=" flex items-center md:items-start flex-col gap-3">
             <Link
               className=" flex gap-4 items-center"
               href={process.env.BASE_URL || "http://localhost:3000"}
@@ -25,7 +25,7 @@ export default function Footer() {
               </h1>
               <h2 className=" text-2xl">Just Abdullah</h2>
             </Link>
-            <ul className=" flex space-x-16">
+            <ul className=" flex gap-4 md:flex-col lg:flex-row">
               {links.map((item, index) => {
                 return (
                   <li key={index}>
@@ -38,7 +38,7 @@ export default function Footer() {
             </ul>
           </div>
           {/* Contact me  */}
-          <div className="flex items-center flex-col gap-3">
+          <div className="flex items-center md:items-start flex-col gap-3">
             <h2 className="text-white text-xl font-semibold">
               Contact Me
             </h2>
@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
           </div>
           {/* follow me  */}
-          <div className=" flex items-center flex-col gap-3">
+          <div className=" flex items-center md:items-start flex-col gap-3">
             <h2 className="text-white text-xl font-semibold">Follow Me</h2>
             <Socials css={'flex space-x-4 '} />
           </div>

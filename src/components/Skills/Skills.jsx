@@ -15,9 +15,9 @@ function Skills() {
       </Link>
       {/* skills map func  */}
       <div className=" grid gap-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2">
-        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
+        <div className=" skillDivCSS group overflow-hidden relative">
           <Image
-            className=" aspect-auto h-auto mx-auto my-auto"
+            className=" aspect-auto h-auto mx-auto my-auto z-10"
             width={120}
             height={100}
             src={
@@ -25,13 +25,15 @@ function Skills() {
             }
             alt={"Next.js logo"}
           />
-          <h1 className=" text-xl roboto-medium mx-auto text-center">
+          <h1 className=" skillH1CSS">
             Next.js
           </h1>
+          
+          <div className=" skillLevelCSS h-[85%]"></div>
         </div>
-        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
+        <div className=" skillDivCSS group overflow-hidden relative">
           <Image
-            className=" aspect-auto h-auto mx-auto my-auto"
+            className=" aspect-auto h-auto mx-auto my-auto z-10"
             width={90}
             height={90}
             src={
@@ -39,13 +41,15 @@ function Skills() {
             }
             alt={"React.js logo"}
           />
-          <h1 className=" text-xl roboto-medium mx-auto text-center">
+          <h1 className=" skillH1CSS">
             React.js
           </h1>
+          
+          <div className=" skillLevelCSS h-[90%]"></div>
         </div>
-        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
+        <div className=" skillDivCSS group overflow-hidden relative">
           <Image
-            className=" aspect-auto h-auto mx-auto my-auto"
+            className=" aspect-auto h-auto mx-auto my-auto z-10"
             width={90}
             height={90}
             src={
@@ -53,13 +57,15 @@ function Skills() {
             }
             alt={"Tailwind CSS logo"}
           />
-          <h1 className=" text-xl roboto-medium mx-auto text-center">
+          <h1 className=" skillH1CSS">
             Tailwind CSS
           </h1>
+          
+          <div className=" skillLevelCSS h-[90%]"></div>
         </div>
-        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
+        <div className=" skillDivCSS group overflow-hidden relative">
           <Image
-            className=" aspect-auto h-auto mx-auto my-auto"
+            className=" aspect-auto h-auto mx-auto my-auto z-10"
             width={125}
             height={100}
             src={
@@ -67,13 +73,15 @@ function Skills() {
             }
             alt={"Node.js logo"}
           />
-          <h1 className=" text-xl roboto-medium mx-auto text-center">
+          <h1 className=" skillH1CSS">
             Node.js
           </h1>
+          
+          <div className=" skillLevelCSS h-[80%]"></div>
         </div>
-        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
+        <div className=" skillDivCSS group overflow-hidden relative">
           <Image
-            className=" aspect-auto h-auto mx-auto my-auto"
+            className=" aspect-auto h-auto mx-auto my-auto z-10"
             width={90}
             height={90}
             src={
@@ -81,13 +89,15 @@ function Skills() {
             }
             alt={"Express.js logo"}
           />
-          <h1 className=" text-xl roboto-medium mx-auto text-center">
+          <h1 className=" skillH1CSS">
             Express.js
           </h1>
+          
+          <div className=" skillLevelCSS h-[85%]"></div>
         </div>
-        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
+        <div className=" skillDivCSS group overflow-hidden relative">
           <Image
-            className=" aspect-auto h-auto mx-auto my-auto"
+            className=" aspect-auto h-auto mx-auto my-auto z-10"
             width={150}
             height={100}
             src={
@@ -95,27 +105,31 @@ function Skills() {
             }
             alt={"MongoDB logo"}
           />
-          <h1 className=" text-xl roboto-medium mx-auto text-center">
+          <h1 className=" skillH1CSS">
             MongoDB
           </h1>
+          
+          <div className=" skillLevelCSS h-[75%]"></div>
         </div>
-        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
+        <div className=" skillDivCSS group overflow-hidden relative">
           <Image
-            className=" aspect-auto h-auto mx-auto my-auto"
+            className=" aspect-auto h-auto mx-auto my-auto z-10"
             width={85}
             height={85}
             src={
-              "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+              "/git.png"
             }
             alt={"Git logo"}
           />
-          <h1 className=" text-xl roboto-medium mx-auto text-center">
+          <h1 className=" skillH1CSS">
             Git
           </h1>
+          
+          <div className=" skillLevelCSS h-[85%]"></div>
         </div>
-        <div className=" p-4 rounded-lg borde border-primar bg-opacity-30 bg-gray-500 text-white duration-300 h-[150px] flex flex-col justify-between items-center">
+        <div className=" skillDivCSS group overflow-hidden relative">
           <Image
-            className=" aspect-auto h-auto mx-auto my-auto"
+            className=" aspect-auto h-auto mx-auto my-auto z-10"
             width={80}
             height={80}
             src={
@@ -123,9 +137,11 @@ function Skills() {
             }
             alt={"GitHub logo"}
           />
-          <h1 className=" text-xl roboto-medium mx-auto text-center">
+          <h1 className=" skillH1CSS">
             GitHub
           </h1>
+          
+          <div className=" skillLevelCSS h-[95%]"></div>
         </div>
         
       </div>

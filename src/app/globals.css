@@ -44,10 +44,10 @@
   @apply flex-row;
 }
 .actionBtn{
-  @apply  py-2 px-4 bg-primary hover:bg-dark border border-dark hover:border-primary hover:text-primary disabled:opacity-50 disabled:cursor-not-allowed duration-300;
+  @apply  py-2 px-4 bg-primary hover:bg-dark border border-dark hover:border-primary hover:text-primary disabled:opacity-50 disabled:cursor-not-allowed duration-300 rounded;
 }
 .inputTag {
-  @apply block py-2 px-4 outline-none border border-primary bg-dark;
+  @apply block py-2 px-4 outline-none border border-primary bg-dark rounded;
 }
 .labelTag{
   @apply font-semibold text-gray-400;
@@ -161,6 +161,16 @@
   font-size: 10.72px;
  }
 
+ .skillDivCSS {
+  @apply p-4 rounded  bg-gray-500 bg-opacity-30 text-white duration-300 h-[150px] flex flex-col justify-between items-center rounded-t-full hover:rounded-t hover:rounded-b-full cursor-pointer;
+ }
 
+ .skillH1CSS{
+  @apply text-xl roboto-medium mx-auto text-center text-primary group-hover:text-white z-10;
+ }
+
+.skillLevelCSS{
+  @apply w-full bg-primary absolute bottom-0 left-0 hidden group-hover:block;
+}
 
 

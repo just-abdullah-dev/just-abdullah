@@ -4,20 +4,24 @@ import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 const services = [
   // personal
   {
+    cta: "Get Portfolio",
     title: "Personal",
     slug: "personal",
     image: "/personal.png",
     features: [
       "Fast & optimized",
-      "Custom Domain Connection",
-      "Free SSL",
-      "SEO friendly",
-      "Premium support",
+    "Custom Domain Connection",
+    "Free SSL",
+    "SEO friendly",
+    "Premium support",
+    "Tailored customization",
+    "Personalized optimization",
     ],
     desc: "Unleash the power of personalization. From customization to optimization, I cater to your specific requirements, delivering results that exceed expectations.",
   },
   // corporate 
   {
+    cta: "Elevate Your Brand",
     title: "Corporate",
     slug: "corporate",
     image: "/corporate.png",
@@ -27,11 +31,14 @@ const services = [
       "Free SSL",
       "SEO friendly",
       "Premium support",
+      "Seamless integration",
+      "Enterprise-level solutions",
     ],
     desc: "Elevate your business with corporate solutions tailored to your needs. From seamless integration to unparalleled support, I ensure your enterprise operates at its peak efficiency.",
   },
   // ecommerce 
   {
+    cta: "Start Selling",
     title: "Ecommerce",
     slug: "ecommerce",
     image: "/ecommerce.png",
@@ -41,11 +48,14 @@ const services = [
       "Free SSL",
       "SEO friendly",
       "Premium support",
+      "Boost digital presence",
+      "Foster growth",
     ],
     desc: "Dive into the world of online commerce with Ecommerce solutions, designed to boost your digital presence and foster growth.",
   },
   // custom 
   {
+    cta: "Create Your Vision",
     title: "Custom",
     slug: "custom",
     image: "/custom.png",
@@ -55,11 +65,14 @@ const services = [
       "Free SSL",
       "SEO friendly",
       "Premium support",
+      "Creative solutions",
+      "Expertise-driven development",
     ],
     desc: "From concept to execution, my custom development services provide the foundation for your startup's success, combining creativity, expertise, and unparalleled support.",
   },
   // deployment
   {
+    cta: "Launch Your Project",
     title: "Deployment",
     slug: "deployment",
     image: "/deployment.png",
@@ -69,6 +82,8 @@ const services = [
       "Free SSL",
       "SEO friendly",
       "Premium support",
+      "Hassle-free deployment",
+      "Project maintenance",
     ],
     desc: "If you're looking for someone to deploy and maintain your project, then you're in a right place! You can leave it for me and get rid of extra work.",
   },

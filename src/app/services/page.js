@@ -1,7 +1,7 @@
-import Contact from "@/components/ContactPage/Contact";
+
 import PageLayout from "@/components/PageLayout/PageLayout";
 import HeroSection from "@/components/ServicesPage/HeroSection";
-import ServicesInDetail from "@/components/ServicesPage/ServicesInDetail";
+import Services from "@/components/ServicesPage/Services";
 import React from "react";
 
 function page() {
@@ -9,7 +9,7 @@ function page() {
     <PageLayout>
       <div className=" py-6 grid gap-12">
         <HeroSection />
-        <ServicesInDetail />
+        <Services />
       </div>
     </PageLayout>
   );
