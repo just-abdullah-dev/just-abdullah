@@ -232,4 +232,22 @@ const social_links = [
   },
 ];
 
-export { services, social_links, projects, skills };
+const reviews = [
+  {
+    name: "MUHAMMAD NASEER",
+    profession: "Flutter Mobile App Developer",
+    avatar: "/naseer.jpeg",
+    projectSlug: "naseerfolio",
+    review: `I'm absolutely delighted with the exceptional work Abdullah has done on my portfolio website! The final result exceeded my expectations in every way. The website is not only visually stunning, but also incredibly functional and user-friendly. Abdullah demonstrated a remarkable understanding of my vision and requirements, and his attention to detail and expertise in web development are truly impressive. The website is a testament to his creativity, professionalism, and dedication to delivering high-quality work. I couldn't be happier with the outcome and would highly recommend Abdullah to anyone seeking a talented and reliable web developer.`
+  },
+  {
+    name: "MUHAMMAD NASEER",
+    profession: "Flutter Mobile App Developer",
+    avatar: "/naseer.jpeg",
+    projectSlug: "naseerfolio",
+    review: `I'm absolutely delighted with the exceptional work Abdullah has done on my portfolio website! The final result exceeded my expectations in every way. The website is not only visually stunning, but also incredibly functional and user-friendly. Abdullah demonstrated a remarkable understanding of my vision and requirements, and his attention to detail and expertise in web development are truly impressive. The website is a testament to his creativity, professionalism, and dedication to delivering high-quality work. I couldn't be happier with the outcome and would highly recommend Abdullah to anyone seeking a talented and reliable web developer.`
+  },
+  
+];
+
+export { services, social_links, projects, skills, reviews };

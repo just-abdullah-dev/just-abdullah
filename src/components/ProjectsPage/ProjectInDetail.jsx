@@ -27,6 +27,7 @@ export default function ProjectInDetail({ slug }) {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  
   return (
     <div className="">
       {/* hero section  */}
