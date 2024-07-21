@@ -11,7 +11,7 @@ import Slider from "react-slick";
 function CustomerFeedback() {
   const settings = {
     dots: false,
-    autoplay: false,
+    autoplay: true,
     speed: 3500,
     autoplaySpeed: 2600,
     cssEase: "ease-in-out",
