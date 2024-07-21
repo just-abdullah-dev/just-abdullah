@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <PageLayout>
       <div className=" grid gap-6 md:gap-12 mt-4">
-        {/* <HeroSection />        
-        <Projects showMoreBtn={true} /> */}
+        <HeroSection />        
+        <Projects showMoreBtn={true} />
         <CustomerFeedback />
         <Skills />
         <Contact />
