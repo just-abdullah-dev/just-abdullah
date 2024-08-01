@@ -58,7 +58,7 @@ function Contact() {
     >
       {/* title  */}
       <div className=" md:px-24 grid gap-2">
-        <h1 className=" text-primary roboto-bold text-4xl lg:text-5xl">
+        <h1 className=" text-primary font-bold text-4xl lg:text-5xl">
           Contact.
         </h1>
         <p className=" text-light">

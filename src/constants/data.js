@@ -10,16 +10,16 @@ const services = [
     image: "/personal.png",
     features: [
       "Fast & optimized",
-    "Custom Domain Connection",
-    "Free SSL",
-    "SEO friendly",
-    "Premium support",
-    "Tailored customization",
-    "Personalized optimization",
+      "Custom Domain Connection",
+      "Free SSL",
+      "SEO friendly",
+      "Premium support",
+      "Tailored customization",
+      "Personalized optimization",
     ],
     desc: "Unleash the power of personalization. From customization to optimization, I cater to your specific requirements, delivering results that exceed expectations.",
   },
-  // corporate 
+  // corporate
   {
     cta: "Elevate Your Brand",
     title: "Corporate",
@@ -36,7 +36,7 @@ const services = [
     ],
     desc: "Elevate your business with corporate solutions tailored to your needs. From seamless integration to unparalleled support, I ensure your enterprise operates at its peak efficiency.",
   },
-  // ecommerce 
+  // ecommerce
   {
     cta: "Start Selling",
     title: "Ecommerce",
@@ -53,7 +53,7 @@ const services = [
     ],
     desc: "Dive into the world of online commerce with Ecommerce solutions, designed to boost your digital presence and foster growth.",
   },
-  // custom 
+  // custom
   {
     cta: "Create Your Vision",
     title: "Custom",
@@ -96,8 +96,18 @@ const projects = [
     title: "Naseerfolio",
     tagline: "Building the Future of Mobile Apps",
     slug: "naseerfolio",
-    images: ["/naseerfolio-1.gif", "/naseerfolio-2.gif", "/naseerfolio-image.jpg"],
-    keywords: ["Next.js", "React.js", "TailwindCSS", "Framer Motion", "Node Mailer"],
+    images: [
+      "/naseerfolio-1.gif",
+      "/naseerfolio-2.gif",
+      "/naseerfolio-image.jpg",
+    ],
+    keywords: [
+      "Next.js",
+      "React.js",
+      "TailwindCSS",
+      "Framer Motion",
+      "Node Mailer",
+    ],
     repo: "",
     link: "https://protech-coders.com/",
     startedOn: "15-Jun-2024",
@@ -121,15 +131,55 @@ Naseerfolio is a professional portfolio website designed for Naseer, a talented 
 - Nodemailer (used in contact form to send mail)
 - Framer Motion (animations)`,
   },
+  // Activus
+  {
+    title: "Activus",
+    tagline: "Bringing your ideas to life with cutting-edge technology.",
+    slug: "activus",
+    keywords: [
+      "Next.js",
+      "React.js",
+      "TailwindCSS",
+      "Framer Motion",
+      "Spline",
+      "GSAP",
+      "Magic UI",
+      "Node Mailer",
+    ],
+    images: ["/activus.png"],
+    repo: "",
+    link: "https://activus1.vercel.app",
+    startedOn: "07-July-2024",
+    completedOn: "25-July-2024",
+    desc: `## Activus - Your Partner in Technology
+
+### Introduction:
+Activus is a premier technology agency offering a wide range of services tailored to meet diverse business needs. Whether it's innovative web development, dynamic animations, or seamless integrations, Activus excels in transforming ideas into reality. The agency specializes in creating visually stunning and technically robust solutions that engage and captivate target audiences.
+
+### Features:
+- Explore a rich portfolio showcasing a diverse range of tech projects across various industries.
+- Discover the agency's expertise in leveraging advanced animation techniques, utilizing tools like Framer Motion, GSAP, and Spline.
+- Experience the seamless integration of Magic UI components, enhancing interactivity and user experience.
+- Easily connect with the team through an integrated contact form for personalized consultations.
+- Benefit from responsive, aesthetically pleasing designs that provide a flawless experience across all devices.
+
+### Technologies Used:
+- Next.js
+- React.js
+- Tailwind CSS
+- Nodemailer (used in the contact form to send emails)
+- Framer Motion (animations)
+- GSAP (animations)
+- Spline (3D graphics)
+- Magic UI (animation components)
+`,
+  },
   // read verve
   {
     title: "Read Verve",
     slug: "read-verve",
     tagline: "Unleash Your Intellectual Journey with Read Verve",
-    images: [
-      "/read-verve.gif",
-      "/read-verve-sm.png",
-    ],
+    images: ["/read-verve.gif", "/read-verve-sm.png"],
     keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/read-verve-next-js/",
     link: "",
@@ -142,7 +192,7 @@ Naseerfolio is a professional portfolio website designed for Naseer, a talented 
     title: "Skill Joiner",
     tagline: "Skills you need delivered with speed",
     slug: "skill-joiner",
-    images: ["/skill-joiner-1.gif", "/skill-joiner-2.gif",],
+    images: ["/skill-joiner-1.gif", "/skill-joiner-2.gif"],
     keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/skill-joiner-nextjs",
     link: "",
@@ -238,16 +288,15 @@ const reviews = [
     profession: "Flutter Mobile App Developer",
     avatar: "/naseer.jpeg",
     projectSlug: "naseerfolio",
-    review: `I'm absolutely delighted with the exceptional work Abdullah has done on my portfolio website! The final result exceeded my expectations in every way. The website is not only visually stunning, but also incredibly functional and user-friendly. Abdullah demonstrated a remarkable understanding of my vision and requirements, and his attention to detail and expertise in web development are truly impressive. The website is a testament to his creativity, professionalism, and dedication to delivering high-quality work. I couldn't be happier with the outcome and would highly recommend Abdullah to anyone seeking a talented and reliable web developer.`
+    review: `I'm absolutely delighted with the exceptional work Abdullah has done on my portfolio website! The final result exceeded my expectations in every way. The website is not only visually stunning, but also incredibly functional and user-friendly. Abdullah demonstrated a remarkable understanding of my vision and requirements, and his attention to detail and expertise in web development are truly impressive. The website is a testament to his creativity, professionalism, and dedication to delivering high-quality work. I couldn't be happier with the outcome and would highly recommend Abdullah to anyone seeking a talented and reliable web developer.`,
   },
   {
-    name: "MUHAMMAD NASEER",
-    profession: "Flutter Mobile App Developer",
-    avatar: "/naseer.jpeg",
-    projectSlug: "naseerfolio",
-    review: `I'm absolutely delighted with the exceptional work Abdullah has done on my portfolio website! The final result exceeded my expectations in every way. The website is not only visually stunning, but also incredibly functional and user-friendly. Abdullah demonstrated a remarkable understanding of my vision and requirements, and his attention to detail and expertise in web development are truly impressive. The website is a testament to his creativity, professionalism, and dedication to delivering high-quality work. I couldn't be happier with the outcome and would highly recommend Abdullah to anyone seeking a talented and reliable web developer.`
+    name: "Hayan Khan",
+    profession: "Senior React Developer",
+    avatar: "/hayan.jpg",
+    projectSlug: "activus",
+    review: `Working with Abdullah was a wonderful experience, I was looking for a developer to do one of my extra project and I cannot trust everyone with my work but Abdullah always went the extra mile, did everything on time and had a very creative and optimized approach from start to end. He has a very good design eye. I am looking forward to future collaborations with him. Much recommended!`,
   },
-  
 ];
 
 export { services, social_links, projects, skills, reviews };

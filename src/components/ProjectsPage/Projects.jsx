@@ -12,7 +12,7 @@ function Projects({showMoreBtn}) {
       {showMoreBtn &&
       <Link
       href={"projects"}
-      className=" text-primary roboto-bold text-4xl lg:text-5xl mb-4"
+      className=" text-primary font-medium text-4xl lg:text-5xl mb-4"
     >
       Projects.
     </Link>}
@@ -31,7 +31,7 @@ function Projects({showMoreBtn}) {
               <div className="md:hidden duration-300 font-serif text-xl hover:text-primary absolute -top-6 left-0 ">
                 <span className="">{index+1}.</span>{" "}{item?.title}
               </div>
-              <div className="hidden md:flex w-1/12 aspect-square roboto-bold text-3xl lg:text-4xl xl:text-5xl items-center justify-center border lg:border-2 xl:border-4 border-dark rounded-full bg-opacity-30 bg-gray-500">
+              <div className="hidden md:flex w-1/12 aspect-square font-bold text-3xl lg:text-4xl xl:text-5xl items-center justify-center border lg:border-2 xl:border-4 border-dark rounded-full bg-opacity-30 bg-gray-500">
                 0{index + 1}
               </div>
               <div className="hidden md:block border-b border-primary w-4/12 relative">

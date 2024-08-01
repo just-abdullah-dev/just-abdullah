@@ -9,9 +9,9 @@ function Skills() {
       {/* title  */}
       <Link
         href={"skills"}
-        className=" text-primary roboto-bold text-4xl lg:text-5xl"
+        className=" text-primary font-bold text-4xl lg:text-5xl"
       >
-        My expertise.
+        My Expertise.
       </Link>
       {/* skills map func  */}
       <div className=" grid gap-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2">

@@ -11,7 +11,7 @@ export default function OtherProjects({slug}) {
             }
             return <div key={index} className=' p-4 bg-opacity-30 bg-gray-500 rounded-xl'>
                 <Link href={`/projects/${item?.slug}`} className=' hover:underline duration-300' >
-                    <h1 className=' roboto-bold text-2xl text-primary'>{item?.title}</h1>
+                    <h1 className=' font-bold text-2xl text-primary'>{item?.title}</h1>
                     <h3>{item?.tagline}</h3>
                 </Link>
                 <div className=' flex flex-wrap gap-3'>

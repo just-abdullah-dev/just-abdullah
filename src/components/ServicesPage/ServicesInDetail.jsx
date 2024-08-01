@@ -27,11 +27,11 @@ function ServicesInDetail() {
                 />
               </div>
               <div className=" lg:w-[60%] grid gap-2">
-              <h1 className=" text-2xl lg:text-4xl roboto-bold flex gap-2 items-center text-primary">
+              <h1 className=" text-2xl lg:text-4xl font-bold flex gap-2 items-center text-primary">
                 {item?.title}
               </h1>
               <p className="">{item?.desc}</p>
-              <h1 className=" text-lg roboto-bold text-white">
+              <h1 className=" text-lg font-bold text-white">
                 Features:
               </h1>
               <ul className=" px-6 grid gap-2 text-sm">

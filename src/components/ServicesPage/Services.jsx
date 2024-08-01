@@ -10,7 +10,7 @@ function Services() {
       {/* <div className="grid gap-2">
         <Link 
         href={'services'}
-        className=" text-primary roboto-bold text-4xl lg:text-5xl">Web Services.</Link>
+        className=" text-primary font-bold text-4xl lg:text-5xl">Web Services.</Link>
         <p className=" text-light">Where <span className=" text-primary">ideas</span> transform into <span className=" text-primary">web</span> realities.</p>
       </div> */}
       {/* services map func  */}
@@ -20,11 +20,11 @@ function Services() {
           className=' p-4 md:p-8 rounded-lg border border-primary hover:bg-primary duration-300 hover:text-white grid gap-8 min-h-max group'
           >
           <div className=' grid gap-4'>
-          <h1 className=' text-2xl roboto-bold flex gap-2 items-center'>{item?.title} <ArrowRight /> </h1>
+          <h1 className=' text-2xl font-bold flex gap-2 items-center'>{item?.title} <ArrowRight /> </h1>
           <p className=' text-sm text-light'>{item?.desc}</p>
           </div>
           <div className=' grid gap-4'>
-          <h1 className=" text-lg roboto-bold text-white">
+          <h1 className=" text-lg font-bold text-white">
                 Features:
               </h1>
               <ul className=" px-6 grid gap-2 text-sm">

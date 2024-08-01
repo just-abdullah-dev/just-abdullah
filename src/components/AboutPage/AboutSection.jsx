@@ -18,7 +18,7 @@ export default function AboutSection() {
       {/* about content  */}
       <div className=" p-4 grid gap-8 text-light lg:px-8 xl:px-16">
         <div className=" grid gap-4">
-          <h1 className=" text-2xl roboto-bold text-white">
+          <h1 className=" text-2xl font-bold text-white">
             Emerging Full Stack Web Developer
           </h1>
           <p className=" ">
@@ -31,7 +31,7 @@ export default function AboutSection() {
         </div>
         {/* key points  */}
         <div>
-          <h2 className=" roboto-bold text-xl text-white">
+          <h2 className=" font-bold text-xl text-white">
             Here&#39;s what sets me apart
           </h2>
           <ul className=" list-inside list-disc pl-4">
@@ -55,7 +55,7 @@ export default function AboutSection() {
         </div>
         {/* tech  */}
         <div>
-          <h2 className=" roboto-bold text-xl text-white">
+          <h2 className=" font-bold text-xl text-white">
             Technologies I work with:
           </h2>
           <ul className=" list-inside list-disc pl-4">
@@ -72,7 +72,7 @@ export default function AboutSection() {
           </ul>
         </div>
         {/* call for action  */}
-        <div className=" text-white roboto-bold text-3xl py-6 flex items-end md:items-center gap-4 hover:gap-10 duration-300">
+        <div className=" text-white font-bold text-3xl py-6 flex items-end md:items-center gap-4 hover:gap-10 duration-300">
           Let&#39;s build something amazing together <Link href={"/#contact"}>
             <MoveRight size={40} className=" hover:text-primary" /></Link>
         </div>

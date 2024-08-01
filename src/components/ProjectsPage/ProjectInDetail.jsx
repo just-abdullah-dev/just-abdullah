@@ -34,7 +34,7 @@ export default function ProjectInDetail({ slug }) {
       <div className=" flex flex-col lg:flex-row items-center w-full text-light relative gap-10 p-6 mb-8">
         {/* title tagline  */}
         <div className=" flex flex-col w-full lg:w-[40%] ">
-          <div className=" text-5xl lg:text-6xl text-primary roboto-bold">
+          <div className=" text-5xl lg:text-6xl text-primary font-bold">
             {data?.title}
           </div>
           <div className=" text-lg text-light">{data?.tagline}</div>
@@ -107,7 +107,7 @@ export default function ProjectInDetail({ slug }) {
       </div>
       {/* tags  */}
       <div className="grid gap-4 mb-8 md:px-16 lg:px-24">
-        <h2 className=" text-white roboto-bold text-lg">Tags:</h2>
+        <h2 className=" text-white font-bold text-lg">Tags:</h2>
         <div className=" flex flex-wrap items-center gap-6 px-4">
           {data?.keywords.map((item, index) => {
             return (
@@ -121,7 +121,7 @@ export default function ProjectInDetail({ slug }) {
 
       {/* others projects except this one  */}
       <div className=" mb-8 md:px-16 lg:px-24">
-        <h1 className="text-primary roboto-bold text-3xl">Other Projects:</h1>
+        <h1 className="text-primary font-bold text-3xl">Other Projects:</h1>
         <OtherProjects slug={slug} />
       </div>
     </div>

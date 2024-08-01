@@ -8,7 +8,7 @@ function page() {
       <div className=" py-6 grid gap-12">
         <div className=" flex flex-col-reverse lg:flex-row items-center overflow-hidden w-full text-gray-300 relative gap-10">
           <div className=" flex flex-col lg:w-[55%] lg:pl-12 xl:pl-24 gap-6">
-            <div className=" text-6xl lg:text-7xl text-primary roboto-bold py-1">
+            <div className=" text-6xl lg:text-7xl text-primary font-bol font-bold py-1">
               Projects
             </div>
           </div>

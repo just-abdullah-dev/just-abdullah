@@ -24,12 +24,12 @@ function CustomerFeedback() {
   return (
     <div className="grid gap-6 lg:px-12 xl:px-24 mt-6 md:mt-0 w-full overflow-hidden">
       {/* title  */}
-      <div className=" text-primary roboto-bold text-4xl lg:text-5xl mb-4">
-        Testimonials.
+      <div className=" text-primary font-bold text-4xl lg:text-5xl mb-4">
+        Feedback.
       </div>
 
       {/* feedbacks  */}
-      <div className=" bg-gray-500 bg-opacity-30 rounded-2xl w-full h-full md:h-[61vh] overflow-hidden ">
+      <div className=" bg-gray-500 bg-opacity-30 rounded-2xl w-full h-full md:h-fit overflow-hidden ">
         <div className=" relative w-full h-full overflow-hidden">
           <Slider {...settings}>
             {reviews.map((item, index) => {
