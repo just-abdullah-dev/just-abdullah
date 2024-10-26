@@ -276,16 +276,29 @@ body{
  }
 
  .skillDivCSS {
-  @apply p-4 rounded  bg-gray-500 bg-opacity-30 text-white duration-300 h-[150px] flex flex-col justify-between items-center rounded-t-full hover:rounded-t hover:rounded-b-full cursor-pointer;
+  @apply p-4 rounded h-full bg-gray-500 hover:bg-primary bg-opacity-30 text-white duration-500 flex flex-col justify-between items-center cursor-pointer;
  }
 
-/* font-medium  */
+/* font-medium  */ 
  .skillH1CSS{
   @apply text-xl mx-auto font-medium text-center text-primary group-hover:text-white z-10;
  }
 
-.skillLevelCSS{
+/* .skillLevelCSS{
   @apply w-full bg-primary absolute bottom-0 left-0 hidden group-hover:block;
+} */
+
+.animate-herosection-image {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 

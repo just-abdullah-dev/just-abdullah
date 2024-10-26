@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import Btn from "../utils/Btn";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -107,8 +108,8 @@ function Contact() {
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Your Message goes here..."
         />
-        <button className=" actionBtn w-full" type="submit">
-          Send
+        <button className=" w-full" type="submit">
+          <Btn className="w-full">Send</Btn>
         </button>
       </form>
     </div>

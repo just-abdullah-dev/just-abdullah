@@ -8,7 +8,7 @@ import Skills from "@/components/Skills/Skills";
 export default function Home() {
   return (
     <PageLayout>
-      <div className=" grid gap-6 md:gap-12 mt-4">
+      <div className=" grid gap-6 md:gap-12 mt-4 relative">
         <HeroSection />        
         <Projects showMoreBtn={true} />
         <CustomerFeedback />

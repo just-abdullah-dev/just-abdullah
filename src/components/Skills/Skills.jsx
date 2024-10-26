@@ -29,7 +29,7 @@ function Skills() {
             Next.js
           </h1>
           
-          <div className=" skillLevelCSS h-[85%]"></div>
+          {/* <div className=" skillLevelCSS h-[85%]"></div> */}
         </div>
         <div className=" skillDivCSS group overflow-hidden relative">
           <Image
@@ -45,7 +45,7 @@ function Skills() {
             React.js
           </h1>
           
-          <div className=" skillLevelCSS h-[90%]"></div>
+          {/* <div className=" skillLevelCSS h-[90%]"></div> */}
         </div>
         <div className=" skillDivCSS group overflow-hidden relative">
           <Image
@@ -61,7 +61,7 @@ function Skills() {
             Tailwind CSS
           </h1>
           
-          <div className=" skillLevelCSS h-[90%]"></div>
+          {/* <div className=" skillLevelCSS h-[90%]"></div> */}
         </div>
         <div className=" skillDivCSS group overflow-hidden relative">
           <Image
@@ -77,7 +77,7 @@ function Skills() {
             Node.js
           </h1>
           
-          <div className=" skillLevelCSS h-[80%]"></div>
+          {/* <div className=" skillLevelCSS h-[80%]"></div> */}
         </div>
         <div className=" skillDivCSS group overflow-hidden relative">
           <Image
@@ -93,7 +93,7 @@ function Skills() {
             Express.js
           </h1>
           
-          <div className=" skillLevelCSS h-[85%]"></div>
+          {/* <div className=" skillLevelCSS h-[85%]"></div> */}
         </div>
         <div className=" skillDivCSS group overflow-hidden relative">
           <Image
@@ -109,7 +109,7 @@ function Skills() {
             MongoDB
           </h1>
           
-          <div className=" skillLevelCSS h-[75%]"></div>
+          {/* <div className=" skillLevelCSS h-[75%]"></div> */}
         </div>
         <div className=" skillDivCSS group overflow-hidden relative">
           <Image
@@ -125,7 +125,7 @@ function Skills() {
             Git
           </h1>
           
-          <div className=" skillLevelCSS h-[85%]"></div>
+          {/* <div className=" skillLevelCSS h-[85%]"></div> */}
         </div>
         <div className=" skillDivCSS group overflow-hidden relative">
           <Image
@@ -141,7 +141,7 @@ function Skills() {
             GitHub
           </h1>
           
-          <div className=" skillLevelCSS h-[95%]"></div>
+          {/* <div className=" skillLevelCSS h-[95%]"></div> */}
         </div>
         
       </div>

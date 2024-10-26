@@ -2,6 +2,8 @@ import { projects } from "@/constants/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Btn from "../utils/Btn";
+import AnimatedText from "../utils/AnimatedText";
 
 function Projects({showMoreBtn}) {
   return (
@@ -35,8 +37,8 @@ function Projects({showMoreBtn}) {
                 0{index + 1}
               </div>
               <div className="hidden md:block border-b border-primary w-4/12 relative">
-                <div className="  font-serif text-4xl hover:text-primary absolute bottom-0 duration-300 left-16">
-                  {item?.title}
+                <div className="  text-4xl hover:text-primary absolute bottom-0 duration-300 left-16">
+                  <AnimatedText className=" h-[44px]" yValue={-42} text={item?.title} />
                 </div>
               </div>
               <div className=" w-full md:w-7/12 flex items-center justify-center aspect-video bg-opacity-30 bg-gray-500 rounded-lg">
@@ -49,8 +51,8 @@ function Projects({showMoreBtn}) {
                     height={300}
                     priority
                   />
-                  <div className=" bg-dark bg-opacity-40 w-full absolute z-10 bottom-0 right-0 text-center pt-1 text-sm md:text-base hover:underline duration-300 w-1/">
-                    Tap to see
+                  <div className=" bg-dark bg-opacity-40 w-full absolute z-10 bottom-0 right-0 text-center py-2 text-sm md:text-base">
+                    <AnimatedText className=" mx-auto" border={true} text={"Tap to see"} />
                   </div>
                 </div>
               </div>
@@ -61,8 +63,10 @@ function Projects({showMoreBtn}) {
       {showMoreBtn &&
         <Link 
             href={`/projects`}
-            className="actionBtn w-fit mx-auto"
-            >See More Projects</Link>}
+            className="w-fit mx-auto"
+            >
+              <Btn>See More Projects</Btn>
+              </Link>}
     </div>
   );
 }

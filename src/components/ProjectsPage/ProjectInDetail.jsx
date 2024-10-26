@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import OtherProjects from "./OtherProjects";
+import Btn from "../utils/Btn";
 
 export default function ProjectInDetail({ slug }) {
   const arr = [1, 2, 3, 4, 5, 6];
@@ -85,19 +86,19 @@ export default function ProjectInDetail({ slug }) {
       <div className=" flex items-center justify-around py-4 w-full mb-8">
         {data?.repo && 
         <Link
-          className=" actionBtn w-44 text-center"
+          className=" w-44 text-center"
           target="_blank"
           href={data?.repo}
         >
-          See on GitHub
+          <Btn className=" w-full">See on GitHub</Btn>
         </Link>}
           {data?.link && 
         <Link
-          className=" actionBtn w-44 text-center"
+          className="  w-44 text-center"
           target="_blank"
           href={data?.link}
         >
-          Visit Site
+          <Btn className=" w-full">Visit Site</Btn>
         </Link>}
       </div>
 

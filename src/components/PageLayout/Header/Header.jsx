@@ -1,4 +1,5 @@
 "use client";
+import AnimatedText from "@/components/utils/AnimatedText";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -11,13 +12,12 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className=" py-4 md:px-12 px-4 bg-dark bg-opacity-60 flex items-center justify-between sticky top-0 right-0 left-0 z-50">
+    <header className=" py-4 md:px-12 px-4 bg-transparent backdrop-blur-md flex items-center justify-between sticky top-0 right-0 left-0 z-50">
       {/* Logo & Name */}
       <Link className=" flex gap-4 items-center" href={"/"}>
         <h1 className=" text-3xl tracking-tighter font-sans font-bold pb-1">
-          JA
+        Just Abdullah.
         </h1>
-        <h2 className=" text-2xl">Just Abdullah.</h2>
       </Link>
       <nav className={`md:block relative ${isOpen ? "block" : "hidden"}`}>
         <ul className={`${isOpen?"absolute top-8 md:left-0 -left-12 border border-primary rounded-lg py-2 px-8 flex flex-col gap-2 bg-dark":"flex space-x-8"} `}>
@@ -26,10 +26,10 @@ export default function Header() {
               <li key={index}>
                 <Link
                   onClick={() => setIsOpen(false)}
-                  className=" hover:text-primary duration-300"
+                  className=" duration-300"
                   href={item?.slug}
                 >
-                  {item?.name}
+                  <AnimatedText text={item?.name} border={true} />
                 </Link>
               </li>
             );
