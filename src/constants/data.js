@@ -96,7 +96,7 @@ const projects = [
     title: "Dynam Galaxy",
     tagline: "Calm Solutions for Fast Startups",
     slug: "dynam-galaxy",
-    images: ["dynam-1.png", "dynam-2.png", "dynam-3.png"],
+    images: ["/dynam-1.png", "/dynam-2.png", "/dynam-3.png"],
     keywords: [
       "Next.js",
       "React.js",
@@ -111,6 +111,28 @@ const projects = [
     startedOn: "18-Sep-2024",
     completedOn: "20-Oct-2024",
     desc: "## Dynam Galaxy - Software Company\n\n### Introduction:\n\nDynam Galaxy is a software company that provides a variety of digital solutions, helping startups and businesses grow efficiently. The company specializes in UI/UX design, web and mobile development, and digital marketing, offering tailored strategies for different industries.\n\n### Services:\n\n- UI/UX Design for web and mobile applications.\n- Custom software and web development solutions.\n- Digital marketing strategies to enhance online presence.\n- Scalable and efficient solutions for startups and enterprises.\n\n### Technologies & Tools:\n\n- Modern design and development frameworks.\n- Scalable cloud solutions.\n- Data-driven marketing strategies.\n\nVisit the official website to learn more about Dynam Galaxy's services.",
+  },
+  // Dynam galaxy
+  {
+    title: "Nigotis",
+    tagline: "Accounting Software and Business Automation Tool v1",
+    slug: "nigotis",
+    images: ["/nigotis-3.png", "/nigotis-1.png", "/nigotis-2.png", "/nigotis-4.png", "/nigotis-5.png"],
+    keywords: [
+      "Next.js",
+      "React.js",
+      "MongoDB",
+      "Node.js",
+      "TailwindCSS",
+      "Framer Motion",
+      "AWS S3",
+      "Node Mailer",
+    ],
+    repo: "",
+    link: "https://nigotis-fe.vercel.app/auth/signin",
+    startedOn: "20-Sep-2024",
+    completedOn: "31-Jan-2025",
+    desc: "## Nigotis - Accounting Software and Business Automation tool for Growing Businesses\n\n### Introduction:\n\Nigotis is a web based software to create invoices, manage company assets, expenses, employees payrolls efficiently.\n\n\n\nUse Following test credentials:\n\n- Email: abdullah@justxtech.com\n\n- Password: 12345678",
   },
   // Naseerfolio
   {
