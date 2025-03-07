@@ -12,8 +12,8 @@ function CustomerFeedback() {
   const settings = {
     dots: false,
     autoplay: true,
-    speed: 3500,
-    autoplaySpeed: 2600,
+    speed: 1500,
+    autoplaySpeed: 3600,
     cssEase: "ease-in-out",
     infinite: true,
     slidesToShow: 1,
@@ -22,14 +22,14 @@ function CustomerFeedback() {
   };
 
   return (
-    <div className="grid gap-6 lg:px-12 xl:px-24 mt-6 md:mt-0 w-full overflow-hidden">
+    <div className="grid gap-6 lg:px-12 xl:px-24 mt-6 md:mt-0 w-full h-full overflow-hidden">
       {/* title  */}
       <div className=" text-primary font-bold text-4xl lg:text-5xl mb-4">
         Feedback.
       </div>
 
       {/* feedbacks  */}
-      <div className=" bg-gray-500 bg-opacity-30 rounded-2xl w-full h-full md:h-fit overflow-hidden ">
+      <div className=" bg-gray-5 bg-opacity-30 rounded-2xl w-full h-full md:h-fit overflow-hidden ">
         <div className=" relative w-full h-full overflow-hidden">
           <Slider {...settings}>
             {reviews.map((item, index) => {
@@ -37,6 +37,9 @@ function CustomerFeedback() {
             })}
           </Slider>
         </div>
+      </div>
+      <div className="flex items-center justify-center">
+      <div class="dot-carousel"></div>
       </div>
     </div>
   );
