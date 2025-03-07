@@ -117,7 +117,13 @@ const projects = [
     title: "Nigotis",
     tagline: "Accounting Software and Business Automation Tool v1",
     slug: "nigotis",
-    images: ["/nigotis-3.png", "/nigotis-1.png", "/nigotis-2.png", "/nigotis-4.png", "/nigotis-5.png"],
+    images: [
+      "/nigotis-3.png",
+      "/nigotis-1.png",
+      "/nigotis-2.png",
+      "/nigotis-4.png",
+      "/nigotis-5.png",
+    ],
     keywords: [
       "Next.js",
       "React.js",
@@ -132,7 +138,7 @@ const projects = [
     link: "https://nigotis-fe.vercel.app/auth/signin",
     startedOn: "20-Sep-2024",
     completedOn: "31-Jan-2025",
-    desc: "## Nigotis - Accounting Software and Business Automation tool for Growing Businesses\n\n### Introduction:\n\Nigotis is a web based software to create invoices, manage company assets, expenses, employees payrolls efficiently.\n\n\n\nUse Following test credentials:\n\n- Email: abdullah@justxtech.com\n\n- Password: 12345678",
+    desc: "## Nigotis - Accounting Software and Business Automation tool for Growing Businesses\n\n### Introduction:\nNigotis is a web based software to create invoices, manage company assets, expenses, employees payrolls efficiently.\n\n\n\nUse Following test credentials:\n\n- Email: abdullah@justxtech.com\n\n- Password: 12345678",
   },
   // Naseerfolio
   {
@@ -326,6 +332,18 @@ const social_links = [
 ];
 
 const reviews = [
+  {
+    name: "ABDUL RAHMAN ASIM",
+    profession: "Founder & CEO of Dynam Galaxy",
+    avatar: "/asim.jpg",
+    projectSlug: "dynam-galaxy",
+    review: `I have worked with a bunch of developers for the Dynam Galaxy website, but none could get it right until Abdullah stepped in. The guy is an absolute Next.js genius. He pulled off what others couldn’t, with insane dedication, problem-solving skills, and next-level expertise.
+
+Honestly, I was losing hope after hiring multiple devs, but Abdullah just made it happen. He handled every challenge like a pro and delivered a site that’s not just functional but super smooth, fast, and exactly how I envisioned it.
+
+If you need a Website especially Next.js expert who actually delivers, Abdullah is your guy. Can’t recommend him enough!
+`,
+  },
   {
     name: "MUHAMMAD NASEER",
     profession: "Flutter Mobile App Developer",
