@@ -38,7 +38,7 @@ function CustomerFeedback() {
           </Slider>
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="md:flex items-center justify-center hidden">
       <div class="dot-carousel"></div>
       </div>
     </div>
