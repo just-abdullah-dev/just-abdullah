@@ -47,7 +47,17 @@ function Projects({ showMoreBtn }) {
               </div>
               <div className=" w-full md:w-7/12 flex items-center justify-center aspect-video bg-opacity-30 bg-gray-500 rounded-lg">
                 <div className=" w-full h-full bg-dark m-2 mt-4 rounded-md overflow-hidden relative flex items-center justify-center">
-                  <ImageSlider item={item} key={index} />
+                  {/* <ImageSlider item={item} key={index} /> */}
+                   <div className="relative w-full h-fit overflow-hidden">
+                        <Image
+                          className={`w-full h-fit transition-opacity duration-200`}
+                          src={item?.images[0]}
+                          alt={`${item?.title} picture`}
+                          width={300}
+                          height={300}
+                          priority
+                        />
+                      </div>
                   <div className=" bg-dark bg-opacity-40 w-full absolute z-10 bottom-0 right-0 text-center py-2 text-sm md:text-base">
                     <AnimatedText
                       className=" mx-auto"
