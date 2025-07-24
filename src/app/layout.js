@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import Head from "next/head"; // Import Head
 
 const kanit = Kanit({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -21,6 +22,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="manifest" href="https://progressier.app/gNCuSU5pUaQ2vH3zgxEn/progressier.json" />
+        <script defer src="https://progressier.app/gNCuSU5pUaQ2vH3zgxEn/script.js"></script>
+      </Head>
       <body className={kanit.className + " bg-dark text-white relative"}>
         {children}
         <Toaster />
