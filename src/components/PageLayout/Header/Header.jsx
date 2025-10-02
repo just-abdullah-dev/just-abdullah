@@ -15,8 +15,8 @@ export default function Header() {
     <header className=" py-4 md:px-12 px-4 bg-transparent backdrop-blur-md flex items-center justify-between sticky top-0 right-0 left-0 z-50">
       {/* Logo & Name */}
       <Link className=" flex gap-4 items-center" href={"/"}>
-        <h1 className=" text-3xl tracking-tighter font-sans font-bold pb-1">
-        Just Abdullah.
+        <h1 className=" text-2xl tracking-tighter font-sans font-bold pb-1">
+        ABDULLAH
         </h1>
       </Link>
       <nav className={`md:block relative ${isOpen ? "block" : "hidden"}`}>

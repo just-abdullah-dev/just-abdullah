@@ -112,7 +112,7 @@ const projects = [
     completedOn: "20-Oct-2024",
     desc: "## Dynam Galaxy - Software Company\n\n### Introduction:\n\nDynam Galaxy is a software company that provides a variety of digital solutions, helping startups and businesses grow efficiently. The company specializes in UI/UX design, web and mobile development, and digital marketing, offering tailored strategies for different industries.\n\n### Services:\n\n- UI/UX Design for web and mobile applications.\n- Custom software and web development solutions.\n- Digital marketing strategies to enhance online presence.\n- Scalable and efficient solutions for startups and enterprises.\n\n### Technologies & Tools:\n\n- Modern design and development frameworks.\n- Scalable cloud solutions.\n- Data-driven marketing strategies.\n\nVisit the official website to learn more about Dynam Galaxy's services.",
   },
-  // Dynam galaxy
+  // nigotis
   {
     title: "Nigotis",
     tagline: "Accounting Software and Business Automation Tool v1",

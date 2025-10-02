@@ -5,28 +5,28 @@ import React from "react";
 
 export default function AboutSection() {
   return (
-    <div className="">
+    <div className="grid grid-cols-1 md:grid-cols-3">
       <Image
-        className="mx-auto w-full md:w-[70%] lg:w-[45%] xl:w-[35%] aspect-auto scale-x-[-1 rounded-2xl"
-        src={"/DP_New2_Square.jpg"}
+        className="mx-auto w-full aspect-auto scale-x-[-1 rounded-2xl"
+        src={"/about.jpg"}
         alt="Abdullah Profile Picture"
         width={800}
         height={800}
-        loading = 'eager'
+        loading="eager"
         priority
       />
       {/* about content  */}
-      <div className=" p-4 grid gap-8 text-light lg:px-8 xl:px-16">
+      <div className=" p-4 grid gap-8 col-span-2 text-light lg:px-8 xl:px-16">
         <div className=" grid gap-4">
           <h1 className=" text-2xl font-bold text-white">
-            Emerging Full Stack Web Developer
+            Full Stack Web Developer - Abdullah
           </h1>
           <p className=" ">
             I am <span className=" text-primary">Abdullah</span>, an
             enthusiastic full-stack web developer with expertise in Next.js,
-            React.js, Node.js, and MongoDB. With 1+ year of hands-on experience
-            in the web development, I specialize in crafting exceptional user
-            experiences using cutting-edge technologies.
+            React.js, Node.js, and MongoDB, MySQL, PostgreSQL. With 1+ year of
+            hands-on experience in the web development, I specialize in crafting
+            exceptional user experiences using cutting-edge technologies.
           </p>
         </div>
         {/* key points  */}
@@ -36,8 +36,9 @@ export default function AboutSection() {
           </h2>
           <ul className=" list-inside list-disc pl-4">
             <li>
-              Proficiency in React.js, Next.js, MongoDB, and Node.js, ensuring
-              robust and scalable web applications.
+              Proficient in React.js, Next.js, and Node.js, with expertise in
+              MongoDB and PostgreSQL for building robust and scalable full-stack
+              web applications.
             </li>
             <li>
               Dedication to delivering high-quality solutions that meet your
@@ -64,7 +65,10 @@ export default function AboutSection() {
               JavaScript
             </li>
             <li>
-              <b>Backend:</b> Node.js, MongoDB, Next.js
+              <b>Backend:</b> Node.js, Next.js
+            </li>
+            <li>
+              <b>Database:</b> MongoDB, MySQL, PostgreSQL
             </li>
             <li>
               <b>Tools:</b> Git, VS Code
@@ -72,10 +76,13 @@ export default function AboutSection() {
           </ul>
         </div>
         {/* call for action  */}
-        <div className=" text-white font-bold text-3xl py-6 flex items-end md:items-center gap-4 hover:gap-10 duration-300">
-          Let&#39;s build something amazing together <Link href={"/#contact"}>
-            <MoveRight size={40} className=" hover:text-primary" /></Link>
-        </div>
+        <Link href={"/#contact"}>
+          {" "}
+          <div className=" text-white font-bold text-2xl py-6 flex items-end md:items-center cursor-pointer group gap-4 hover:gap-10 duration-300">
+            Let&#39;s build something amazing together
+            <MoveRight size={40} className=" group-hover:text-primary" />
+          </div>
+        </Link>
       </div>
     </div>
   );

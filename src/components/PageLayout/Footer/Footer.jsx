@@ -20,9 +20,7 @@ export default function Footer() {
               className=" flex gap-4 items-center"
               href={process.env.BASE_URL || "http://localhost:3000"}
             >
-              <h1 className=" text-3xl tracking-tighter font-sans font-bold pb-1">
-                JA
-              </h1>
+             
               <h2 className=" text-2xl">Just Abdullah</h2>
             </Link>
             <ul className=" flex gap-4 md:flex-col lg:flex-row">
