@@ -320,7 +320,7 @@ const skills = [
 const social_links = [
   {
     jsx: <Linkedin />,
-    link: "https://www.linkedin.com/in/just-abdullah/",
+    link: "https://www.linkedin.com/in/just-abdullah-/",
   },
   { jsx: <Github />, link: "https://github.com/just-abdullah-dev" },
   { jsx: <Twitter />, link: "https://twitter.com/just_abdullah_3" },
