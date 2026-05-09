@@ -6,28 +6,25 @@ import useHover from "@/hooks/useHover";
 export default function Btn({ className = " ", children }) {
   const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
   return (
-    <button
+    <span
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={` actionBtn ${className}`}
+      className={`actionBtn ${className}`}
     >
-      <div
-        className={`  h-[24px] relative overflow-hidden w-full`}
-      >
+      <span className="relative block h-[24px] w-full overflow-hidden">
         <AnimatePresence>
-          <motion.div
+          <motion.span
             initial={{ y: 0, opacity: 1 }}
             animate={isHovered ? { y: "-24px", opacity: 1 } : { y: 0, opacity: 1 }}
             exit={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="  "
+            className="block"
           >
-            <p >{children}</p>
-
-            <p >{children}</p>
-          </motion.div>
+            <span className="block">{children}</span>
+            <span className="block">{children}</span>
+          </motion.span>
         </AnimatePresence>
-      </div>
-    </button>
+      </span>
+    </span>
   );
 }

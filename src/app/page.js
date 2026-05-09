@@ -1,6 +1,8 @@
 import Contact from "@/components/ContactPage/Contact";
-import CustomerFeedback from "@/components/CustomerFeedback/CustomerFeedback";
+import Education from "@/components/Education/Education";
+import ExperienceTimeline from "@/components/Experience/ExperienceTimeline";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import LaunchPad from "@/components/LaunchPad/LaunchPad";
 import PageLayout from "@/components/PageLayout/PageLayout";
 import Projects from "@/components/ProjectsPage/Projects";
 import Skills from "@/components/Skills/Skills";
@@ -8,13 +10,15 @@ import Skills from "@/components/Skills/Skills";
 export default function Home() {
   return (
     <PageLayout>
-      <div className=" grid gap-6 md:gap-12 mt-4 relative">
-        <HeroSection />        
+      <main className="relative grid gap-8 pb-10 md:gap-12">
+        <HeroSection />
         <Projects showMoreBtn={true} />
-        <CustomerFeedback />
+        <ExperienceTimeline />
+        <LaunchPad />
         <Skills />
+        <Education />
         <Contact />
-      </div>
+      </main>
     </PageLayout>
   );
 }

@@ -91,6 +91,43 @@ const services = [
 
 // projects each tile data
 const projects = [
+  {
+    title: "Sehat-AI",
+    tagline: "Deep learning chest X-ray screening system",
+    slug: "sehat-ai",
+    images: ["/activus.png", "/read-verve-sm.png"],
+    keywords: ["Python", "FastAPI", "Deep Learning", "React Native", "Expo", "CNN"],
+    repo: "",
+    link: "",
+    startedOn: "01-Jan-2025",
+    completedOn: "Present",
+    desc: "## Sehat-AI — Final Year Project (FYP)\n\nBuilt a deep learning model for detecting TB and Pneumonia from chest X-rays, integrated with a FastAPI backend and React Native mobile frontend for real-time predictions. The project applies CNN architectures for medical image classification and focuses on practical AI-assisted screening workflows.",
+  },
+  {
+    title: "Aban Edu",
+    tagline: "Multi-tenant SaaS school management system",
+    slug: "aban-edu",
+    images: ["/nigotis-1.png", "/nigotis-3.png"],
+    keywords: ["Next.js", "PostgreSQL", "Prisma", "SaaS", "RBAC", "Multi-tenant"],
+    repo: "",
+    link: "",
+    startedOn: "01-Jan-2026",
+    completedOn: "Present",
+    desc: "## Aban Edu — SaaS School Management System\n\nDesigned a scalable multi-tenant school management system with a complex PostgreSQL schema, Prisma ORM, async fee voucher generation, role-based system design, and planned mobile integration for real-world deployment.",
+  },
+  {
+    title: "Bonny",
+    tagline: "Events, subscriptions, and QR voucher redemption",
+    slug: "bonny",
+    images: ["/dynam-1.png", "/dynam-2.png"],
+    keywords: ["React.js", "Next.js", "TypeScript", "Supabase", "Dashboards", "QR"],
+    repo: "",
+    link: "",
+    startedOn: "01-Jun-2025",
+    completedOn: "30-Sept-2025",
+    desc: "## Bonny — Events & Voucher Platform\n\nUnder Inostrik as a client project, built interactive dashboards for event management and voucher systems, QR-based voucher redemption, subscriptions, and admin tools for users, events, and businesses.",
+  },
+
   // Dynam galaxy
   {
     title: "Dynam Galaxy",
@@ -288,33 +325,110 @@ Activus is a premier technology agency offering a wide range of services tailore
 
 // skills each tile data
 const skills = [
-  { title: "Next.js", logo: `html` },
+  { title: "Next.js", category: "Frontend", level: "Production" },
+  { title: "React.js", category: "Frontend", level: "Production" },
+  { title: "Tailwind CSS", category: "Frontend", level: "Production" },
+  { title: "Framer Motion", category: "Frontend", level: "Production" },
+  { title: "React Native", category: "Mobile", level: "Building" },
+  { title: "Expo", category: "Mobile", level: "Building" },
+  { title: "Node.js", category: "Backend", level: "Production" },
+  { title: "Express.js", category: "Backend", level: "Production" },
+  { title: "FastAPI", category: "Backend", level: "Building" },
+  { title: "Python", category: "AI / ML", level: "Applied" },
+  { title: "PostgreSQL", category: "Database", level: "Production" },
+  { title: "Prisma ORM", category: "Data", level: "Production" },
+  { title: "MongoDB", category: "Database", level: "Production" },
+  { title: "Supabase", category: "Backend", level: "Production" },
+  { title: "Google Colab", category: "AI / ML", level: "Applied" },
+  { title: "RAG", category: "Learning", level: "Learning" },
+  { title: "REST APIs", category: "Architecture", level: "Production" },
+  { title: "RBAC", category: "Security", level: "Production" },
+];
+
+const workExperience = [
   {
-    title: "React.js",
-    logo: "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
+    role: "Full Stack Developer",
+    company: "Peregrine Ventures AI",
+    period: "Oct 2025 – Mar 2026",
+    type: "B2B Platform",
+    highlights: [
+      "Built a B2B veterinary ordering platform with complete order workflows, clinic management, and prescription handling.",
+      "Designed flexible pricing with dynamic percentage adjustments and product-level overrides.",
+      "Implemented secure authentication and approval-based access control for users and admins.",
+    ],
   },
   {
-    title: "Tailwind CSS",
-    logo: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-  },
-  { title: "Node.js", logo: "https://nodejs.org/static/images/logo.svg" },
-  {
-    title: "Express.js",
-    logo: "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg",
-  },
-  {
-    title: "MongoDB",
-    logo: "https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg",
+    role: "Full Stack Developer",
+    company: "Inostrik",
+    period: "Jul 2025 – Jan 2026",
+    type: "Client Products",
+    highlights: [
+      "Developed modern landing pages with responsive UI and smooth animations using Next.js and React.",
+      "Built CMS-driven features using Supabase for blogs, banners, and dynamic content.",
+      "Integrated frontend experiences with backend services for scalable content delivery.",
+    ],
   },
   {
-    title: "Git",
-    logo: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+    role: "Software Engineer Intern",
+    company: "Mahhir 360",
+    period: "Jun 2025 – Aug 2025",
+    type: "Restaurant SaaS",
+    highlights: [
+      "Developed frontend features for a restaurant management system using Next.js and Tailwind CSS.",
+      "Improved UI responsiveness and streamlined user workflows in collaboration with the team.",
+    ],
   },
   {
-    title: "GitHub",
-    logo: "https://www.vectorlogo.zone/logos/github/github-tile.svg",
+    role: "Frontend Intern",
+    company: "Powersoft 19",
+    period: "Jun 2024 – Aug 2024",
+    type: "Healthcare System",
+    highlights: [
+      "Built and optimized UI components for a healthcare system using React and Tailwind CSS.",
+      "Enhanced application performance and user experience through collaborative development.",
+    ],
   },
 ];
+
+const productsToLaunch = [
+  {
+    name: "Aban Edu",
+    status: "Building",
+    accent: "green",
+    desc: "A multi-tenant school management SaaS with fee automation, roles, and PostgreSQL-first architecture.",
+  },
+  {
+    name: "Aban Arena Booking App",
+    status: "Planned",
+    accent: "orange",
+    desc: "A booking product for sports arenas with availability, reservations, payments, and mobile-first flows.",
+  },
+  {
+    name: "Sehat-AI",
+    status: "Research",
+    accent: "gray",
+    desc: "AI-assisted chest X-ray screening workflow powered by CNN models, FastAPI, and mobile delivery.",
+  },
+];
+
+const learningFocus = [
+  "Retrieval-Augmented Generation (RAG)",
+  "Production AI API design",
+  "Scalable multi-tenant SaaS",
+  "Mobile product delivery with Expo",
+];
+
+const education = {
+  institute: "Pak-Austria Fachhochschule (PAF-IAST), Haripur, KPK",
+  period: "Oct 2022 – May 2026",
+  degree: "Bachelor of Software Engineering (Final Year)",
+  cgpa: "3.51",
+  highlights: [
+    "Dean's List recipient — 4 consecutive times throughout degree program.",
+    "Teaching Assistant for 7 courses across 4 semesters, including Programming Fundamentals, ICT, DSA, Calculus, Applied Physics, Computer Networks, and Discrete Structures.",
+    "Relevant coursework: Deep Learning, Computer Networks, Database Systems, Software Engineering, Discrete Structures, and Algorithms.",
+  ],
+};
 
 // socials links
 const social_links = [
@@ -360,4 +474,14 @@ If you need a Website especially Next.js expert who actually delivers, Abdullah 
   },
 ];
 
-export { services, social_links, projects, skills, reviews };
+export {
+  services,
+  social_links,
+  projects,
+  skills,
+  reviews,
+  workExperience,
+  productsToLaunch,
+  learningFocus,
+  education,
+};

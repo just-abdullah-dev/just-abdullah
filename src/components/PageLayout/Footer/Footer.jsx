@@ -5,67 +5,46 @@ import React from "react";
 
 export default function Footer() {
   const links = [
-    { name: "Services", slug: "services" },
-    { name: "Projects", slug: "projects" },
-    { name: "About", slug: "about" },
+    { name: "Projects", slug: "/projects" },
+    { name: "Experience", slug: "/#experience" },
+    { name: "Products", slug: "/#products" },
+    { name: "About", slug: "/about" },
   ];
-  
+
   return (
-    <footer className="bg-dark pt-8 ">
-      <div className="container mx-auto px-4 md:px-16 lg:px-28 flex flex-col w-full">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Logo & Name, pages links*/}
-          <div className=" flex items-center md:items-start flex-col gap-3">
-            <Link
-              className=" flex gap-4 items-center"
-              href={process.env.BASE_URL || "http://localhost:3000"}
-            >
-             
-              <h2 className=" text-2xl">Just Abdullah</h2>
-            </Link>
-            <ul className=" flex gap-4 md:flex-col lg:flex-row">
-              {links.map((item, index) => {
-                return (
-                  <li key={index}>
-                    <Link className="" href={item?.slug}>
-                      {item?.name}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          {/* Contact me  */}
-          <div className="flex items-center md:items-start flex-col gap-3">
-            <h2 className="text-white text-xl font-semibold">
-              Contact Me
-            </h2>
-            <div className=" flex gap-4">
-              <Link
-                className=" text-gray-300 hover:text-white"
-                href={"mailto:just.abdullah.dev@gmail.com"}
-              >
-                <Mail />
-              </Link>
-              <Link
-                className=" text-gray-300 hover:text-white"
-                href={"tel:+923140571198"}
-              >
-                <Phone />
-              </Link>
-            </div>
-          </div>
-          {/* follow me  */}
-          <div className=" flex items-center md:items-start flex-col gap-3">
-            <h2 className="text-white text-xl font-semibold">Follow Me</h2>
-            <Socials css={'flex space-x-4 '} />
-          </div>
-        </div>
-        <div className="mt-8 mb-2 text-center text-gray-300">
-          <p>
-            &copy; {new Date().getFullYear()} Just Abdullah.
+    <footer className="mt-12 rounded-t-[2rem] border-t border-white/10 bg-black py-8">
+      <div className="grid gap-8 px-4 md:grid-cols-3 md:px-8">
+        <div className="grid gap-3">
+          <Link className="text-2xl font-bold tracking-[-0.05em] text-white" href="/">
+            Just Abdullah
+          </Link>
+          <p className="max-w-sm text-sm leading-6 text-gray-500">
+            Full Stack Developer building premium web, mobile, SaaS, and AI-integrated product experiences.
           </p>
         </div>
+        <div className="grid gap-3">
+          <h2 className="text-lg font-semibold text-white">Navigation</h2>
+          <ul className="flex flex-wrap gap-3">
+            {links.map((item) => (
+              <li key={item.name}>
+                <Link className="text-gray-400 transition hover:text-white" href={item.slug}>
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="grid gap-4">
+          <h2 className="text-lg font-semibold text-white">Contact & Social</h2>
+          <div className="flex gap-4">
+            <Link className="text-gray-400 transition hover:text-white" href="mailto:just.abdullah.dev@gmail.com"><Mail /></Link>
+            <Link className="text-gray-400 transition hover:text-white" href="tel:+923140571198"><Phone /></Link>
+          </div>
+          <Socials css="flex space-x-4" />
+        </div>
+      </div>
+      <div className="mt-8 text-center text-sm text-gray-600">
+        <p>&copy; {new Date().getFullYear()} Just Abdullah. Built in black, white, and intention.</p>
       </div>
     </footer>
   );
