@@ -3,80 +3,75 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Btn from "../utils/Btn";
-import AnimatedText from "../utils/AnimatedText";
-import ImageSlider from "./ImageSlider";
 
 function Projects({ showMoreBtn }) {
+  const visibleProjects = showMoreBtn ? projects.slice(0, 6) : projects;
+
   return (
-    <div className="grid gap-6 lg:px-12 xl:px-24 mt-6 md:mt-0">
-      {/* title  */}
-      {showMoreBtn && (
-        <Link
-          href={"projects"}
-          className=" text-primary font-medium text-3xl lg:text-4xl mb-4"
-        >
-          Projects.
-        </Link>
+    <section id="projects" className="premium-section">
+      {showMoreBtn ? (
+        <div className="section-heading-grid">
+          <div>
+            <div className="section-kicker">Selected Projects</div>
+            <h2 className="section-title">Product-grade builds with clean architecture.</h2>
+          </div>
+          <p className="section-copy">
+            A mix of SaaS platforms, AI-enabled systems, dashboards, mobile-backed
+            products, and brand experiences — with more case studies coming soon.
+          </p>
+        </div>
+      ) : (
+        <div className="mb-10">
+          <div className="section-kicker">Project Archive</div>
+          <h1 className="section-title">All Projects.</h1>
+        </div>
       )}
-      {/* projects map func  */}
-      <div className=" projects grid gap-8 grid-cols-1 text-light">
-        {projects.map((item, index) => {
-          if (showMoreBtn && index > 2) {
-            return;
-          }
-          return (
-            <Link
-              key={index}
-              className=" p-4 flex items-center justify-between relative  flex-row-reverse"
-              href={`/projects/${item?.slug}`}
-            >
-              <div className="md:hidden duration-300 font-serif text-xl hover:text-primary absolute -top-6 left-0 ">
-                <span className="">{index + 1}.</span> {item?.title}
+
+      <div className="mt-10 grid gap-5 lg:grid-cols-2">
+        {visibleProjects.map((item, index) => (
+          <Link
+            key={`${item.slug}-${index}`}
+            className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.06]"
+            href={`/projects/${item?.slug}`}
+          >
+            <div className="relative aspect-video overflow-hidden bg-gray-950">
+              <Image
+                className="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                src={item?.images[0]}
+                alt={`${item?.title} picture`}
+                width={700}
+                height={420}
+                priority={index < 2}
+              />
+              <div className="absolute left-4 top-4 rounded-full border border-white/15 bg-black/70 px-3 py-1 text-xs uppercase tracking-[0.25em] text-gray-300 backdrop-blur">
+                {String(index + 1).padStart(2, "0")}
               </div>
-              <div className="hidden md:flex w-1/12 aspect-square font-bold text-2xl lg:text-3xl xl:text-4xl items-center justify-center border lg:border-2 xl:border-4 border-dark rounded-full bg-opacity-30 bg-gray-500">
-                0{index + 1}
-              </div>
-              <div className="hidden md:block border-b border-primary w-4/12 relative whitespace-nowrap">
-                <div className="  text-4xl hover:text-primary absolute bottom-0 duration-300 left-10">
-                  <AnimatedText
-                    className=" h-[44px]"
-                    yValue={-42}
-                    text={item?.title}
-                  />
+            </div>
+            <div className="p-5 md:p-6">
+              <div className="flex flex-col justify-between gap-3 md:flex-row md:items-start">
+                <div>
+                  <h3 className="text-2xl font-semibold text-white">{item.title}</h3>
+                  <p className="mt-2 text-gray-400">{item.tagline}</p>
                 </div>
+                <span className="whitespace-nowrap text-sm text-gray-500">{item.startedOn} — {item.completedOn}</span>
               </div>
-              <div className=" w-full md:w-7/12 flex items-center justify-center aspect-video bg-opacity-30 bg-gray-500 rounded-lg">
-                <div className=" w-full h-full bg-dark m-2 mt-4 rounded-md overflow-hidden relative flex items-center justify-center">
-                  {/* <ImageSlider item={item} key={index} /> */}
-                   <div className="relative w-full h-fit overflow-hidden">
-                        <Image
-                          className={`w-full h-fit transition-opacity duration-200`}
-                          src={item?.images[0]}
-                          alt={`${item?.title} picture`}
-                          width={300}
-                          height={300}
-                          priority
-                        />
-                      </div>
-                  <div className=" bg-dark bg-opacity-40 w-full absolute z-10 bottom-0 right-0 text-center py-2 text-sm md:text-base">
-                    <AnimatedText
-                      className=" mx-auto"
-                      border={true}
-                      text={"Tap to see"}
-                    />
-                  </div>
-                </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {item.keywords.slice(0, 6).map((keyword) => (
+                  <span key={keyword} className="rounded-full border border-white/10 bg-black/40 px-3 py-1 text-xs text-gray-300">
+                    {keyword}
+                  </span>
+                ))}
               </div>
-            </Link>
-          );
-        })}
+            </div>
+          </Link>
+        ))}
       </div>
       {showMoreBtn && (
-        <Link href={`/projects`} className="w-fit mx-auto">
+        <Link href="/projects" className="mx-auto mt-8 w-fit">
           <Btn>See More Projects</Btn>
         </Link>
       )}
-    </div>
+    </section>
   );
 }
 

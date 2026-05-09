@@ -1,15 +1,10 @@
 import Socials from "@/components/utils/Socials";
-import { DM_Sans, Kanit } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
-const kanit = Kanit({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Abdullah - Full Stack Engineer",
@@ -21,12 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={kanit.className + " bg-dark text-white relative"}>
+      <body className="bg-dark text-white relative antialiased">
         {children}
         <Toaster />
         <SpeedInsights />
         <Analytics />
-        <div className=" fixed bg-dark p-3 top-56 right-0 w-fit z-50 ">
+        <div className=" fixed right-0 top-56 z-50 hidden w-fit rounded-l-2xl border border-white/10 bg-black/70 p-3 backdrop-blur md:block ">
           <Socials css={"grid gap-4"} />
         </div>
       </body>
