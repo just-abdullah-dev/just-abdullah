@@ -14,17 +14,18 @@ const strengths = [
 const techGroups = [
   { label: "Frontend", items: "React.js, Next.js, Tailwind CSS, Framer Motion, Redux, TypeScript" },
   { label: "Backend", items: "Node.js, Express.js, Next.js API Routes, FastAPI, Django, REST APIs" },
-  { label: "Mobile / AI", items: "React Native, Expo, Python, Google Colab, Deep Learning, CNNs, RAG" },
+  { label: "Mobile", items: "React Native, Expo" },
+  { label: "AI", items: "Python, Google Colab, Deep Learning, CNNs, RAG" },
   { label: "Databases", items: "PostgreSQL, Prisma ORM, MongoDB, Mongoose, MySQL, Supabase" },
   { label: "Tools", items: "Git, GitHub, Vercel, GCP, AWS S3, Postman, VS Code" },
 ];
 
 export default function AboutSection() {
   return (
-    <section className="premium-section grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-      <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-3">
+    <section className="premium-section grid items-start gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+      <div className="relative h-fit overflow-hidden rounded-[2rem] border border-white/10 bg-red-500/[0.03] p-3 lg:sticky lg:top-12">
         <Image
-          className="aspect-[4/5] w-full rounded-[1.5rem] object-cover"
+          className="aspect-[4/5] h-fit w-full rounded-[1.5rem] object-cover"
           src="/avatar.jpg"
           alt="Abdullah Profile Picture"
           width={900}
@@ -37,9 +38,11 @@ export default function AboutSection() {
       <div className="grid content-center gap-8 text-light">
         <div className="grid gap-4">
           <div className="section-kicker">About Abdullah</div>
-          <h1 className="section-title">Full Stack Developer building SaaS, AI APIs, and premium web products.</h1>
+          <h1 className="section-title">Full Stack Engineer
+             {/* focused on building real-world products, scalable SaaS systems, AI-integrated solutions, and startup-driven platforms. */}</h1>
           <p className="section-copy">
-            I am Abdullah, a software engineering final-year student and full-stack developer from Haripur, Pakistan. I build scalable web applications with Next.js, React.js, Node.js, PostgreSQL, and Prisma, while expanding into FastAPI, React Native, Expo, and applied AI systems.
+            I am Abdullah, a Full Stack Engineer from Pakistan, building scalable web applications using Next.js, React.js, Node.js, PostgreSQL, and Prisma, while expanding into FastAPI, React Native, Expo, and AI-integrated systems. With 2+ years of experience, I have delivered 10+ projects, including SaaS platforms, AI-enabled systems, dashboards, and mobile-backed products. I am passionate about clean architecture, responsive UI, and production-focused system design. I am eager to contribute my skills to innovative projects and collaborate with visionary teams.
+
           </p>
         </div>
 

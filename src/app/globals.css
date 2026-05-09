@@ -27,7 +27,7 @@ body {
 
 @layer components {
   .premium-section {
-    @apply rounded-[2rem] border border-white/10 bg-black/40 p-5 shadow-2xl shadow-black/20 md:p-8 lg:p-10;
+    @apply rounded-[2rem] border border-white/10 bg-black/75 p-5 shadow-2xl shadow-black/20 md:p-8 lg:p-10;
   }
 
   .premium-card {
@@ -80,6 +80,10 @@ body {
   @apply inline-flex cursor-pointer items-center justify-center rounded-full border border-white bg-white px-6 py-3 font-semibold text-black transition duration-300 hover:-translate-y-1 hover:bg-black hover:text-white disabled:cursor-not-allowed disabled:opacity-50;
 }
 
+.header-pill {
+  @apply inline-flex items-center justify-center rounded-full border border-none px-4 py-2 text-sm text-gray-400 hover:text-white transition-all duration-300;
+}
+
 .inputTag {
   @apply block w-full rounded-2xl border border-white/10 bg-black/50 px-4 py-3 text-white outline-none transition placeholder:text-gray-600 focus:border-white/40;
 }
@@ -101,15 +105,18 @@ body {
 .diagonal-portrait .portrait-base {
   filter: grayscale(1);
 }
+.portrait-base:hover {
+  filter: grayscale(0);
+}
 
 .diagonal-portrait .portrait-color {
-  mask-image: repeating-linear-gradient(135deg, #000 0 22px, transparent 22px 44px);
+  mask-image: repeating-linear-gradient(135deg, #000 0 32px, transparent 32px 64px);
   mask-size: 180% 180%;
   mask-position: 0 0;
-  -webkit-mask-image: repeating-linear-gradient(135deg, #000 0 22px, transparent 22px 44px);
+  -webkit-mask-image: repeating-linear-gradient(135deg, #000 0 32px, transparent 32px 64px);
   -webkit-mask-size: 180% 180%;
   -webkit-mask-position: 0 0;
-  animation: diagonal-scan 7s linear infinite;
+  animation: diagonal-scan 9s linear infinite;
   transition: mask-image 0.35s ease, -webkit-mask-image 0.35s ease, opacity 0.35s ease;
 }
 
@@ -140,4 +147,135 @@ body {
   50% {
     transform: translateY(8px);
   }
+}
+
+.project-markdown h2 {
+  @apply mt-6 text-2xl font-semibold text-white;
+}
+
+.project-markdown h3 {
+  @apply mt-5 text-xl font-semibold text-white;
+}
+
+.project-markdown p {
+  @apply mt-3 leading-7 text-gray-300;
+}
+
+.project-markdown ul {
+  @apply mt-4 grid gap-2 pl-5 text-gray-300;
+}
+
+.project-markdown ol {
+  @apply mt-4 grid gap-2 pl-5 text-gray-300;
+}
+
+.project-markdown li {
+  @apply list-disc;
+}
+
+.project-markdown strong {
+  @apply font-semibold text-white;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hint {
+  animation: scroll-hint-x 1.4s ease-in-out infinite;
+}
+
+@keyframes scroll-hint-x {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateX(8px);
+    opacity: 1;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.border-beam {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 9999px; */
+}
+
+.border-beam::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+
+  background: conic-gradient(
+    from var(--angle),
+
+  /* bright beam head */
+  rgb(255, 255, 255) 0deg,
+
+  /* electric violet */
+  rgb(168, 85, 247) 12deg,
+
+  /* neon purple */
+  rgb(192, 132, 252) 40deg,
+
+  /* vibrant pink-purple */
+  rgb(217, 70, 239) 75deg,
+
+  /* deep purple */
+  rgb(126, 34, 206) 120deg,
+
+  /* soft fading lavender */
+  rgba(192, 132, 252, 0.55) 170deg,
+
+  /* smooth transparent tail */
+  rgba(192, 132, 252, 0.15) 196deg,
+
+  rgba(192, 132, 252, 0) 216deg,
+
+    /* remaining 40% hidden */
+    transparent 216deg,
+    transparent 360deg
+  );
+
+  animation: border-beam-spin var(--duration, 3s) linear infinite;
+
+  -webkit-mask:
+    linear-gradient(#bd2525 0 0) content-box,
+    linear-gradient(#f29406 0 0);
+  mask:
+    linear-gradient(#ba05f7 0 0) content-box,
+    linear-gradient(#02f795 0 0);
+
+  /* -webkit-mask-composite: and; */
+  mask-composite: exclude;
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes border-beam-spin {
+  from {
+    --angle: 360deg;
+  }
+  to {
+    --angle: 0deg;
+  }
+}
+
+.border-beam > * {
+  position: relative;
+  z-index: 1;
 }

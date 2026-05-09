@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <Toaster />
         <SpeedInsights />
         <Analytics />
-        <div className=" fixed right-0 top-56 z-50 hidden w-fit rounded-l-2xl border border-white/10 bg-black/70 p-3 backdrop-blur md:block ">
+        <div className="  border-beam !fixed -right-1 top-[33vh] z-50 hidden w-fit rounded-l-2xl border border-white/10 bg-black/75 p-3 backdrop-blur md:block ">
           <Socials css={"grid gap-4"} />
         </div>
       </body>
