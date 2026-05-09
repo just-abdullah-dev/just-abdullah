@@ -1,37 +1,89 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { ArrowDown, Download, Mail } from "lucide-react";
 import Btn from "../utils/Btn";
+
+const cvUrl =
+  "https://docs.google.com/document/d/1VuZUAkCQCse91MA25MYUx1L88Y7JqQzR/edit";
 
 export default function HeroSection() {
   return (
-    <div className=" flex items-center  w-full text-gray-300 relative">
-      <div className=" flex flex-col md:gap-2 md:w-1/2 lg:pl-12 xl:pl-24 py-12 md:py-0 gap-6">
-        <div className=" text-6xl text-primary font-semibold stroke-white stroke-2 ">
-          Here is Abdullah!
+    <section className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-black px-5 py-7 shadow-2xl shadow-black/40 md:px-10 md:py-9 lg:px-14 lg:py-10">
+      <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+      <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-gray-500/10 blur-3xl" />
+      <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] [background-size:56px_56px]" />
+
+      <div className="relative grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+        <div>
+          <h1 className="max-w-4xl text-6xl font-black leading-[0.82] tracking-[-0.09em] text-white md:text-8xl xl:text-9xl">
+            Abdullah
+          </h1>
+          <h2 className="mt-3 max-w-4xl text-4xl font-black leading-[0.95] tracking-[-0.065em] text-gray-200 md:text-5xl xl:text-6xl">
+            builds clean products that feel expensive.
+          </h2>
+          <p className="mt-5 max-w-2xl text-base leading-7 text-gray-300 md:text-lg">
+            Full Stack Developer focused on Next.js, React, Node.js,
+            PostgreSQL, SaaS platforms, REST APIs, and AI-integrated systems —
+            with a sharp eye for black-and-white interfaces that stand out.
+          </p>
+
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <Link href="#contact" className="w-full sm:w-fit">
+              <Btn className="w-full sm:w-fit">Start a project</Btn>
+            </Link>
+            <Link href={cvUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-fit">
+              <Btn className="w-full gap-2 sm:w-fit">
+                <Download size={18} /> Download CV
+              </Btn>
+            </Link>
+          </div>
+
+          <div className="mt-8 grid max-w-md grid-cols-2 gap-3 border-t border-white/10 pt-5 text-white">
+            <div>
+              <p className="text-3xl font-bold">2+</p>
+              <p className="text-xs uppercase tracking-[0.25em] text-gray-500">Years</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold">10+</p>
+              <p className="text-xs uppercase tracking-[0.25em] text-gray-500">Projects</p>
+            </div>
+          </div>
         </div>
-        <div className=" text-4xl text-primary font-medium opacity-75">
-          I am Full-Stack Developer.
+
+        <div className="relative mx-auto w-full max-w-[25rem]">
+          <div className="absolute -inset-4 rounded-[2.5rem] border border-white/10" />
+          <div className="diagonal-portrait relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] p-3">
+            <Image
+              src="/avatar.jpg"
+              className="portrait-base aspect-[4/5] w-full rounded-[1.5rem] object-cover"
+              width={520}
+              height={650}
+              alt="Abdullah portrait"
+              priority
+            />
+            <Image
+              src="/avatar.jpg"
+              className="portrait-color pointer-events-none absolute inset-3 h-[calc(100%-1.5rem)] w-[calc(100%-1.5rem)] rounded-[1.5rem] object-cover"
+              width={520}
+              height={650}
+              alt=""
+              aria-hidden="true"
+              priority
+            />
+            <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/10 bg-black/70 p-4 backdrop-blur">
+              <div className="flex items-center justify-between gap-4 text-white">
+                <span>just.abdullah.dev@gmail.com</span>
+                <Mail size={18} />
+              </div>
+            </div>
+          </div>
         </div>
-        {/* <div className=" font-medium text-xl">
-            Turning <span className=" text-primary">ideas</span> into <span className=" text-primary">real life</span> products is my <span className=" text-primary">calling</span>
-        </div> */}
-        <div className=" w-[75%] font-light">
-          Passionate about building modern-classical solutions that empower startups to stand out.
-        </div>
-        <Link href={`#contact`} className="w-fit">
-          <Btn className="w-fit">Contact Me</Btn>
-        </Link>
       </div>
-      <div className=" md:w-1/2 items-center justify-center  hidden md:flex animate-herosection-image">
-        <Image
-          src={"/profile.jpg"}
-          className=" aspect-square scale-x-[-1 rounded-full "
-          width={450}
-          height={450}
-          alt="hero-section-image"
-        />
-      </div>
-    </div>
+
+      <Link href="#projects" className="relative mt-7 inline-flex items-center gap-2 text-sm uppercase tracking-[0.3em] text-gray-500 hover:text-white">
+        Scroll <ArrowDown size={16} className="animate-scroll-arrow" />
+      </Link>
+    </section>
   );
 }

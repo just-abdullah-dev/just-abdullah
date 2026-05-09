@@ -16,6 +16,7 @@ export default function Review({ data }) {
               width={200}
               height={200}
               className=" aspect-square "
+              alt={`${data?.name} avatar`}
             />
             <div className=" grid place-items-center text-black">
               <h1 className=" font-semibold tracking-wider ">{data?.name}</h1>
