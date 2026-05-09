@@ -16,16 +16,14 @@ export default function HeroSection() {
 
       <div className="relative grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
-          <h1 className="max-w-4xl text-6xl font-black leading-[0.82] tracking-[-0.09em] text-white md:text-8xl xl:text-9xl">
+          <h1 className="max-w-4xl text-6xl font-black leading-[0.82] tracking-[-0.06em] text-white md:text-8xl xl:text-9xl">
             Abdullah
           </h1>
-          <h2 className="mt-3 max-w-4xl text-4xl font-black leading-[0.95] tracking-[-0.065em] text-gray-200 md:text-5xl xl:text-6xl">
-            builds clean products that feel expensive.
+          <h2 className="mt-3 max-w-4xl text-4xl font-black leading-[1.95] tracking-[-0.065em] text-gray-200 md:text-5xl xl:text-6xl">
+            builds clean products that feel <span className="font-mediumfont-sansitalic ">expensive.</span>
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-7 text-gray-300 md:text-lg">
-            Full Stack Developer focused on Next.js, React, Node.js,
-            PostgreSQL, SaaS platforms, REST APIs, and AI-integrated systems —
-            with a sharp eye for black-and-white interfaces that stand out.
+            Full Stack Engineer focused on building real-world products, scalable SaaS systems, AI-integrated solutions, and startup-driven platforms.
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -56,26 +54,27 @@ export default function HeroSection() {
           <div className="diagonal-portrait relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] p-3">
             <Image
               src="/avatar.jpg"
-              className="portrait-base aspect-[4/5] w-full rounded-[1.5rem] object-cover"
+              className="portrait-base aspect-[3/4] duration-300 w-full rounded-[1.5rem] object-cover"
               width={520}
-              height={650}
+              height={520}
               alt="Abdullah portrait"
               priority
             />
-            <Image
+            {/* <Image
               src="/avatar.jpg"
-              className="portrait-color pointer-events-none absolute inset-3 h-[calc(100%-1.5rem)] w-[calc(100%-1.5rem)] rounded-[1.5rem] object-cover"
+              className="portrait-color duration-300 pointer-events-none absolute inset-3 h-[calc(100%-1.5rem)] w-[calc(100%-1.5rem)] rounded-[1.5rem] object-cover"
               width={520}
               height={650}
               alt=""
               aria-hidden="true"
               priority
-            />
+            /> */}
             <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/10 bg-black/70 p-4 backdrop-blur">
-              <div className="flex items-center justify-between gap-4 text-white">
+
+              <Link className="flex flex-row-reverse items-center justify-between gap-4 text-white" href="mailto:just.abdullah.dev@gmail.com">
                 <span>just.abdullah.dev@gmail.com</span>
-                <Mail size={18} />
-              </div>
+                <Mail size={18} /></Link>
+
             </div>
           </div>
         </div>

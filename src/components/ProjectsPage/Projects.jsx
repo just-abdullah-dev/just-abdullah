@@ -27,14 +27,14 @@ function Projects({ showMoreBtn }) {
         </div>
       )}
 
-      <div className="mt-10 grid gap-5 lg:grid-cols-2">
+      <div className="my-10 grid gap-5 lg:grid-cols-2">
         {visibleProjects.map((item, index) => (
           <Link
             key={`${item.slug}-${index}`}
             className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.06]"
             href={`/projects/${item?.slug}`}
           >
-            <div className="relative aspect-video overflow-hidden bg-gray-950">
+            <div className="relative aspect-video overflow-hidden bg-black/75">
               <Image
                 className="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
                 src={item?.images[0]}
@@ -54,7 +54,7 @@ function Projects({ showMoreBtn }) {
                   <p className="mt-2 text-gray-400">{item.tagline}</p>
                   <p className="mt-3 text-sm leading-6 text-gray-500">{item.summary || item.tagline}</p>
                 </div>
-                <span className="whitespace-nowrap text-sm text-gray-500">{item.startedOn} — {item.completedOn}</span>
+                {/* <span className="whitespace-nowrap text-sm text-gray-500">{item.startedOn} — {item.completedOn}</span> */}
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
                 {item.keywords.slice(0, 6).map((keyword) => (
@@ -68,7 +68,7 @@ function Projects({ showMoreBtn }) {
         ))}
       </div>
       {showMoreBtn && (
-        <Link href="/projects" className="mx-auto mt-8 w-fit">
+        <Link href="/projects" className="mx-auto w-fit">
           <Btn>See More Projects</Btn>
         </Link>
       )}

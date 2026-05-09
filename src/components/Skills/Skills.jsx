@@ -1,7 +1,7 @@
 import { skills } from "@/constants/data";
 
 const categoryStyles = {
-  Frontend: "border-white/15 bg-white text-black",
+  Frontend: "border-white/15 bg-violet-500/30 text-white",
   Backend: "border-emerald-400/30 bg-emerald-400/10 text-emerald-200",
   Mobile: "border-orange-400/30 bg-orange-400/10 text-orange-200",
   Database: "border-sky-400/30 bg-sky-400/10 text-sky-200",

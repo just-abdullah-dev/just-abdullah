@@ -24,20 +24,20 @@ export default function Header() {
           className="size-11 rounded-full border border-white/15 object-cover"
           priority
         />
-        <span className="text-lg font-bold tracking-[-0.04em] text-white">ABDULLAH</span>
+        <span className="text-lg tracking-[-0.04em] text-white">@abdullah</span>
       </Link>
       <nav className={`${isOpen ? "block" : "hidden"} absolute right-4 top-16 md:static md:block`}>
         <ul className="flex min-w-52 flex-col gap-2 rounded-2xl border border-white/10 bg-black p-3 shadow-2xl md:min-w-0 md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none">
           {links.map((item) => (
             <li key={item.name}>
               <Link onClick={() => setIsOpen(false)} href={item.slug} className="block">
-                <Btn className="w-full !px-4 !py-2 text-sm md:w-fit">{item.name}</Btn>
+                <button className=" header-pill  w-full md:w-fit">{item.name}</button>
               </Link>
             </li>
           ))}
           <li>
             <Link onClick={() => setIsOpen(false)} href="/#contact" className="block">
-              <Btn className="w-full !px-4 !py-2 text-sm md:w-fit">Contact</Btn>
+              <button className="w-full rounded-full border-beam text-white hover:text-white hover:bg-black hover:border-white transition-all duration-300 bg-black !px-4 !py-2 text-sm md:w-fit">Contact</button>
             </Link>
           </li>
         </ul>
