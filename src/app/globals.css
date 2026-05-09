@@ -96,3 +96,48 @@ body {
 .transition-hero-image:hover {
   border-radius: 5%;
 }
+
+
+.diagonal-portrait .portrait-base {
+  filter: grayscale(1);
+}
+
+.diagonal-portrait .portrait-color {
+  mask-image: repeating-linear-gradient(135deg, #000 0 22px, transparent 22px 44px);
+  mask-size: 180% 180%;
+  mask-position: 0 0;
+  -webkit-mask-image: repeating-linear-gradient(135deg, #000 0 22px, transparent 22px 44px);
+  -webkit-mask-size: 180% 180%;
+  -webkit-mask-position: 0 0;
+  animation: diagonal-scan 7s linear infinite;
+  transition: mask-image 0.35s ease, -webkit-mask-image 0.35s ease, opacity 0.35s ease;
+}
+
+.diagonal-portrait:hover .portrait-color {
+  mask-image: linear-gradient(#000, #000);
+  -webkit-mask-image: linear-gradient(#000, #000);
+}
+
+@keyframes diagonal-scan {
+  from {
+    mask-position: 0 0;
+    -webkit-mask-position: 0 0;
+  }
+  to {
+    mask-position: 0 180%;
+    -webkit-mask-position: 0 180%;
+  }
+}
+
+.animate-scroll-arrow {
+  animation: scroll-arrow 1.35s ease-in-out infinite;
+}
+
+@keyframes scroll-arrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}

@@ -20,8 +20,8 @@ export default function Btn({ className = " ", children }) {
             transition={{ duration: 0.25, ease: "easeInOut" }}
             className="block"
           >
-            <span className="block">{children}</span>
-            <span className="block">{children}</span>
+            <span className="flex items-center justify-center gap-2">{children}</span>
+            <span className="flex items-center justify-center gap-2">{children}</span>
           </motion.span>
         </AnimatePresence>
       </span>

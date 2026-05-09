@@ -52,6 +52,7 @@ function Projects({ showMoreBtn }) {
                 <div>
                   <h3 className="text-2xl font-semibold text-white">{item.title}</h3>
                   <p className="mt-2 text-gray-400">{item.tagline}</p>
+                  <p className="mt-3 text-sm leading-6 text-gray-500">{item.summary || item.tagline}</p>
                 </div>
                 <span className="whitespace-nowrap text-sm text-gray-500">{item.startedOn} — {item.completedOn}</span>
               </div>
