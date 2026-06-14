@@ -53,7 +53,7 @@ export default function HeroSection() {
           <div className="absolute -inset-4 rounded-[2.5rem] border border-white/10" />
           <div className="diagonal-portrait relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] p-3">
             <Image
-              src="/avatar.jpg"
+              src="/v3-crop.png"
               className="portrait-base aspect-[3/4] duration-300 w-full rounded-[1.5rem] object-cover"
               width={520}
               height={520}
@@ -61,7 +61,7 @@ export default function HeroSection() {
               priority
             />
             {/* <Image
-              src="/avatar.jpg"
+              src="/v3-crop.png"
               className="portrait-color duration-300 pointer-events-none absolute inset-3 h-[calc(100%-1.5rem)] w-[calc(100%-1.5rem)] rounded-[1.5rem] object-cover"
               width={520}
               height={650}

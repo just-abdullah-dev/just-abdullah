@@ -17,7 +17,7 @@ export default function Header() {
     <header className="sticky left-0 right-0 top-0 z-50 mb-4 flex items-center justify-between rounded-b-3xl border-b border-white/10 bg-black/75 px-4 py-3 backdrop-blur-xl md:px-8">
       <Link className="flex items-center gap-3" href="/">
         <Image
-          src="/avatar.jpg"
+          src="/avatar.png"
           width={44}
           height={44}
           alt="Abdullah avatar"
