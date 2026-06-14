@@ -26,7 +26,7 @@ export default function AboutSection() {
       <div className="relative h-fit overflow-hidden rounded-[2rem] border border-white/10 bg-red-500/[0.03] p-3 lg:sticky lg:top-12">
         <Image
           className="aspect-[4/5] h-fit w-full rounded-[1.5rem] object-cover"
-          src="/avatar.jpg"
+          src="/v3-crop.png"
           alt="Abdullah Profile Picture"
           width={900}
           height={1100}
