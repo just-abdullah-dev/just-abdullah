@@ -378,7 +378,7 @@ const workExperience = [
   {
     role: "Full Stack Developer",
     company: "Peregrine Ventures AI",
-    period: "Oct 2025 – Mar 2026",
+    period: "Oct 2025 – Present",
     type: "B2B Platform",
     highlights: [
       "Built a B2B veterinary ordering platform with complete order workflows, clinic management, and prescription handling.",
