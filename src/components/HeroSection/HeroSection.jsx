@@ -5,7 +5,7 @@ import { ArrowDown, Download, Mail } from "lucide-react";
 import Btn from "../utils/Btn";
 
 const cvUrl =
-  "https://drive.google.com/file/d/1i7YKDmqFgPF6Dm7YXJsmjEFEgaNzgW1X/view?usp=sharing";
+  "https://drive.google.com/file/d/1CiFBBUH76J8rgznKLYCWW6oNvP-ScM87/view?usp=sharing";
 
 export default function HeroSection() {
   return (
