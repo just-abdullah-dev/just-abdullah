@@ -1,7 +1,14 @@
 import PageLayout from "@/components/PageLayout/PageLayout";
 import ProjectInDetail from "@/components/ProjectsPage/ProjectInDetail";
 import BreadCrumbs from "@/components/utils/BreadCrumbs";
+import { projects } from "@/constants/data";
 import React from "react";
+
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
+}
 
 export default function page({ params }) {
   const formattedSlug = params?.slug

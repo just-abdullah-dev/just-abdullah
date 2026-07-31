@@ -64,7 +64,7 @@ function Contact() {
       <div className="section-heading-grid">
         <div>
           <div className="section-kicker">Contact</div>
-          <h2 className="section-title">Have a serious build in mind?</h2>
+          <h2 className="section-title italic font-serif">Have a serious build in mind?</h2>
         </div>
         <p className="section-copy">
           Send a message for SaaS platforms, dashboards, AI API integrations,

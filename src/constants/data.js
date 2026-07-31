@@ -2,7 +2,6 @@ import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 // web services each tile data
 const services = [
-  // personal
   {
     cta: "Get Portfolio",
     title: "Personal",
@@ -19,7 +18,6 @@ const services = [
     ],
     desc: "Unleash the power of personalization. From customization to optimization, I cater to your specific requirements, delivering results that exceed expectations.",
   },
-  // corporate
   {
     cta: "Elevate Your Brand",
     title: "Corporate",
@@ -36,7 +34,6 @@ const services = [
     ],
     desc: "Elevate your business with corporate solutions tailored to your needs. From seamless integration to unparalleled support, I ensure your enterprise operates at its peak efficiency.",
   },
-  // ecommerce
   {
     cta: "Start Selling",
     title: "Ecommerce",
@@ -53,7 +50,6 @@ const services = [
     ],
     desc: "Dive into the world of online commerce with Ecommerce solutions, designed to boost your digital presence and foster growth.",
   },
-  // custom
   {
     cta: "Create Your Vision",
     title: "Custom",
@@ -70,7 +66,6 @@ const services = [
     ],
     desc: "From concept to execution, my custom development services provide the foundation for your startup's success, combining creativity, expertise, and unparalleled support.",
   },
-  // deployment
   {
     cta: "Launch Your Project",
     title: "Deployment",
@@ -92,6 +87,19 @@ const services = [
 // projects each tile data
 const projects = [
   {
+    title: "GateTak",
+    tagline: "City-wide delivery & logistics platform for Haripur",
+    slug: "gatetak",
+    images: ["/projects/aban-edu-1.png", "/projects/aban-edu-2.png", "/projects/aban-edu-3.png"],
+    keywords: ["React Native", "Next.js", "Supabase", "TypeScript", "Logistics", "Mobile"],
+    repo: "",
+    link: "",
+    startedOn: "Jul-2026",
+    completedOn: "Present",
+    summary: "Founded GateTak, a city-wide delivery and logistics platform featuring 3 separate React Native mobile apps (Customers, Riders, Vendors) and a Next.js admin panel.",
+    desc: "## GateTak — Delivery & Logistics Startup\n\nGateTak is a city-wide delivery and logistics platform founded for Haripur, Pakistan. Built as a full-stack lead across web and mobile.\n\n### Key Highlights:\n- Engineered 3 separate React Native mobile applications for **Customers**, **Riders**, and **Vendors/Restaurants**.\n- Built a centralized Supabase database for real-time tracking, order state transitions, and user account management.\n- Developed an admin control panel using Next.js for operational oversight, managing vendors, rider payouts, and live order status.",
+  },
+  {
     title: "AWC Veterinary Ordering Platform",
     tagline: "B2B veterinary compounding pharmacy e-commerce",
     slug: "awc-veterinary-platform",
@@ -99,10 +107,10 @@ const projects = [
     keywords: ["Next.js", "React.js", "PostgreSQL", "Prisma", "RBAC", "B2B Workflows"],
     repo: "",
     link: "",
-    startedOn: "01-Oct-2025",
-    completedOn: "31-Mar-2026",
-    summary: "A clinic-first ordering system for Australian veterinarians to register clinics, order compounded medications, and manage prescriptions.",
-    desc: "## AWC Veterinary Ordering Platform\n\nAnimal Welfare Compounding (AWC) Platform is a B2B e-commerce system for a veterinary compounding pharmacy in Australia. Veterinarians register clinics, order compounded medications including quality-assured products and custom made-to-order formulations, and manage prescriptions for animal patients.\n\nBuilt complete order workflows, clinic management, prescription handling, flexible pricing with dynamic percentage adjustments, product-level overrides, secure authentication, and approval-based access control.",
+    startedOn: "Oct-2025",
+    completedOn: "Jun-2026",
+    summary: "A B2B veterinary ordering platform with clinic management, prescriptions, and order workflows for 50+ clinics, reducing manual processing by ~40%.",
+    desc: "## AWC Veterinary Ordering Platform\n\nAnimal Welfare Compounding (AWC) Platform is a B2B e-commerce system for a veterinary compounding pharmacy in Australia. Veterinarians register clinics, order compounded medications including quality-assured products and custom made-to-order formulations, and manage prescriptions for animal patients.\n\n### Key Highlights:\n- Built a clinic-first ordering platform serving 50+ clinics, reducing manual processing time by ~40%.\n- Developed a dynamic pricing engine supporting clinic-specific pricing rules and product-level overrides.\n- Implemented secure JWT authentication with granular role-based access control (RBAC) for admins and clinic staff.",
   },
   {
     title: "Astra Wellness Telehealth",
@@ -112,27 +120,27 @@ const projects = [
     keywords: ["Next.js", "Telehealth", "Appointments", "Video Consultations", "Chat", "AI Transcription"],
     repo: "",
     link: "https://astra-wellness-platform-764800041404.us-central1.run.app/",
-    startedOn: "01-Jan-2026",
-    completedOn: "Present",
-    summary: "A telehealth product covering doctor onboarding, patient booking, appointment requests, video consultations, chat, and AI medical summaries.",
-    desc: "## Astra Wellness Telehealth — Phase 1\n\nA telehealth web application with doctor and patient roles. Doctors can register, manage professional profiles, select medical categories and specialties, upload certifications, define availability, accept or reject appointments, conduct video consultations, and chat with patients. Patients can browse doctors, view availability, request appointments, join consultations, and chat before and after visits.\n\nPhase 1 scope includes category-based doctor discovery, calendar availability, appointment status tracking, appointment history, secure one-to-one meetings, in-meeting chat, AI-powered medical transcription, and consultation summarization.",
+    startedOn: "Jan-2026",
+    completedOn: "Jun-2026",
+    summary: "A telehealth platform covering doctor onboarding, patient booking, appointment requests, video consultations, chat, and AI medical summaries.",
+    desc: "## Astra Wellness Telehealth — Phase 1\n\nA telehealth web application with doctor and patient roles. Doctors can register, manage professional profiles, select medical categories and specialties, upload certifications, define availability, accept or reject appointments, conduct video consultations, and chat with patients.\n\n### Key Highlights:\n- Category-based doctor discovery, calendar availability management, and appointment status tracking.\n- In-meeting video calls and text chat integration for seamless remote consultations.\n- AI-powered medical transcription and automated consultation summary generation.",
   },
   {
     title: "Bonny",
     tagline: "Events, subscriptions, and QR voucher redemption",
     slug: "bonny",
     images: ["/projects/bonny-0.png", "/projects/bonny-1.png", "/projects/bonny-2.png", "/projects/bonny-3.png", "/projects/bonny-4.png", "/projects/bonny-5.png", "/projects/bonny-6.png"],
-    keywords: ["React.js", "Next.js", "TypeScript", "Supabase", "Stripe", "QR"],
+    keywords: ["React.js", "Next.js", "TypeScript", "Supabase", "Stripe", "QR Code"],
     repo: "",
     link: "https://bonny.at",
-    startedOn: "01-Jun-2025",
-    completedOn: "30-Sept-2025",
+    startedOn: "Feb-2025",
+    completedOn: "Jun-2025",
     summary: "An event discovery and voucher management app serving customers, businesses, and super admins with QR redemption and Stripe payments.",
-    desc: "## Bonny — Events & Voucher Platform\n\nBonny is a Next.js 15 web application for event discovery and voucher management. It serves three distinct user roles: regular users, businesses, and super admins. The app uses Supabase for data storage, Stripe for payments, and includes QR code scanning, event management, and voucher redemption.\n\nBuilt interactive dashboards, QR-based voucher redemption, subscription features, and admin panels for users, events, and businesses under Inostrik as a client project.",
+    desc: "## Bonny — Events & Voucher Platform\n\nBonny is a Next.js web application for event discovery and voucher management built at Inostrik. It serves three distinct user roles: regular users, businesses, and super admins.\n\n### Key Highlights:\n- Supabase backend for real-time data storage and dynamic content management.\n- QR-based voucher redemption system for instant in-person verification.\n- Subscription tier management and Stripe payment integration.",
   },
   {
     title: "Nigotis",
-    tagline: "Accounting Software and Business Automation Tool v1",
+    tagline: "Accounting Software & SME Business Management System",
     slug: "nigotis",
     images: [
       "/nigotis-3.png",
@@ -149,46 +157,44 @@ const projects = [
       "TailwindCSS",
       "Framer Motion",
       "AWS S3",
-      "Node Mailer",
+      "RBAC",
     ],
     repo: "",
     link: "https://nigotis-fe.vercel.app/",
-    startedOn: "20-Sep-2024",
-    completedOn: "31-Jan-2025",
-    summary: "A business automation suite for invoices, payroll, assets, expenses, authentication, and role-based access control.",
-    desc: "## Nigotis - Accounting Software and Business Automation tool for Growing Businesses\n\n### Introduction:\nNigotis is a web based software to create invoices, manage company assets, expenses, employees payrolls efficiently.\n\n\n\nUse Following test credentials:\n\n- Email: abdullah@justxtech.com\n\n- Password: 12345678",
+    startedOn: "Oct-2024",
+    completedOn: "Jan-2025",
+    summary: "A full accounting and business management system covering invoicing, payroll processing, asset tracking, and RBAC for SME clients.",
+    desc: "## Nigotis - Accounting Software & Business Automation System\n\nBuilt at Raqqamiyya (Dubai, UAE), Nigotis is a web-based accounting and business management system for SMEs.\n\n### Key Highlights:\n- Module engineering for invoicing, payroll processing, employee records, and asset tracking.\n- Role-Based Access Control (RBAC) with secure authentication for multi-user organizational workflows.\n- Optimized SSR and tuned MongoDB aggregation queries to handle large financial ledger datasets with ultra-low latency.\n\n**Test Credentials:**\n- Email: abdullah@justxtech.com\n- Password: 12345678",
   },
   {
     title: "Sehat-AI",
     tagline: "Deep learning chest X-ray screening system",
     slug: "sehat-ai",
     images: ["/projects/sehat-ai-0.png", "/projects/sehat-ai-1.png", "/projects/sehat-ai-1.jpg", "/projects/sehat-ai-2.jpg"],
-    keywords: ["Python", "FastAPI", "Deep Learning", "React Native", "Expo", "CNN"],
+    keywords: ["Python", "FastAPI", "DenseNet121", "React Native", "Expo", "CNN"],
     repo: "",
     link: "",
-    startedOn: "01-Jan-2025",
-    completedOn: "Present",
-    summary: "An AI-assisted medical imaging workflow for TB and Pneumonia screening using CNN models, FastAPI, and mobile delivery.",
-    desc: "## Sehat-AI — Final Year Project (FYP)\n\nBuilt a deep learning model for detecting TB and Pneumonia from chest X-rays, integrated with a FastAPI backend and React Native mobile frontend for real-time predictions. The project applies CNN architectures for medical image classification and focuses on practical AI-assisted screening workflows.",
+    startedOn: "Jan-2025",
+    completedOn: "2026",
+    summary: "Deep learning chest X-ray screening pipeline for TB and Pneumonia using DenseNet121 transfer learning, FastAPI backend, and React Native mobile app.",
+    desc: "## Sehat-AI — Deep Learning Medical Screening\n\nMedical AI system created as a flagship project, combining deep learning with real-time mobile API delivery.\n\n### Key Highlights:\n- Trained a deep learning image classification pipeline with DenseNet121 transfer learning for TB and Pneumonia detection.\n- Built a high-performance FastAPI server serving real-time prediction endpoints.\n- Developed a React Native mobile application for clinicians and patients to upload X-rays and instantly view diagnostic confidence scores.",
   },
   {
     title: "Aban Edu",
     tagline: "Multi-tenant SaaS school management system",
     slug: "aban-edu",
     images: ["/projects/aban-edu-1.png", "/projects/aban-edu-2.png", "/projects/aban-edu-3.png", "/projects/aban-edu-4.png", "/projects/aban-edu-5.png"],
-    keywords: ["Next.js", "PostgreSQL", "Prisma", "SaaS", "RBAC", "Multi-tenant"],
+    keywords: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "SaaS", "Multi-tenant"],
     repo: "",
     link: "",
-    startedOn: "01-Jan-2026",
+    startedOn: "Jan-2026",
     completedOn: "Present",
-    summary: "A school management SaaS with multi-tenant architecture, fee voucher automation, roles, and PostgreSQL-first schema design.",
-    desc: "## Aban Edu — SaaS School Management System\n\nDesigned a scalable multi-tenant school management system with a complex PostgreSQL schema, Prisma ORM, async fee voucher generation, role-based system design, and planned mobile integration for real-world deployment.",
+    summary: "A multi-tenant school management SaaS with isolated tenant data, fee voucher automation, role-based security, and React Native guardian app.",
+    desc: "## Aban Edu — Multi-Tenant School SaaS\n\nArchitected a scalable SaaS system for educational institutions.\n\n### Key Highlights:\n- Complex relational schema designed in PostgreSQL using Prisma ORM for multi-branch school isolation.\n- Features timetables, automated fee voucher generation, attendance logging, and academic marksheets.\n- Created a React Native guardian application prototype for live attendance alerts and fee reminders.",
   },
-
-  // Dynam galaxy
   {
     title: "Dynam Galaxy",
-    tagline: "Calm Solutions for Fast Startups",
+    tagline: "High-animation agency portfolio website",
     slug: "dynam-galaxy",
     images: ["/dynam-1.png", "/dynam-2.png", "/dynam-3.png"],
     keywords: [
@@ -198,18 +204,16 @@ const projects = [
       "Framer Motion",
       "GSAP",
       "Magic UI",
-      "Node Mailer",
     ],
     repo: "",
     link: "https://www.dynamgalaxy.com/",
-    startedOn: "18-Sep-2024",
-    completedOn: "20-Oct-2024",
-    desc: "## Dynam Galaxy - Software Company\n\n### Introduction:\n\nDynam Galaxy is a software company that provides a variety of digital solutions, helping startups and businesses grow efficiently. The company specializes in UI/UX design, web and mobile development, and digital marketing, offering tailored strategies for different industries.\n\n### Services:\n\n- UI/UX Design for web and mobile applications.\n- Custom software and web development solutions.\n- Digital marketing strategies to enhance online presence.\n- Scalable and efficient solutions for startups and enterprises.\n\n### Technologies & Tools:\n\n- Modern design and development frameworks.\n- Scalable cloud solutions.\n- Data-driven marketing strategies.\n\nVisit the official website to learn more about Dynam Galaxy's services.",
+    startedOn: "Sep-2024",
+    completedOn: "Sep-2024",
+    desc: "## Dynam Galaxy - Agency Portfolio\n\nBuilt at Inostrik as a high-animation agency portfolio for Dynam Galaxy, showcasing custom UI design, responsive animations, and fast SSR performance using Next.js and Framer Motion.",
   },
-  // Naseerfolio
   {
     title: "Naseerfolio",
-    tagline: "Building the Future of Mobile Apps",
+    tagline: "Portfolio site for Flutter Mobile App Developer",
     slug: "naseerfolio",
     images: [
       "/naseerfolio-1.gif",
@@ -221,253 +225,250 @@ const projects = [
       "React.js",
       "TailwindCSS",
       "Framer Motion",
-      "Node Mailer",
+      "Nodemailer",
     ],
     repo: "",
     link: "https://protech-coders.com/",
-    startedOn: "15-Jun-2024",
-    completedOn: "21-Jun-2024",
-    desc: `## Naseerfolio - Muhammad Naseer Portfolio \n\n ### Introduction:
-
-Naseerfolio is a professional portfolio website designed for Naseer, a talented Flutter mobile app developer. This sleek and modern portfolio showcases Naseer's skills, projects, and experience, providing a comprehensive overview of his expertise. Explore Naseerfolio to learn more about his work and get in touch through the integrated contact form.
-\n\n
-### Features:
-\n\n
-- Browse through a portfolio of mobile app development projects.
-- Learn about Naseer's skills, experience, and background.
-- Contact Naseer directly using the integrated contact form.
-- Enjoy smooth animations and a responsive design for an optimal user experience.
-\n\n\n\n
-### Technologies Used:
-\n\n
-- Next.js
-- React.js
-- Tailwind CSS
-- Nodemailer (used in contact form to send mail)
-- Framer Motion (animations)`,
+    startedOn: "Jun-2024",
+    completedOn: "Jun-2024",
+    desc: "## Naseerfolio - Developer Portfolio\n\nSleek, high-performance portfolio website built for Muhammad Naseer, a Flutter mobile developer, featuring interactive project previews, smooth Framer Motion micro-interactions, and integrated contact API.",
   },
-  // Activus
   {
     title: "Activus",
-    tagline: "Bringing your ideas to life with cutting-edge technology.",
+    tagline: "Technology agency platform with 3D graphics & animations",
     slug: "activus",
     keywords: [
       "Next.js",
       "React.js",
       "TailwindCSS",
       "Framer Motion",
-      "Spline",
+      "Spline 3D",
       "GSAP",
-      "Magic UI",
-      "Node Mailer",
     ],
     images: ["/activus.png"],
     repo: "",
     link: "https://activus1.vercel.app",
-    startedOn: "07-July-2024",
-    completedOn: "25-July-2024",
-    desc: `## Activus - Your Partner in Technology
-
-### Introduction:
-Activus is a premier technology agency offering a wide range of services tailored to meet diverse business needs. Whether it's innovative web development, dynamic animations, or seamless integrations, Activus excels in transforming ideas into reality. The agency specializes in creating visually stunning and technically robust solutions that engage and captivate target audiences.
-
-### Features:
-- Explore a rich portfolio showcasing a diverse range of tech projects across various industries.
-- Discover the agency's expertise in leveraging advanced animation techniques, utilizing tools like Framer Motion, GSAP, and Spline.
-- Experience the seamless integration of Magic UI components, enhancing interactivity and user experience.
-- Easily connect with the team through an integrated contact form for personalized consultations.
-- Benefit from responsive, aesthetically pleasing designs that provide a flawless experience across all devices.
-
-### Technologies Used:
-- Next.js
-- React.js
-- Tailwind CSS
-- Nodemailer (used in the contact form to send emails)
-- Framer Motion (animations)
-- GSAP (animations)
-- Spline (3D graphics)
-- Magic UI (animation components)
-`,
+    startedOn: "Jul-2024",
+    completedOn: "Jul-2024",
+    desc: "## Activus - Tech Agency Showcase\n\nCreated an interactive agency website integrating Spline 3D graphics, GSAP scroll triggers, and Framer Motion layout transitions.",
   },
-  // read verve
   {
     title: "Read Verve",
+    tagline: "Full stack blogging platform with RBAC & comments",
     slug: "read-verve",
-    tagline: "Unleash Your Intellectual Journey with Read Verve",
     images: ["/read-verve.gif", "/read-verve-sm.png"],
     keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/read-verve-next-js/",
     link: "",
-    startedOn: "01-Sept-2023",
-    completedOn: "24-Nov-2023",
-    desc: `## Read Verve: Empowering Knowledge through Diverse Blogs\n\n### Introduction to Read Verve\n\nWelcome to Read Verve, a dynamic blog website designed to enrich your knowledge base. Dive into a myriad of articles spanning various categories, curated to cater to your diverse interests and informational needs.\n\n\n\n### Blog Website Features\n\n- **Categorized Articles**: Explore a wide range of topics across distinct categories.\n\n- **User Engagement**: Interact with the community by commenting on posts.\n\n- **Personalized Profiles**: Customize your profile with details like name, avatar, and password settings.\n\n### Administrative Control\n\n- **Multiple Admin Management**: The platform supports multiple admins, granting them comprehensive control over user activities and site management.\n\n- **Admin Privileges**: Admins hold authority over user management tasks, including user deletion and role assignments (e.g., admin or author).\n\n### Author Capabilities\n\n- **Content Creation**: Authors contribute and publish their blogs on the platform.\n\n- **Editing Tools**: Authors can revise and improve their published content as needed.\n\n`,
+    startedOn: "Sep-2023",
+    completedOn: "Nov-2023",
+    desc: "## Read Verve - Dynamic Content Platform\n\nFull stack blogging application featuring user profiles, article categorization, interactive comment threads, and multi-admin management.",
   },
-  // skill joiner
   {
     title: "Skill Joiner",
-    tagline: "Skills you need delivered with speed",
+    tagline: "University skill marketplace & student forum hub",
     slug: "skill-joiner",
     images: ["/skill-joiner-1.gif", "/skill-joiner-2.gif"],
     keywords: ["Next.js", "React.js", "Node.js", "MongoDB"],
     repo: "https://github.com/just-abdullah-dev/skill-joiner-nextjs",
     link: "",
-    startedOn: "01-Dec-2023",
-    completedOn: "22-Jan-2024",
-    desc: `### Introduction:\n\nSkill Joiner is a special platform for PAF-IAST University. It helps smart
-    students who are good at lots of things like coding, designing, SEO, and more.
-    This platform is designed to let students craft their profiles, showcasing their
-    expertise and portfolios. Skill Joiner acts as a central hub, facilitating
-    connections with various opportunities within and beyond the university's
-    scope.\n\n### Connecting Skillful Individuals:\n\nSkill Joiner connects people who needs skill persons (from PAF-IAST),
-    providing easy interface to find out the expert for their work. Users can post a
-    job and students will bid on the job. Or users can request a service from
-    specific student.\n\n### Community Forums for Learning:\n\nThis platform also has community forums for each profession. Where
-    students can communicate with each other to learn and grow together.`,
+    startedOn: "Dec-2023",
+    completedOn: "Jan-2024",
+    desc: "## Skill Joiner - PAF-IAST Platform\n\nA talent matching platform created for university students to publish service offerings, bid on freelance jobs, and collaborate in peer forums.",
   },
-  // quizical app
   {
     title: "Quizical",
-    tagline: "Challenge Your Mind, Expand Your Knowledge",
+    tagline: "Interactive trivia & knowledge quiz app",
     slug: "quizical",
     images: ["/quizical.gif"],
     keywords: ["React.js", "Trivia API"],
     repo: "https://github.com/just-abdullah-dev/Quizical-App",
     link: "https://quizical-app.netlify.app/",
-    startedOn: "04-Sept-2023",
-    completedOn: "05-Sept-2023",
-    desc: `### Introduction:\n\nQuizical is an engaging and educational quiz app that provides an interactive way to challenge your knowledge on various topics. Whether you're looking for a fun way to pass the time or want to learn something new, Quizical has you covered.\n\n### Features:\n\n- Choose the number of multiple-choice questions you want to answer.\n\n- Select a quiz category from a wide range of topics.\n\n- Pick a difficulty level that suits your knowledge.\n\n- Receive instant feedback on your answers.\n\n### How to Play:\n\n1. **Launch the App**: Open the Quizical app in your web browser.\n\n2. **Customize Your Quiz**: Select the number, type, and difficulty level of questions.\n\n3. **Start the Quiz**: Click the "Start Quiz" button to begin.\n\n4. **Answer Questions**: Answer each multiple-choice question by selecting the correct option.\n\n5. **Get Feedback**: Receive immediate feedback on your answer, including whether it's correct or not.\n\n6. **View Your Score**: Keep track of your score as you progress through the quiz.\n\n7. **Finish the Quiz**: Complete the quiz and see your final score.\n\n`,
+    startedOn: "Sep-2023",
+    completedOn: "Sep-2023",
+    desc: "## Quizical App\n\nInteractive React quiz application featuring custom difficulty settings, category selections, immediate scoring, and API data fetching.",
   },
-  // tenzies app
   {
     title: "Tenzies Game",
-    tagline: "Roll, match, conquer - Tenzies Game!",
+    tagline: "Fast-paced interactive dice matching game",
     slug: "tenzies",
     images: ["/tenzies.gif"],
-    keywords: ["React.js"],
+    keywords: ["React.js", "LocalStorage"],
     repo: "https://github.com/just-abdullah-dev/Tenzies-Game",
     link: "https://tenzies-game-ar.netlify.app/",
-    startedOn: "01-Sept-2023",
-    completedOn: "02-Sept-2023",
-    desc: `### Introduction:\n\nTenzies game is a fun and addictive dice game where the goal is to roll as many dice with the same number as possible within a limited time. The more dice with the same number you roll, the higher your score. Challenge yourself and see how high you can score!\n\n### Features:\n\n- Roll dice and aim for the highest score.\n\n- Track your best score, total rolls, and game duration.\n\n- Automatically save your best score to local storage for future reference.\n\n- Enjoy a clean and responsive user interface.\n\n### Technologies Used:\n\n- React.js\n\n- HTML5\n\n- CSS3\n\n- JavaScript\n\n### Acknowledgments:\n\nI would like to thank **[Bob Ziroll](https://www.coursera.org/instructor/~130316767)** for providing the guidance and inspiration to create this project.`,
+    startedOn: "Sep-2023",
+    completedOn: "Sep-2023",
+    desc: "## Tenzies Game\n\nClean React game with state tracking for dice rolls, best time persistence, and victory celebration animations.",
   },
 ];
 
-// skills each tile data
+// skills list
 const skills = [
   { title: "Next.js", category: "Frontend", level: "Production" },
   { title: "React.js", category: "Frontend", level: "Production" },
+  { title: "TypeScript", category: "Languages", level: "Production" },
+  { title: "JavaScript", category: "Languages", level: "Production" },
+  { title: "Python", category: "Languages", level: "Applied" },
   { title: "Tailwind CSS", category: "Frontend", level: "Production" },
   { title: "Framer Motion", category: "Frontend", level: "Production" },
-  { title: "React Native", category: "Mobile", level: "Building" },
-  { title: "Expo", category: "Mobile", level: "Building" },
+  { title: "React Native", category: "Mobile", level: "Production" },
+  { title: "Expo", category: "Mobile", level: "Production" },
   { title: "Node.js", category: "Backend", level: "Production" },
   { title: "Express.js", category: "Backend", level: "Production" },
-  { title: "FastAPI", category: "Backend", level: "Building" },
-  { title: "Python", category: "AI / ML", level: "Applied" },
+  { title: "FastAPI", category: "Backend", level: "Production" },
+  { title: "Nest.js", category: "Backend", level: "Applied" },
   { title: "PostgreSQL", category: "Database", level: "Production" },
   { title: "Prisma ORM", category: "Data", level: "Production" },
   { title: "MongoDB", category: "Database", level: "Production" },
   { title: "Supabase", category: "Backend", level: "Production" },
-  { title: "Google Colab", category: "AI / ML", level: "Applied" },
-  { title: "RAG", category: "Learning", level: "Learning" },
-  { title: "REST APIs", category: "Architecture", level: "Production" },
-  { title: "RBAC", category: "Security", level: "Production" },
+  { title: "MySQL", category: "Database", level: "Production" },
+  { title: "REST APIs", category: "Expertise", level: "Production" },
+  { title: "SaaS Architecture", category: "Expertise", level: "Production" },
+  { title: "RBAC & Auth", category: "Security", level: "Production" },
+  { title: "Docker & AWS S3", category: "Tools", level: "Applied" },
+  { title: "Git & Vercel", category: "Tools", level: "Production" },
 ];
 
+// Main Work Experience (as defined in CV)
 const workExperience = [
   {
-    role: "Full Stack Developer",
-    company: "Peregrine Ventures AI",
-    period: "Oct 2025 – Present",
-    type: "B2B Platform",
+    role: "Founder | Full Stack Engineer",
+    company: "GateTak - On-site",
+    location: "Haripur, Pakistan",
+    period: "Jul 2026 – Present",
+    type: "Delivery Startup",
     highlights: [
-      "Built a B2B veterinary ordering platform with complete order workflows, clinic management, and prescription handling.",
-      "Designed flexible pricing with dynamic percentage adjustments and product-level overrides.",
-      "Implemented secure authentication and approval-based access control for users and admins.",
+      "Founded GateTak, a city-wide delivery and logistics platform for Haripur, building three separate React Native apps for customers, riders, and vendors/restaurants, backed by a Supabase database.",
+      "Built the admin panel in Next.js for managing orders, vendors, and riders across the platform.",
+      "Serving as full stack engineer across the entire stack, web and mobile.",
     ],
   },
   {
     role: "Full Stack Developer",
-    company: "Inostrik",
-    period: "Jul 2025 – Jan 2026",
+    company: "Peregrine Ventures AI - Contract, Remote",
+    location: "Lightsview, South Australia",
+    period: "Oct 2025 – Jun 2026",
+    type: "Healthtech & AI",
+    highlights: [
+      "Built a B2B veterinary ordering platform with clinic management, prescriptions, and order workflows for 50+ clinics, reducing manual processing by ~40%.",
+      "Developed a dynamic pricing engine supporting clinic-specific pricing rules and product-level overrides.",
+      "Built a telehealth platform with booking, video calls, chat, AI transcription, and automated visit summaries.",
+      "Implemented secure JWT authentication with role-based access for admins and clinic users.",
+    ],
+  },
+  {
+    role: "Full Stack Developer",
+    company: "Inostrik - Part-time, Remote",
+    location: "Islamabad, Pakistan",
+    period: "Feb 2025 – Jun 2025",
     type: "Client Products",
     highlights: [
-      "Developed modern landing pages with responsive UI and smooth animations using Next.js and React.",
-      "Built CMS-driven features using Supabase for blogs, banners, and dynamic content.",
-      "Integrated frontend experiences with backend services for scalable content delivery.",
+      "Delivered a Supabase-powered CMS with dynamic blog and banner management, and Bonny, a full events and voucher management platform: admin dashboard, QR-based redemption, user/business/event management, and subscription tier features using Next.js, TypeScript, and Supabase.",
+      "Improved SSR and database query strategies, cutting page load times across CMS-heavy pages.",
     ],
   },
+  {
+    role: "Full Stack Developer",
+    company: "Raqqamiyya (Nigotis) - Part-time, Remote",
+    location: "Dubai, UAE",
+    period: "Oct 2024 – Jan 2025",
+    type: "SME Accounting System",
+    highlights: [
+      "Built a full accounting and business management system covering invoicing, payroll processing, and asset tracking for SME clients.",
+      "Established RBAC with secure authentication, ensuring granular access per user role across the platform.",
+      "Used SSR and tuned MongoDB queries to handle large ledger datasets with low latency.",
+    ],
+  },
+  {
+    role: "Web Developer",
+    company: "Inostrik - Part-time, Remote",
+    location: "Islamabad, Pakistan",
+    period: "Sep 2024",
+    type: "Agency Web",
+    highlights: [
+      "Built Dynam Galaxy, a high-animation agency portfolio site, using Next.js and Framer Motion.",
+    ],
+  },
+];
+
+// Internships (moved after main work experience)
+const internships = [
   {
     role: "Software Engineer Intern",
-    company: "Mahhir 360",
-    period: "Jun 2025 – Aug 2025",
+    company: "Mahhir 360 - On-site Internship",
+    location: "Lahore, Pakistan",
+    period: "Jul 2025 – Sep 2025",
     type: "Restaurant SaaS",
     highlights: [
-      "Developed frontend features for a restaurant management system using Next.js and Tailwind CSS.",
-      "Improved UI responsiveness and streamlined user workflows in collaboration with the team.",
-    ],
-  },
-   {
-    role: "Full Stack Developer",
-    company: "Nigotis Backed by Raqqamiyya",
-    period: "Oct 2024 – Jan 2025",
-    type: "Accounting Software",
-    highlights: [
-      "Built and optimized UI components for Accounting Software and Business Automation Tool using Next.js, React.js and Tailwind CSS.",
-      "Managed the complete project development independently, improving application performance and overall user experience.",
+      "Built an internal task tracker for a multi-branch restaurant chain to coordinate employees across different cities, laying the groundwork for a future employee performance tracking feature.",
+      "Built the Supabase-powered backend for the internal task manager, handling data models and APIs for task assignment across restaurant branches.",
     ],
   },
   {
-    role: "Frontend Intern",
-    company: "Powersoft 19",
-    period: "Jun 2024 – Aug 2024",
+    role: "Frontend Developer Intern",
+    company: "Powersoft19 - On-site Internship",
+    location: "Lahore, Pakistan",
+    period: "Jul 2024 – Aug 2024",
     type: "Healthcare System",
     highlights: [
-      "Built and optimized UI components for a healthcare system using React and Tailwind CSS.",
-      "Enhanced application performance and user experience through collaborative development.",
+      "Created and refined reusable UI components for a healthcare management system using React and Tailwind CSS.",
+      "Raised key screen rendering performance and accessibility through component refactoring in collaboration with senior developers.",
     ],
   },
 ];
 
 const productsToLaunch = [
   {
+    name: "GateTak",
+    status: "Founding Lead",
+    accent: "green",
+    desc: "City-wide delivery & logistics platform for Haripur with 3 React Native apps (Customers, Riders, Vendors) & Next.js admin panel.",
+  },
+  {
     name: "Aban Edu",
     status: "Building",
-    accent: "green",
+    accent: "orange",
     desc: "A multi-tenant school management SaaS with fee automation, roles, and PostgreSQL-first architecture.",
   },
   {
     name: "Aban Arena",
-    status: "Coming Soon",
-    accent: "orange",
+    status: "Soon",
+    accent: "gray",
     desc: "A mobile-first arena booking product for availability, reservations, payments, and sports venue operations.",
   },
   {
     name: "Sehat-AI",
-    status: "Research",
+    status: "FYP",
     accent: "gray",
-    desc: "AI-assisted chest X-ray screening workflow powered by CNN models, FastAPI, and mobile delivery.",
+    desc: "AI-assisted chest X-ray screening workflow powered by DenseNet121 CNN models, FastAPI backend, and mobile app.",
   },
 ];
 
 const learningFocus = [
   "Retrieval-Augmented Generation (RAG)",
-  "Production AI API design",
-  "Scalable multi-tenant SaaS",
-  "Mobile product delivery with Expo",
+  "Production AI API Design & DenseNet Pipelines",
+  "Scalable Multi-Tenant SaaS & RBAC",
+  "Mobile Product Delivery with React Native & Expo",
 ];
 
 const education = {
   institute: "Pak-Austria Fachhochschule (PAF-IAST), Haripur, KPK",
   period: "Oct 2022 – May 2026",
-  degree: "Bachelor of Software Engineering (Final Year)",
-  cgpa: "3.51",
+  degree: "Bachelor of Software Engineering (CGPA: 3.47)",
+  cgpa: "3.47",
   highlights: [
-    "Dean's List recipient — 4 consecutive times throughout degree program.",
-    "Teaching Assistant for 7 courses across 4 semesters, including Programming Fundamentals, ICT, DSA, Calculus, Applied Physics, Computer Networks, and Discrete Structures.",
-    "Relevant coursework: Deep Learning, Computer Networks, Database Systems, Software Engineering, Discrete Structures, and Algorithms.",
+    "Dean's List recipient — recognized 4 consecutive times for top GPA performance.",
+    "Teaching Assistant for 7 courses across 4 semesters: Programming Fundamentals, ICT, DSA, Calculus, Applied Physics, Computer Networks, Discrete Structures.",
+    "Relevant Coursework: Deep Learning, Computer Networks, Database Systems, Software Engineering, Algorithms, Discrete Structures.",
   ],
 };
+
+const achievements = [
+  "Dean's List - 4x at PAF-IAST for maintaining top GPA performance each semester.",
+  "Full Merit Scholarship - Granted for one semester based on outstanding academic results.",
+  "Half Merit Scholarship - Received for one semester for sustained academic achievement.",
+  "Prime Minister Laptop Award - Government of Pakistan PM Laptop Scheme, presented to top-performing students nationwide.",
+];
 
 // socials links
 const social_links = [
@@ -509,7 +510,7 @@ If you need a Website especially Next.js expert who actually delivers, Abdullah 
     profession: "Senior React Developer",
     avatar: "/hayan.jpg",
     projectSlug: "activus",
-    review: `Working with Abdullah was a wonderful experience, I was looking for a developer to do one of my extra project and I cannot trust everyone with my work but Abdullah always went the extra mile, did everything on time and had a very creative and optimized approach from start to end. He has a very good design eye. I am looking forward to future collaborations with him. Much recommended!`,
+    review: `Working with Abdullah was a wonderful experience, I was looking for a developer to do one of my extra project and I cannot trust everyone with my work but Abdullah always went the extra mile, did everything on time and had a very creative and optimized approach from start to end. He has a very good design eye. I am looking forward to future collaborations with him. Much recommended!`,
   },
 ];
 
@@ -520,7 +521,9 @@ export {
   skills,
   reviews,
   workExperience,
+  internships,
   productsToLaunch,
   learningFocus,
   education,
+  achievements,
 };

@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="mt-12 rounded-t-[2rem] border-t border-white/10 bg-black py-8">
       <div className="grid gap-8 px-4 lg:grid-cols-3 lg:px-8">
         <div className="grid gap-3">
-          <Link className="text-3xl font-bold tracking-[-0.05em] text-white" href="/">
+          <Link className="text-3xl font-bold tracking-[-0.05em] text-white font-serif italic" href="/">
             Abdullah
           </Link>
           <p className="max-w-sm text-sm leading-6 text-gray-500">
