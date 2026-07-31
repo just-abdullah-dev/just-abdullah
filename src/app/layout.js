@@ -1,4 +1,5 @@
 import Socials from "@/components/utils/Socials";
+import CursorGlow from "@/components/utils/CursorGlow";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -16,8 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-dark text-white relative antialiased">
-        {children}
+      <body className="bg-dark text-white relative antialiased min-h-screen">
+        <CursorGlow />
+        <div className="relative z-10">{children}</div>
         <Toaster />
         <SpeedInsights />
         <Analytics />

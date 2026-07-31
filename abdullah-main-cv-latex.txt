@@ -1,0 +1,233 @@
+%-------------------------
+% Abdullah — Full Stack Engineer CV
+% Overleaf-ready LaTeX
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+% Company name and location are bolded here (2nd row of the subheading)
+\newcommand{\resumeSubheading}[4]{
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small\textbf{#3}} & \textit{\small\textbf{#4}} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{28}{32}\selectfont \scshape Abdullah} \\ \vspace{3pt}
+    {\Large \textbf{Full Stack Software Engineer} $|$ Pakistan} \\ \vspace{4pt}
+    \small
+    +923466193942 $|$
+    \href{mailto:just.abdullah.dev@gmail.com}{just.abdullah.dev@gmail.com} $|$
+    \href{https://just-abdullah.vercel.app/}{just-abdullah.vercel.app} $|$
+    \href{https://github.com/just-abdullah-dev/}{github.com/just-abdullah-dev} $|$
+    \href{https://www.linkedin.com/in/just-abdullah-/}{linkedin.com/in/just-abdullah-}\\
+\end{center}
+
+%-----------PROFILE SUMMARY-----------
+\section{Profile Summary}
+\small{
+Results-driven Full Stack Engineer with \textbf{\textasciitilde2 years} of hands-on professional experience building scalable \textbf{SaaS} platforms, \textbf{REST APIs}, and AI-integrated systems across multiple client and product teams. Proven track record delivering production-ready applications in Next.js, React, Node.js, TypeScript, and PostgreSQL, from complex multi-tenant architectures to real-time video. Currently founding \textbf{GateTak}, a delivery and logistics platform, as full stack lead across web and mobile. Comfortable working across the full stack, shipping fast in agile and contract environments, and collaborating remotely with international teams. BSc Software Engineering graduate (CGPA: 3.47, 4x Dean's List). Actively seeking opportunities, available for remote or relocation.
+}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Founder | Full Stack Engineer}{Jul 2026 - Present}
+      {GateTak - On-site}{Haripur, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Founded GateTak, a city-wide delivery and logistics platform for Haripur, building three separate React Native apps for customers, riders, and vendors/restaurants, backed by a Supabase database.}
+        \resumeItem{Built the admin panel in Next.js for managing orders, vendors, and riders across the platform.}
+        \resumeItem{Serving as full stack engineer across the entire stack, web and mobile.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Developer}{Oct 2025 - Jun 2026}
+      {Peregrine Ventures AI - Contract, Remote}{Lightsview, South Australia}
+      \resumeItemListStart
+        \resumeItem{Built a B2B veterinary ordering platform with clinic management, prescriptions, and order workflows for 50+ clinics, reducing manual processing by ~40\%.}
+        \resumeItem{Developed a dynamic pricing engine supporting clinic-specific pricing rules and product-level overrides.}
+        \resumeItem{Built a telehealth platform with booking, video calls, chat, AI transcription, and automated visit summaries.}
+        \resumeItem{Implemented secure JWT authentication with role-based access for admins and clinic users.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Developer}{Feb 2025 - Jun 2025}
+      {Inostrik - Part-time, Remote}{Islamabad, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Delivered a Supabase-powered CMS with dynamic blog and banner management, and Bonny, a full events and voucher management platform: admin dashboard, QR-based redemption, user/business/event management, and subscription tier features using Next.js, TypeScript, and Supabase.}
+        \resumeItem{Improved SSR and database query strategies, cutting page load times across CMS-heavy pages.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Developer}{Oct 2024 - Jan 2025}
+      {Raqqamiyya (Nigotis) - Part-time, Remote}{Dubai, UAE}
+      \resumeItemListStart
+        \resumeItem{Built a full accounting and business management system covering invoicing, payroll processing, and asset tracking for SME clients.}
+        \resumeItem{Established RBAC with secure authentication, ensuring granular access per user role across the platform.}
+        \resumeItem{Used SSR and tuned MongoDB queries to handle large ledger datasets with low latency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Developer}{Sep 2024}
+      {Inostrik - Part-time, Remote}{Islamabad, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Built Dynam Galaxy, a high-animation agency portfolio site, using Next.js and Framer Motion.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------INTERNSHIPS-----------
+\section{Internships}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{Jul 2025 - Sep 2025}
+      {Mahhir 360 - On-site Internship}{Lahore, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Built an internal task tracker for a multi-branch restaurant chain to coordinate employees across different cities, laying the groundwork for a future employee performance tracking feature.}
+        \resumeItem{Built the Supabase-powered backend for the internal task manager, handling data models and APIs for task assignment across restaurant branches.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Frontend Developer Intern}{Jul 2024 - Aug 2024}
+      {Powersoft19 - On-site Internship}{Lahore, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Created and refined reusable UI components for a healthcare management system using React and Tailwind CSS.}
+        \resumeItem{Raised key screen rendering performance and accessibility through component refactoring in collaboration with senior developers.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Sehat-AI} $|$ \emph{Python · FastAPI · React Native}}{2025 - 2026}
+          \resumeItemListStart
+            \resumeItem{Built and trained a deep learning pipeline to classify TB and Pneumonia from chest X-rays using DenseNet121 with transfer learning.}
+            \resumeItem{Built a FastAPI backend serving real-time predictions for the classification pipeline.}
+            \resumeItem{Developed a React Native mobile frontend enabling patients and clinicians to upload X-rays and receive instant AI-assisted screening results.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Aban Edu} - SaaS School Management $|$ \emph{Next.js · TypeScript · PostgreSQL · React Native}}{2026 - Present}
+          \resumeItemListStart
+            \resumeItem{Architecting a multi-tenant school management system supporting institutions, teachers, students, and guardians with isolated tenant data and role-based access.}
+            \resumeItem{Built a complex relational schema in PostgreSQL with Prisma ORM, covering timetables, fee structures, attendance, and academic records.}
+            \resumeItem{Created functional React Native guardian app prototype focused on real-time communication of fee reminders, attendance alerts, and academic updates.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} JavaScript, TypeScript, Python, HTML, CSS \\
+     \textbf{Frontend:} React.js, Next.js, Tailwind CSS, Framer Motion, Redux, React Native \\
+     \textbf{Backend:} Node.js, Next.js API Routes, Nest.js, Express.js, FastAPI \\
+     \textbf{Databases:} PostgreSQL, MongoDB, MySQL, Supabase \\
+     \textbf{ORM / Data:} Prisma ORM, Mongoose \\
+     \textbf{Tools:} Git, GitHub, Vercel, AWS S3, GCP (Google Cloud Platform), Postman, Docker \\
+     \textbf{Expertise:} SaaS Architecture, Multi-tenancy, RBAC, REST APIs, SSR, CSR, SSG, Real-time Systems, Database Design
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pak-Austria Fachhochschule (PAF-IAST)}{Oct 2022 - May 2026}
+      {Bachelor of Software Engineering $|$ CGPA: 3.47}{Haripur, KPK, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Dean's List - recognized for 4 consecutive semesters for top academic performance.}
+        \resumeItem{Teaching Assistant for 7 courses across 4 semesters: Programming Fundamentals, ICT, DSA, Calculus, Applied Physics, Computer Networks, Discrete Structures.}
+        \resumeItem{Relevant Coursework: Deep Learning, Computer Networks, Database Systems, Software Engineering, Algorithms, Discrete Structures.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Dean's List} - 4x at PAF-IAST for maintaining top GPA performance each semester. \\
+      \textbf{Full Merit Scholarship} - Granted for one semester based on outstanding academic results. \\
+      \textbf{Half Merit Scholarship} - Received for one semester for sustained academic achievement. \\
+      \textbf{Prime Minister Laptop Award} - Government of Pakistan PM Laptop Scheme, presented to top-performing students nationwide.
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

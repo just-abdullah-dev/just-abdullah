@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Btn from "@/components/utils/Btn";
 
 export default function Header() {
@@ -12,9 +12,36 @@ export default function Header() {
     { name: "About", slug: "/about" },
   ];
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY <= 10) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY.current && currentScrollY > 80) {
+        setIsVisible(false);
+      } else if (currentScrollY < lastScrollY.current) {
+        setIsVisible(true);
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const showHeader = isVisible || isOpen;
 
   return (
-    <header className="sticky left-0 right-0 top-0 z-50 mb-4 flex items-center justify-between rounded-b-3xl border-b border-white/10 bg-black/75 px-4 py-3 backdrop-blur-xl md:px-8">
+    <header
+      className={`sticky left-0 right-0 top-0 z-50 mb-4 flex items-center justify-between rounded-b-3xl border-b border-white/10 bg-black/50 px-4 py-3 backdrop-blur-xl transition-transform duration-300 ease-in-out md:px-8 ${
+        showHeader ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <Link className="flex items-center gap-3" href="/">
         <Image
           src="/avatar.png"
@@ -24,7 +51,7 @@ export default function Header() {
           className="size-11 rounded-full border border-white/15 object-cover"
           priority
         />
-        <span className="text-lg tracking-[-0.04em] text-white">@abdullah</span>
+        <span className="text-lg tracking-[-0.04em] text-white italic font-serif ">@abdullah</span>
       </Link>
       <nav className={`${isOpen ? "block" : "hidden"} absolute right-4 top-16 md:static md:block`}>
         <ul className="flex min-w-52 flex-col gap-2 rounded-2xl border border-white/10 bg-black p-3 shadow-2xl md:min-w-0 md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none">

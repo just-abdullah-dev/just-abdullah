@@ -10,7 +10,7 @@ import Skills from "@/components/Skills/Skills";
 export default function Home() {
   return (
     <PageLayout>
-      <main className="relative grid gap-8 pb-10 md:gap-12">
+      <main className="relative flex flex-col gap-8 pb-10 md:gap-12 w-full max-w-full min-w-0 ">
         <HeroSection />
         <Projects showMoreBtn={true} />
         <ExperienceTimeline />
