@@ -95,7 +95,7 @@
 %-----------PROFILE SUMMARY-----------
 \section{Profile Summary}
 \small{
-Results-driven Full Stack Engineer with \textbf{\textasciitilde2 years} of hands-on professional experience building scalable \textbf{SaaS} platforms, \textbf{REST APIs}, and AI-integrated systems across multiple client and product teams. Proven track record delivering production-ready applications in Next.js, React, Node.js, TypeScript, and PostgreSQL, from complex multi-tenant architectures to real-time video. Currently founding \textbf{GateTak}, a delivery and logistics platform, as full stack lead across web and mobile. Comfortable working across the full stack, shipping fast in agile and contract environments, and collaborating remotely with international teams. BSc Software Engineering graduate (CGPA: 3.47, 4x Dean's List). Actively seeking opportunities, available for remote or relocation.
+Results-driven Full Stack Engineer with \textbf{\textasciitilde2 years} of hands-on professional experience building scalable \textbf{SaaS} platforms, \textbf{REST APIs}, and AI-integrated systems across multiple client and product teams. Proven track record delivering production-ready applications in Next.js, React, Node.js, TypeScript, and PostgreSQL, from complex multi-tenant architectures to real-time video. Currently founding \textbf{GateTak}, a delivery and logistics platform, as full stack lead across web and mobile. Comfortable working across the full stack, shipping fast in agile and contract environments, and collaborating remotely with international teams. BSc Software Engineering graduate (CGPA: 3.48, 4x Dean's List). Actively seeking opportunities, available for remote or relocation.
 }
 
 %-----------WORK EXPERIENCE-----------
@@ -210,7 +210,7 @@ Results-driven Full Stack Engineer with \textbf{\textasciitilde2 years} of hands
   \resumeSubHeadingListStart
     \resumeSubheading
       {Pak-Austria Fachhochschule (PAF-IAST)}{Oct 2022 - May 2026}
-      {Bachelor of Software Engineering $|$ CGPA: 3.47}{Haripur, KPK, Pakistan}
+      {Bachelor of Software Engineering $|$ CGPA: 3.48}{Haripur, KPK, Pakistan}
       \resumeItemListStart
         \resumeItem{Dean's List - recognized for 4 consecutive semesters for top academic performance.}
         \resumeItem{Teaching Assistant for 7 courses across 4 semesters: Programming Fundamentals, ICT, DSA, Calculus, Applied Physics, Computer Networks, Discrete Structures.}

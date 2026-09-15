@@ -8,7 +8,7 @@ import { achievements, education } from "@/constants/data";
 const strengths = [
   "Founder & Full Stack Lead at GateTak — building 3 React Native apps & Next.js admin dashboard.",
   "B2B & SaaS Architecture — 50+ clinic ordering platforms, dynamic pricing engines, & multi-tenant school systems.",
-  "Academic Excellence — BSc Software Engineering graduate from PAF-IAST (CGPA: 3.47, 4x Dean's List).",
+  "Academic Excellence — BSc Software Engineering graduate from PAF-IAST (CGPA: 3.48, 4x Dean's List).",
   "Teaching Assistant — TA for 7 courses across 4 semesters including DSA, Programming Fundamentals, & Networks.",
 ];
 
