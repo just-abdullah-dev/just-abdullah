@@ -93,7 +93,7 @@ const projects = [
     images: ["/projects/gatetak-0.png", "/projects/gatetak-1.png", "/projects/gatetak-2.png", "/projects/gatetak-3.jpeg", "/projects/gatetak-4.jpeg", "/projects/gatetak-5.jpeg", "/projects/gatetak-6.jpeg", "/projects/gatetak-7.jpeg"],
     keywords: ["React Native", "Next.js", "Supabase", "TypeScript", "Logistics", "Mobile"],
     repo: "",
-    link: "",
+    link: "https://gate-tak-legal.vercel.app/",
     startedOn: "Jul-2026",
     completedOn: "Present",
     summary: "Founded GateTak, a city-wide delivery and logistics platform featuring 3 separate React Native mobile apps (Customers, Riders, Vendors) and a Next.js admin panel.",
