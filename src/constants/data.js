@@ -90,7 +90,7 @@ const projects = [
     title: "GateTak",
     tagline: "City-wide delivery & logistics platform for Haripur",
     slug: "gatetak",
-    images: ["/projects/aban-edu-1.png", "/projects/aban-edu-2.png", "/projects/aban-edu-3.png"],
+    images: ["/projects/gatetak-0.png", "/projects/gatetak-1.png", "/projects/gatetak-2.png", "/projects/gatetak-3.jpeg", "/projects/gatetak-4.jpeg", "/projects/gatetak-5.jpeg", "/projects/gatetak-6.jpeg", "/projects/gatetak-7.jpeg"],
     keywords: ["React Native", "Next.js", "Supabase", "TypeScript", "Logistics", "Mobile"],
     repo: "",
     link: "",
@@ -454,8 +454,8 @@ const learningFocus = [
 const education = {
   institute: "Pak-Austria Fachhochschule (PAF-IAST), Haripur, KPK",
   period: "Oct 2022 – May 2026",
-  degree: "Bachelor of Software Engineering (CGPA: 3.47)",
-  cgpa: "3.47",
+  degree: "Bachelor of Software Engineering (CGPA: 3.48)",
+  cgpa: "3.48",
   highlights: [
     "Dean's List recipient — recognized 4 consecutive times for top GPA performance.",
     "Teaching Assistant for 7 courses across 4 semesters: Programming Fundamentals, ICT, DSA, Calculus, Applied Physics, Computer Networks, Discrete Structures.",
