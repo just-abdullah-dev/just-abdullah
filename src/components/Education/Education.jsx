@@ -1,28 +1,45 @@
-import { education } from "@/constants/data";
+import { achievements, education } from "@/constants/data";
+import Reveal from "@/components/motion/Reveal";
 
 export default function Education() {
   return (
-    <section className="premium-section">
-      <div className="section-kicker">Education</div>
-      <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 md:p-8">
-        <div className="flex flex-col justify-between gap-4 md:flex-row">
-          <div>
-            <h2 className="text-3xl font-semibold text-white">{education.degree}</h2>
-            <p className="mt-2 text-gray-300">{education.institute}</p>
-          </div>
-          <div className="text-left md:text-right">
-            <p className="text-sm uppercase tracking-[0.25em] text-gray-500">{education.period}</p>
-            <p className="mt-2 text-xl text-white">CGPA {education.cgpa}</p>
-          </div>
-        </div>
-        <ul className="mt-6 grid gap-3 text-sm leading-6 text-gray-300 md:grid-cols-3">
-          {education.highlights.map((highlight) => (
-            <li key={highlight} className="rounded-2xl border border-white/10 bg-black/30 p-4">
-              {highlight}
+    <section id="education" className="section-block">
+      <Reveal>
+        <p className="section-kicker">Education</p>
+        <h2 className="section-title">Academic foundation.</h2>
+      </Reveal>
+
+      <Reveal className="mt-8 rounded-3xl border border-ink/10 bg-white p-6 md:p-8">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-faint">
+          {education.period}
+        </p>
+        <h3 className="mt-3 font-display text-2xl font-semibold text-ink md:text-3xl">
+          {education.degree}
+        </h3>
+        <p className="mt-2 text-signal">{education.institute}</p>
+        <ul className="mt-6 grid gap-3 text-sm leading-6 text-ink-muted">
+          {education.highlights.map((item) => (
+            <li key={item} className="flex gap-3">
+              <span className="mt-2 size-1.5 shrink-0 rounded-full bg-signal" />
+              <span>{item}</span>
             </li>
           ))}
         </ul>
-      </div>
+      </Reveal>
+
+      <Reveal className="mt-6">
+        <h3 className="font-display text-xl font-semibold text-ink">Achievements</h3>
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
+          {achievements.map((item) => (
+            <li
+              key={item}
+              className="rounded-2xl border border-ink/10 bg-stone-soft px-4 py-4 text-sm leading-6 text-ink-muted"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+      </Reveal>
     </section>
   );
 }

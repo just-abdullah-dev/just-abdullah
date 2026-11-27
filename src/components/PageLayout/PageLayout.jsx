@@ -1,16 +1,14 @@
-import React from "react";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 
-function PageLayout({ children, padding = true }) {
-  const css = padding ? "mx-auto max-w-[1500px] w-full min-w-0 px-4 md:px-8" : "mx-auto max-w-[1500px] w-full min-w-0";
+export default function PageLayout({ children, fullBleed = false }) {
   return (
-    <div className={css}>
+    <div className="relative min-h-dvh">
       <Header />
-      {children}
+      <main id="main-content" className={fullBleed ? "" : "shell"}>
+        {children}
+      </main>
       <Footer />
     </div>
   );
 }
-
-export default PageLayout;

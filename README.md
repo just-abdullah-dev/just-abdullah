@@ -1,16 +1,33 @@
-# just-abdullah-portfolio
+# Just Abdullah — Quiet Foundry Portfolio
 
-Welcome to the "just-abdullah-portfolio" repository!
+Product-minded Full Stack Engineer & founder portfolio built with Next.js 14.
 
-## Description
-This repository houses the codebase for my personal website, "Just Abdullah." As a full-stack web developer, I leverage Next.js, React.js, Node.js, and MongoDB to craft a dynamic and engaging platform. Explore the intricacies of my portfolio and the technologies powering it within this repository.
+## Stack
 
-## Technologies Used
-- Next.js
-- React.js
-- Node.js
-- MongoDB
+- Next.js App Router
+- Tailwind CSS
+- Framer Motion (light, reduced-motion aware)
+- Vercel Analytics + Google Analytics
 
-Feel free to dive into the code and explore the inner workings of my portfolio. Let's build something amazing together!
+## SEO
 
-Happy coding!
+- Per-route metadata, Open Graph, Twitter cards
+- `robots.txt` and `sitemap.xml`
+- JSON-LD Person, WebSite, BreadcrumbList, CreativeWork, FAQ
+- Indexable case studies; thin experiments (`quizical`, `tenzies`) are `noindex`
+
+## Local setup
+
+```bash
+npm install
+cp .env.example .env.local
+npm run dev
+```
+
+Set `NEXT_PUBLIC_SITE_URL` to your live domain for correct canonicals and sitemap URLs.
+
+## Scripts
+
+- `npm run dev` — development server
+- `npm run build` — production build
+- `npm start` — serve production build

@@ -1,32 +1,34 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect, useRef } from "react";
-import Btn from "@/components/utils/Btn";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useRef, useState } from "react";
+import { Menu, X } from "lucide-react";
+
+const links = [
+  { name: "Work", slug: "/projects" },
+  { name: "About", slug: "/about" },
+  { name: "Services", slug: "/services" },
+  { name: "Contact", slug: "/contact" },
+];
 
 export default function Header() {
-  const links = [
-    { name: "Projects", slug: "/projects" },
-    { name: "Experience", slug: "/#experience" },
-    { name: "Products", slug: "/#products" },
-    { name: "About", slug: "/about" },
-  ];
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
   const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 24);
 
-      if (currentScrollY <= 10) {
-        setIsVisible(true);
-      } else if (currentScrollY > lastScrollY.current && currentScrollY > 80) {
-        setIsVisible(false);
-      } else if (currentScrollY < lastScrollY.current) {
-        setIsVisible(true);
-      }
-
+      if (currentScrollY <= 10) setIsVisible(true);
+      else if (currentScrollY > lastScrollY.current && currentScrollY > 80) setIsVisible(false);
+      else if (currentScrollY < lastScrollY.current) setIsVisible(true);
       lastScrollY.current = currentScrollY;
     };
 
@@ -34,50 +36,116 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
   const showHeader = isVisible || isOpen;
+  const overlayHome = isHome && !scrolled;
 
   return (
     <header
-      className={`sticky left-0 right-0 top-0 z-50 mb-4 flex items-center justify-between rounded-b-3xl border-b border-white/10 bg-black/50 px-4 py-3 backdrop-blur-xl transition-transform duration-300 ease-in-out md:px-8 ${
-        showHeader ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`${
+        isHome ? "fixed" : "sticky"
+      } left-0 right-0 top-0 z-50 transition-transform duration-300 ease-out ${
+        isHome ? "" : "mb-2"
+      } ${showHeader ? "translate-y-0" : "-translate-y-full"}`}
     >
-      <Link className="flex items-center gap-3" href="/">
-        <Image
-          src="/avatar.png"
-          width={44}
-          height={44}
-          alt="Abdullah avatar"
-          className="size-11 rounded-full border border-white/15 object-cover"
-          priority
-        />
-        <span className="text-lg tracking-[-0.04em] text-white italic font-serif ">@abdullah</span>
-      </Link>
-      <nav className={`${isOpen ? "block" : "hidden"} absolute right-4 top-16 md:static md:block`}>
-        <ul className="flex min-w-52 flex-col gap-2 rounded-2xl border border-white/10 bg-black p-3 shadow-2xl md:min-w-0 md:flex-row md:items-center md:gap-2 md:border-0 md:bg-transparent md:p-0 md:shadow-none">
-          {links.map((item) => (
-            <li key={item.name}>
-              <Link onClick={() => setIsOpen(false)} href={item.slug} className="block">
-                <button className=" header-pill  w-full md:w-fit">{item.name}</button>
-              </Link>
-            </li>
-          ))}
-          <li>
-            <Link onClick={() => setIsOpen(false)} href="/#contact" className="block">
-              <button className="w-full rounded-full border-beam text-white hover:text-white hover:bg-black hover:border-white transition-all duration-300 bg-black !px-4 !py-2 text-sm md:w-fit">Contact</button>
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <button
-        className={`rounded-full border border-white/10 p-2 md:hidden ${isOpen ? "bg-white text-black" : "text-white"}`}
-        onClick={() => setIsOpen((val) => !val)}
-        aria-label="Toggle navigation"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </button>
+      <div className="shell">
+        <div
+          className={`flex items-center justify-between px-4 py-3 md:px-6 ${
+            overlayHome
+              ? "rounded-b-3xl border border-t-0 border-white/10 bg-ink/25 backdrop-blur-md"
+              : "rounded-b-3xl border border-t-0 border-ink/10 bg-stone-soft/85 backdrop-blur-xl"
+          }`}
+        >
+          <Link className="flex items-center gap-3" href="/" aria-label="Abdullah home">
+            <Image
+              src="/avatar.jpg"
+              width={40}
+              height={40}
+              alt=""
+              className={`size-10 rounded-full object-cover ${
+                overlayHome ? "border border-white/20" : "border border-ink/10"
+              }`}
+              priority
+            />
+            <span
+              className={`font-display text-xl font-semibold tracking-[-0.04em] ${
+                overlayHome ? "text-white" : "text-ink"
+              }`}
+            >
+              Abdullah
+            </span>
+          </Link>
+
+          <nav
+            className={`${
+              isOpen ? "block" : "hidden"
+            } absolute left-4 right-4 top-[4.5rem] md:static md:block`}
+            aria-label="Primary"
+          >
+            <ul
+              className={`flex flex-col gap-1 rounded-2xl p-3 shadow-soft md:min-w-0 md:flex-row md:items-center md:gap-1 md:border-0 md:bg-transparent md:p-0 md:shadow-none ${
+                overlayHome
+                  ? "border border-white/10 bg-ink/90"
+                  : "border border-ink/10 bg-stone-soft"
+              }`}
+            >
+              {links.map((item) => {
+                const active =
+                  item.slug === "/"
+                    ? pathname === "/"
+                    : pathname === item.slug || pathname.startsWith(`${item.slug}/`);
+                return (
+                  <li key={item.name}>
+                    <Link
+                      href={item.slug}
+                      className={`block rounded-full px-4 py-2 text-sm font-medium transition ${
+                        active
+                          ? overlayHome
+                            ? "bg-white text-ink"
+                            : "bg-ink text-white"
+                          : overlayHome
+                            ? "text-white/70 hover:bg-white/10 hover:text-white"
+                            : "text-ink-muted hover:bg-white hover:text-ink"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                );
+              })}
+              <li className="md:ml-2">
+                <Link
+                  href="/contact"
+                  className={`block rounded-full px-4 py-2 text-center text-sm font-semibold transition ${
+                    overlayHome
+                      ? "bg-signal text-white hover:bg-white hover:text-ink"
+                      : "bg-signal text-white hover:bg-ink"
+                  }`}
+                >
+                  Start a project
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            type="button"
+            className={`inline-flex size-11 items-center justify-center rounded-full md:hidden ${
+              overlayHome
+                ? "border border-white/20 text-white"
+                : "border border-ink/10 text-ink"
+            }`}
+            onClick={() => setIsOpen((val) => !val)}
+            aria-expanded={isOpen}
+            aria-label={isOpen ? "Close navigation" : "Open navigation"}
+          >
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
+      </div>
     </header>
   );
 }
