@@ -1,76 +1,58 @@
 import { learningFocus, productsToLaunch } from "@/constants/data";
-import { Rocket, Sparkles } from "lucide-react";
+import Reveal from "@/components/motion/Reveal";
 
-const accentClasses = {
-  green: "border-emerald-400/40 text-emerald-300 bg-emerald-400/10 shadow-sm shadow-emerald-500/20",
-  orange: "border-orange-400/40 text-orange-300 bg-orange-400/10 shadow-sm shadow-orange-500/20",
-  gray: "border-purple-400/30 text-purple-300 bg-purple-400/10",
+const accentMap = {
+  green: "border-signal/30 bg-signal-faint text-signal",
+  teal: "border-signal/30 bg-signal-faint text-signal",
+  gray: "border-ink/10 bg-white text-ink-muted",
 };
 
 export default function LaunchPad() {
   return (
-    <section id="products" className="premium-section my-10">
-      <div className="section-kicker flex items-center gap-2 text-purple-400">
-        <Rocket className="size-4" /> Next Products & Startup
-      </div>
-      <div className="section-heading-grid">
-        <h2 className="section-title font-serif italic">Startup Ventures</h2>
-        <p className="section-copy">
-          Beyond client engineering: founding GateTak logistics, building multi-tenant school SaaS, medical AI tools, and arena booking platforms.
+    <section id="products" className="section-block">
+      <Reveal>
+        <p className="section-kicker">Products</p>
+        <h2 className="section-title">What I am building next.</h2>
+        <p className="section-copy mt-4">
+          Beyond client work: founding GateTak, school SaaS, medical AI, and venue booking.
         </p>
-      </div>
+      </Reveal>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        {productsToLaunch.map((product) => {
-          const isGateTak = product.name === "GateTak";
-          return (
-            <article
-              key={product.name}
-              className={`relative flex flex-col justify-between rounded-[2rem] border p-6 transition-all duration-300 ${
-                isGateTak
-                  ? "border-purple-500/60 bg-gradient-to-b from-purple-950/40 via-black/80 to-purple-950/20 shadow-xl shadow-purple-500/15 hover:border-purple-400 hover:scale-[1.02]"
-                  : "border-white/10 bg-white/[0.03] hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.06]"
-              }`}
-            >
-              {isGateTak && (
-                <div className="absolute -top-3 left-6 inline-flex items-center gap-1 rounded-full border border-purple-400/60 bg-purple-600 px-3 py-0.5 text-[10px] font-extrabold uppercase tracking-widest text-white shadow-md">
-                   Active Startup
-                </div>
-              )}
-
-              <div>
-                <div className="flex items-center justify-between gap-3">
-                  <h3 className="text-2xl font-bold text-white">{product.name}</h3>
-                  <span
-                    className={`rounded-full border px-3 py-1 text-[10px] uppercase font-bold tracking-[0.2em] ${
-                      accentClasses[product.accent] || accentClasses.gray
-                    }`}
-                  >
-                    {product.status}
-                  </span>
-                </div>
-                <p className="mt-4 text-xs md:text-sm leading-6 text-gray-300">{product.desc}</p>
+      <div className="mt-10 grid gap-5 md:grid-cols-2">
+        {productsToLaunch.map((product, index) => (
+          <Reveal key={product.name} delay={index * 0.05}>
+            <article className="rounded-3xl border border-ink/10 bg-white p-6 md:p-7">
+              <div className="flex items-start justify-between gap-3">
+                <h3 className="font-display text-2xl font-semibold text-ink">{product.name}</h3>
+                <span
+                  className={`rounded-full border px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] ${
+                    accentMap[product.accent] || accentMap.gray
+                  }`}
+                >
+                  {product.status}
+                </span>
               </div>
+              <p className="mt-4 text-sm leading-6 text-ink-muted">{product.desc}</p>
             </article>
-          );
-        })}
+          </Reveal>
+        ))}
       </div>
 
-      <div className="mt-8 rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 md:p-8">
-        <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-purple-400">
-          <Sparkles className="size-4" /> Currently Learning & Deepening Expertise
-        </div>
-        <div className="mt-5 flex flex-wrap gap-3">
+      <Reveal className="mt-8 rounded-3xl border border-ink/10 bg-stone-soft p-6 md:p-8">
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-signal">
+          Currently deepening
+        </p>
+        <div className="mt-5 flex flex-wrap gap-2">
           {learningFocus.map((item) => (
             <span
               key={item}
-              className="rounded-full border border-white/15 bg-black/50 px-4 py-2 text-xs md:text-sm font-medium text-gray-200 shadow-inner hover:border-purple-500/40 hover:text-purple-300 transition duration-300"
+              className="rounded-full border border-ink/10 bg-white px-4 py-2 text-sm text-ink-muted"
             >
               {item}
             </span>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

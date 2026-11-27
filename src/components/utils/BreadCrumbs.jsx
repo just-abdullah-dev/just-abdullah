@@ -1,30 +1,28 @@
-import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import { ChevronRight } from "lucide-react";
 
-export default function BreadCrumbs({ data }) {
+export default function BreadCrumbs({ data = [] }) {
   return (
-    <div className="flex flex-wrap items-center gap-2 rounded-full border border-white/10 bg-black/75 px-4 py-3 text-sm text-gray-400 md:w-fit md:px-5 ">
-      {data.map((item, index) => {
-        const label = item?.name
-          ?.split(" ")
-          .filter(Boolean)
-          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-          .join(" ");
-        const isLast = index === data.length - 1;
-
-        return (
-          <React.Fragment key={`${item?.path}-${index}`}>
-            <Link
-              className={`transition ${isLast ? "font-medium text-white" : "text-gray-400 hover:text-white"}`}
-              href={item?.path}
-            >
-              {label}
-            </Link>
-            {!isLast ? <ChevronRight size={14} className="text-gray-600" /> : null}
-          </React.Fragment>
-        );
-      })}
-    </div>
+    <nav aria-label="Breadcrumb" className="mb-6">
+      <ol className="flex flex-wrap items-center gap-1 text-sm text-ink-muted">
+        {data.map((item, index) => {
+          const isLast = index === data.length - 1;
+          return (
+            <li key={item.path} className="inline-flex items-center gap-1">
+              {isLast ? (
+                <span className="capitalize text-ink" aria-current="page">
+                  {item.name}
+                </span>
+              ) : (
+                <Link href={item.path} className="capitalize transition hover:text-signal">
+                  {item.name}
+                </Link>
+              )}
+              {!isLast ? <ChevronRight size={14} className="text-ink-faint" /> : null}
+            </li>
+          );
+        })}
+      </ol>
+    </nav>
   );
 }
